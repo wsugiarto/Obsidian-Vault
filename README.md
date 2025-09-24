@@ -20,5 +20,5 @@ not done
 ```
 
 
-- [ ] Work on university applications 📅 2025-10-31
+
 
