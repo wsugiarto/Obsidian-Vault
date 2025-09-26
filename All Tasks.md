@@ -1,4 +1,4 @@
-- [ ] Talk to Mia 📅 2025-09-26
+- [x] Talk to Mia 📅 2025-09-26 ✅ 2025-09-25
 - [ ] LeetCode 🔁 every 2 days 📅 2025-09-25
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
 Tasks Added Here:

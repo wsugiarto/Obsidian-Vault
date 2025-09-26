@@ -25,7 +25,7 @@ hide postpone button
 hide backlinks
 hide recurrence rule
 hide postpone button
-done 1 day ago
+done today
 ```
 # **Overall Tasks**
 ```tasks
