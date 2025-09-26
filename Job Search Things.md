@@ -7,4 +7,4 @@
 7. Stripe	Software Engineer - New Grad	San Francisco, Seattle
 8. Adobe	2026 University Graduate - Software Engineer	San Jose
 9. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
-10. 
+10. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
