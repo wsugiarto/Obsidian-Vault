@@ -18,6 +18,8 @@ sort by due
 hide backlinks
 hide recurrence rule
 hide postpone button
+description does not include leetcode 
+description does not include jobs
 ```
 
 # **Completed Tasks**
