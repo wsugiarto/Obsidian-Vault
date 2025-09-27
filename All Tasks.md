@@ -8,7 +8,8 @@
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
 Tasks Added Here:
 - [x] Doing Leetcode ✅ 2025-09-24
-- [ ] Applying for jobs 🔁 every day 📅 2025-09-26
+- [ ] Applying for jobs 🔁 every day 📅 2025-09-27
+- [x] Applying for jobs 🔁 every day 📅 2025-09-26 ✅ 2025-09-27
 - [x] Applying for jobs 🔁 every day 📅 2025-09-25 ✅ 2025-09-25
 - [x] Applying for jobs 🔁 every day 📅 2025-09-24 ✅ 2025-09-24
 - [x] Do something ✅ 2025-09-25
