@@ -2,7 +2,7 @@
 - [ ] CSE Tutor Networking Night at 5pm 📅 2025-09-30
 - [ ] Check if polo fits me 📅 2025-09-27
 - [x] check career fair details 📅 2025-09-27 ✅ 2025-09-27
-- [ ] order face medicine 📅 2025-09-27
+- [ ] order face medicine 📅 2025-09-30
 - [x] Talk to Mia 📅 2025-09-26 ✅ 2025-09-25
 - [ ] LeetCode 🔁 every 2 days 📅 2025-09-25
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
