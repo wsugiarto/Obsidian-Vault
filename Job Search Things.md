@@ -9,3 +9,4 @@
 9. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
 10. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
 11. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+12. IXL Learning	Software Engineer - New Grad	San Mateo, CA
