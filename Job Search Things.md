@@ -13,3 +13,4 @@
 13. Persona	Software Engineer - 2026 New Grad	San Francisco
 14. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
 15. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+16. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
