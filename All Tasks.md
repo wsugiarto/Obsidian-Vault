@@ -1,3 +1,4 @@
+- [ ] 2025 Fall Career Fair 📅 2025-10-09
 - [ ] CSE Tutor Networking Night at 5pm 📅 2025-09-30
 - [ ] Check if polo fits me 📅 2025-09-27
 - [ ] check career fair details 📅 2025-09-27
