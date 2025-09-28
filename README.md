@@ -1,8 +1,4 @@
-1. 1x Acne Clear 2.8% 5oz
-2. 1x Hydra Serum 5oz 
-3. 1x Calm & Correct Toner 16oz
-4. 1x Balancing Moisturizer 5oz
-5. 1x L-complex 5% 4oz
+
 # **Today**
 
 ```tasks
