@@ -1,3 +1,5 @@
+- [ ] Find my resume folder 📅 2025-09-29
+- [ ] Print and prepare resume 📅 2025-09-29
 - [ ] 2025 Fall Career Fair at 10am + 📅 2025-10-09
 - [ ] CSE Tutor Networking Night at 5pm 📅 2025-09-30
 - [x] Check if polo fits me 📅 2025-09-28 ✅ 2025-09-29
