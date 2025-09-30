@@ -1,5 +1,5 @@
 - [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
-- [ ] Check on SDGE 📅 2025-09-30
+- [x] Check on SDGE 📅 2025-09-30 ✅ 2025-09-30
 - [x] Do MGT 12 HW 📅 2025-09-30 ✅ 2025-09-30
 - [x] Find my resume folder 📅 2025-09-29 ✅ 2025-09-29
 - [x] Print and prepare resume 📅 2025-09-30 ✅ 2025-09-30
