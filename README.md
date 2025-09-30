@@ -22,6 +22,11 @@ description does not include leetcode
 description does not include jobs
 ```
 
+# **Recurring** 
+```tasks
+is recurring 
+not done
+```
 # **Completed Tasks**
 ```tasks
 hide backlinks
