@@ -1,3 +1,4 @@
+- [ ] Apply for the I20 travel sign 📅 2025-10-01
 - [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
 - [x] Check on SDGE 📅 2025-09-30 ✅ 2025-09-30
 - [x] Do MGT 12 HW 📅 2025-09-30 ✅ 2025-09-30
