@@ -2,7 +2,7 @@
 - [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
 - [ ] Check on SDGE 📅 2025-09-30
 =======
-- [ ] Apply for the I20 travel sign 📅 2025-10-01
+- [x] Apply for the I20 travel sign 📅 2025-10-01 ✅ 2025-10-01
 - [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
 - [x] Check on SDGE 📅 2025-09-30 ✅ 2025-09-30
 >>>>>>> origin/main
