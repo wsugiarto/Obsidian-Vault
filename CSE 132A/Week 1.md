@@ -35,3 +35,17 @@ annotation-target::remote-notes/PDF Files/Algebra and Relational Data Models.pdf
 >%%TAGS%%
 >
 ^wusokxv73yh
+
+
+>%%
+>```annotation-json
+>{"created":"2025-10-02T17:07:59.071Z","text":"Refers to the tables having the same column names (attributes) and data type ","updated":"2025-10-02T17:07:59.071Z","document":{"title":"","link":[{"href":"urn:x-pdf:26cc6b8556193c419c2a6897b85724b5"},{"href":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf"}],"documentFingerprint":"26cc6b8556193c419c2a6897b85724b5"},"uri":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf","target":[{"source":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf","selector":[{"type":"TextPositionSelector","start":4033,"end":4041},{"type":"TextQuoteSelector","exact":"schemas ","prefix":"tersection, and difference: the ","suffix":"of the two operands must be the "}]}]}
+>```
+>%%
+>*%%PREFIX%%tersection, and difference: the%%HIGHLIGHT%% ==schemas== %%POSTFIX%%of the two operands must be the*
+>%%LINK%%[[#^27e0gqbi01l|show annotation]]
+>%%COMMENT%%
+>Refers to the tables having the same column names (attributes) and data type 
+>%%TAGS%%
+>
+^27e0gqbi01l
