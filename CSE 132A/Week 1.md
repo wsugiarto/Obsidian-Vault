@@ -21,3 +21,17 @@ annotation-target::remote-notes/PDF Files/Algebra and Relational Data Models.pdf
 >%%TAGS%%
 >
 ^74qrd6v9v2d
+
+
+>%%
+>```annotation-json
+>{"created":"2025-10-02T16:47:39.884Z","text":"Particularly useful for renaming columns after performing joins and other operations.","updated":"2025-10-02T16:47:39.884Z","document":{"title":"","link":[{"href":"urn:x-pdf:26cc6b8556193c419c2a6897b85724b5"},{"href":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf"}],"documentFingerprint":"26cc6b8556193c419c2a6897b85724b5"},"uri":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf","target":[{"source":"vault:/Remote-Notes/PDF%20Files/Algebra%20and%20Relational%20Data%20Models.pdf","selector":[{"type":"TextPositionSelector","start":3070,"end":3078},{"type":"TextQuoteSelector","exact":"Renaming","prefix":" := R1 ⨝ R2Example: Natural Join","suffix":"•The ρ operator gives a new sche"}]}]}
+>```
+>%%
+>*%%PREFIX%%:= R1 ⨝ R2Example: Natural Join%%HIGHLIGHT%% ==Renaming== %%POSTFIX%%•The ρ operator gives a new sche*
+>%%LINK%%[[#^wusokxv73yh|show annotation]]
+>%%COMMENT%%
+>Particularly useful for renaming columns after performing joins and other operations.
+>%%TAGS%%
+>
+^wusokxv73yh
