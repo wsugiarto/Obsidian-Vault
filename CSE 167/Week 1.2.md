@@ -85,3 +85,45 @@ annotation-target::remote-notes/PDF Files/03_linear_transformation.pdf
 >%%TAGS%%
 >
 ^qfvcb5ypzea
+
+
+>%%
+>```annotation-json
+>{"created":"2025-10-03T22:06:48.948Z","text":"linear shift","updated":"2025-10-03T22:06:48.948Z","document":{"title":"03_linear_transformation","link":[{"href":"urn:x-pdf:ea4d1d23584d094eb9bd0efb7ff1c564"},{"href":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf"}],"documentFingerprint":"ea4d1d23584d094eb9bd0efb7ff1c564"},"uri":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","target":[{"source":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","selector":[{"type":"TextPositionSelector","start":3343,"end":3346},{"type":"TextQuoteSelector","exact":"xty","prefix":"d matrix[x′ y′ ]= [abcd][xy]+ [t","suffix":"]x′ y′ 1=abtxcdty0 0 1 [xy1]Tric"}]}]}
+>```
+>%%
+>*%%PREFIX%%d matrix[x′ y′ ]= [abcd][xy]+ [t%%HIGHLIGHT%% ==xty== %%POSTFIX%%]x′ y′ 1=abtxcdty0 0 1 [xy1]Tric*
+>%%LINK%%[[#^71ocx8iryn|show annotation]]
+>%%COMMENT%%
+>linear shift
+>%%TAGS%%
+>
+^71ocx8iryn
+
+
+>%%
+>```annotation-json
+>{"created":"2025-10-03T22:06:59.152Z","text":"linear transformation","updated":"2025-10-03T22:06:59.152Z","document":{"title":"03_linear_transformation","link":[{"href":"urn:x-pdf:ea4d1d23584d094eb9bd0efb7ff1c564"},{"href":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf"}],"documentFingerprint":"ea4d1d23584d094eb9bd0efb7ff1c564"},"uri":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","target":[{"source":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","selector":[{"type":"TextPositionSelector","start":3330,"end":3334},{"type":"TextQuoteSelector","exact":"abcd","prefix":"ick: augmented matrix[x′ y′ ]= [","suffix":"][xy]+ [txty]x′ y′ 1=abtxcdty0 0"}]}]}
+>```
+>%%
+>*%%PREFIX%%ick: augmented matrix[x′ y′ ]= [%%HIGHLIGHT%% ==abcd== %%POSTFIX%%][xy]+ [txty]x′ y′ 1=abtxcdty0 0*
+>%%LINK%%[[#^wiemc3rwwyb|show annotation]]
+>%%COMMENT%%
+>linear transformation
+>%%TAGS%%
+>
+^wiemc3rwwyb
+
+
+>%%
+>```annotation-json
+>{"created":"2025-10-03T22:10:17.203Z","text":"The whole point of this trick is because all the other transformations use matrix multiplication, so we try to use multiplication instead of addition here","updated":"2025-10-03T22:10:17.203Z","document":{"title":"03_linear_transformation","link":[{"href":"urn:x-pdf:ea4d1d23584d094eb9bd0efb7ff1c564"},{"href":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf"}],"documentFingerprint":"ea4d1d23584d094eb9bd0efb7ff1c564"},"uri":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","target":[{"source":"vault:/Remote-Notes/PDF%20Files/03_linear_transformation.pdf","selector":[{"type":"TextPositionSelector","start":3296,"end":3301},{"type":"TextQuoteSelector","exact":"Trick","prefix":" not a 2D linear transformation!","suffix":": augmented matrix[x′ y′ ]= [abc"}]}]}
+>```
+>%%
+>*%%PREFIX%%not a 2D linear transformation!%%HIGHLIGHT%% ==Trick== %%POSTFIX%%: augmented matrix[x′ y′ ]= [abc*
+>%%LINK%%[[#^8ytvs3akn2s|show annotation]]
+>%%COMMENT%%
+>The whole point of this trick is because all the other transformations use matrix multiplication, so we try to use multiplication instead of addition here
+>%%TAGS%%
+>
+^8ytvs3akn2s
