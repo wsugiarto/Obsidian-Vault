@@ -49,3 +49,22 @@ annotation-target::remote-notes/PDF Files/Algebra and Relational Data Models.pdf
 >%%TAGS%%
 >
 ^27e0gqbi01l
+
+Not on slides/PDF
+
+Grouping Operations
+- represented as $\gamma$ -> group by operation
+- When to use?
+	- Looking for key words like "per", "for every"
+- active domain
+	- All currently available values in a table
+- Ex. group all Ds by As (D and A are column names)
+	- Lets say A has an active domain of (a1, a2, b1), D has (3, 31, 5 ,6)
+	- Computing:
+		- Find all distinct values, then all the values for each distinct values, then perform the specified operation
+			- a1 -> (3,31) group all D values where the A = a1, then the count is 2
+			- a2 -> (4), count = 1
+			- a3 -> (5,6), count = 2
+		- By default of group by the operation would be count
+	- If we have something like $\gamma CourseID:AVG(Grade)$ 
+		- We do the same grouping thing where we get the list of values for each course, then instead of getting the count we perform the average operation.
