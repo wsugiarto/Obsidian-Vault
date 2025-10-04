@@ -1,3 +1,4 @@
+- [ ] CSE 167 get as much done as possible 📅 2025-10-04
 - [ ] CSE 167 HW1 Tuesday 📅 2025-10-13
 <<<<<<< HEAD
 - [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
