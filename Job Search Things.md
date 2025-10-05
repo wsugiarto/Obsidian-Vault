@@ -13,10 +13,11 @@ FAANG++
 
 Others
 1. Atlas World Group	Software Developer - Associate	US US IN Evansville
-2. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-3. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-4. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-5. Persona	Software Engineer - 2026 New Grad	San Francisco
-6. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-7. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-8. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+2. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+3. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+4. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+5. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+6. Persona	Software Engineer - 2026 New Grad	San Francisco
+7. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+8. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+9. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
