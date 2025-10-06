@@ -1,25 +1,11 @@
+- [ ] CSE 167 wrap it up 📅 2025-10-06
 - [ ] MGT 12 Ethics of AI HW Saturdady 📅 2025-10-25
 - [x] get as much 167 done as possible 📅 2025-10-05 ✅ 2025-10-05
 - [x] MGT 12 Monday's check in 📅 2025-10-04 ✅ 2025-10-04
 - [x] CSE 167 get as much done as possible 📅 2025-10-04 ✅ 2025-10-04
 - [ ] CSE 167 HW1 Tuesday 📅 2025-10-13
-<<<<<<< HEAD
-- [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
-- [ ] Check on SDGE 📅 2025-09-30
-=======
-- [x] Apply for the I20 travel sign 📅 2025-10-01 ✅ 2025-10-01
-- [x] check on tmobile 📅 2025-09-30 ✅ 2025-09-30
-- [x] Check on SDGE 📅 2025-09-30 ✅ 2025-09-30
->>>>>>> origin/main
-- [x] Do MGT 12 HW 📅 2025-09-30 ✅ 2025-09-30
-- [x] Find my resume folder 📅 2025-09-29 ✅ 2025-09-29
-- [x] Print and prepare resume 📅 2025-09-30 ✅ 2025-09-30
+
 - [ ] 2025 Fall Career Fair at 10am + 📅 2025-10-09
-- [x] CSE Tutor Networking Night at 5pm 📅 2025-09-30 ✅ 2025-09-30
-- [x] Check if polo fits me 📅 2025-09-28 ✅ 2025-09-29
-- [x] check career fair details 📅 2025-09-27 ✅ 2025-09-27
-- [x] order face medicine 📅 2025-09-30 ✅ 2025-09-30
-- [x] Talk to Mia 📅 2025-09-26 ✅ 2025-09-25
 - [ ] LeetCode 🔁 every 2 days 📅 2025-09-30
 - [x] LeetCode 🔁 every 2 days 📅 2025-09-28 ✅ 2025-09-28
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
