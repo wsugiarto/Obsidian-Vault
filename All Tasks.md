@@ -1,4 +1,5 @@
-- [ ] CSE 167 wrap it up 📅 2025-10-06
+- [x] MGT 12 pre class 📅 2025-10-06 ✅ 2025-10-06
+- [x] CSE 167 wrap it up 📅 2025-10-06 ✅ 2025-10-06
 - [ ] MGT 12 Ethics of AI HW Saturdady 📅 2025-10-25
 - [x] get as much 167 done as possible 📅 2025-10-05 ✅ 2025-10-05
 - [x] MGT 12 Monday's check in 📅 2025-10-04 ✅ 2025-10-04
