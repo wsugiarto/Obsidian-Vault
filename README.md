@@ -1,6 +1,5 @@
 
 # **Today**
-
 ```tasks
 not done
 due today
@@ -9,11 +8,11 @@ hide backlinks
 hide recurrence rule
 ```
 
-# **This Week's Tasks**
+# **This Week's**
 ```tasks
 not done
 due after today
-due before in 1 week
+due this week
 sort by due
 hide backlinks
 hide recurrence rule
@@ -21,7 +20,19 @@ hide postpone button
 description does not include leetcode 
 description does not include jobs
 ```
+# **Next Week**
+```tasks
+not done
+due after today
+due next week
+sort by due
+hide backlinks
+hide recurrence rule
+hide postpone button
+description does not include leetcode 
+description does not include jobs
 
+```
 # **Recurring** 
 ```tasks
 is recurring 
