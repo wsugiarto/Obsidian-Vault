@@ -6,7 +6,7 @@
 - [x] CSE 167 get as much done as possible 📅 2025-10-04 ✅ 2025-10-04
 - [ ] CSE 167 HW1 Tuesday 📅 2025-10-13
 
-- [ ] 2025 Fall Career Fair at 10am + 📅 2025-10-09
+- [x] 2025 Fall Career Fair at 10am + 📅 2025-10-09 ✅ 2025-10-09
 - [ ] LeetCode 🔁 every 2 days 📅 2025-09-30
 - [x] LeetCode 🔁 every 2 days 📅 2025-09-28 ✅ 2025-09-28
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
