@@ -1,3 +1,5 @@
+- [x] 132A hw more questions 📅 2025-10-08 ✅ 2025-10-08
+- [x] MGT 12 submit ripped from headlines 📅 2025-10-12 ✅ 2025-10-08
 - [x] MGT 12 pre class 📅 2025-10-06 ✅ 2025-10-06
 - [x] CSE 167 wrap it up 📅 2025-10-06 ✅ 2025-10-06
 - [ ] MGT 12 Ethics of AI HW Saturdady 📅 2025-10-25
