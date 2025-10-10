@@ -1,3 +1,4 @@
+- [ ] MGT 12 Pre class 📅 2025-10-12
 - [x] 132A hw more questions 📅 2025-10-08 ✅ 2025-10-08
 - [x] MGT 12 submit ripped from headlines 📅 2025-10-12 ✅ 2025-10-08
 - [x] MGT 12 pre class 📅 2025-10-06 ✅ 2025-10-06
