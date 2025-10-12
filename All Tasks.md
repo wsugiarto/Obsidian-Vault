@@ -1,3 +1,4 @@
+- [ ] CSE 167 Final Check 📅 2025-10-13
 - [ ] MGT 12 Pre class 📅 2025-10-12
 - [x] 132A hw more questions 📅 2025-10-08 ✅ 2025-10-08
 - [x] MGT 12 submit ripped from headlines 📅 2025-10-12 ✅ 2025-10-08
@@ -7,7 +8,7 @@
 - [x] get as much 167 done as possible 📅 2025-10-05 ✅ 2025-10-05
 - [x] MGT 12 Monday's check in 📅 2025-10-04 ✅ 2025-10-04
 - [x] CSE 167 get as much done as possible 📅 2025-10-04 ✅ 2025-10-04
-- [ ] CSE 167 HW1 Tuesday 📅 2025-10-12
+- [x] CSE 167 HW1 Tuesday 📅 2025-10-12 ✅ 2025-10-12
 
 - [x] 2025 Fall Career Fair at 10am + 📅 2025-10-09 ✅ 2025-10-09
 - [ ] LeetCode 🔁 every 2 days 📅 2025-09-30
