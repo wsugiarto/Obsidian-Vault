@@ -1,4 +1,5 @@
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-14 📅 2025-10-14
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-15 📅 2025-10-15
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-14 📅 2025-10-14 ✅ 2025-10-14
 - [ ] MGT AI HW 📅 2025-10-14
 - [ ] Do MGT Pre Class 📅 2025-10-14
 - [x] CSE 167 Final Check 📅 2025-10-13 ✅ 2025-10-13
