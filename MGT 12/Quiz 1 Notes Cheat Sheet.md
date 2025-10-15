@@ -15,8 +15,8 @@ Personal Financial Planning:
 		5. Create and implement your financial plan
 		6. Review and revise your plan then repeat in step 1 
 	- Types of Risks:
-		- Inflation 
-		- Interest Rate
-		- Income 
-		- Personal
+		- Inflation - prices go up or down causing change in buying power (might cost more later)
+		- Interest Rate - low interest is good for loans, high is good for investments
+		- Income - loss of job impacts consumer spending
+		- Personal - health, safety 
 		- Liquidity
