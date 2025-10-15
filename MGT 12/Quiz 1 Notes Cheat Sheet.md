@@ -22,3 +22,12 @@ Personal Financial Planning:
 		- Liquidity - Difficulty converting assets to cash directly without losing significant money ex. stocks, savings
 Rule of 72:
 - Divide annual inflation by 72 to calculate how many years it takes to double money 
+Developing personal financial goals:
+- influenced by the time frame, and type of financial need that drives your goals
+- Timing: Short (< 1 year), Intermediate (1-5 years), Long-Term (5 years>)
+- Types of goals for financial needs:
+	- Consumbale product goals (groceries)
+	- Durable product goals: car
+	- Intangible purchase goals: investments
+- Goals should be SMART(Specific, Measurable, Action-oriented (what you will do to get the money), Realistic, Time-based)
+- 
