@@ -2,3 +2,21 @@ Planning Principles:
 - Money (both assets and liabilities) grows exponentially so start early 
 Personal Financial Planning:
 - Def. process of managing your money to achieve personal economic satisfaction
+- Financial Process:
+	- Steps: 
+		1. Determine current financial situation 
+		2. -> Develop financial goals 
+		3. -> Identify alternative courses of action 
+		4. -> evaluate your alternatives
+			1. Consider:
+					- Life situation, personal values, and economic factors
+			2. Assess: 
+				- Risks, and time value of money
+		5. Create and implement your financial plan
+		6. Review and revise your plan then repeat in step 1 
+	- Types of Risks:
+		- Inflation 
+		- Interest Rate
+		- Income 
+		- Personal
+		- Liquidity
