@@ -20,3 +20,5 @@ Personal Financial Planning:
 		- Income - loss of job impacts consumer spending
 		- Personal - health, safety, additional costs of purchases
 		- Liquidity - Difficulty converting assets to cash directly without losing significant money ex. stocks, savings
+Rule of 72:
+- Divide annual inflation by 72 to calculate how many years it takes to double money 
