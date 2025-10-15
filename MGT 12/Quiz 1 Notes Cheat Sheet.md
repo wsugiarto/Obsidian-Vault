@@ -18,5 +18,5 @@ Personal Financial Planning:
 		- Inflation - prices go up or down causing change in buying power (might cost more later)
 		- Interest Rate - low interest is good for loans, high is good for investments
 		- Income - loss of job impacts consumer spending
-		- Personal - health, safety 
-		- Liquidity
+		- Personal - health, safety, additional costs of purchases
+		- Liquidity - Difficulty converting assets to cash directly without losing significant money ex. stocks, savings
