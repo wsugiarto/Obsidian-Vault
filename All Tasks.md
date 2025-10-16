@@ -1,4 +1,5 @@
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-15 📅 2025-10-15
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-16 📅 2025-10-16
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-15 📅 2025-10-15 ✅ 2025-10-15
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-14 📅 2025-10-14 ✅ 2025-10-14
 - [x] MGT AI HW 📅 2025-10-14 ✅ 2025-10-14
 - [x] Do MGT Pre Class 📅 2025-10-14 ✅ 2025-10-14
