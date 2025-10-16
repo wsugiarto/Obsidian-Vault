@@ -26,8 +26,21 @@ Developing personal financial goals:
 - influenced by the time frame, and type of financial need that drives your goals
 - Timing: Short (< 1 year), Intermediate (1-5 years), Long-Term (5 years>)
 - Types of goals for financial needs:
-	- Consumbale product goals (groceries)
+	- Consumable product goals (groceries)
 	- Durable product goals: car
 	- Intangible purchase goals: investments
 - Goals should be SMART(Specific, Measurable, Action-oriented (what you will do to get the money), Realistic, Time-based)
+Calculate time value of money
+
+Need to know time value of money calculations:
+
+Strategies for achieving financial goals
+- Financial plan is a report that
+	- summarizes your current financial situation
+	- analyzes your financial needs
+	- recommends future financial activities
+- Develop good financial habits
+	- a good spending plan allowing you to stay within income while allowing saving and investments
+	- Have insurance protection
+	- become informed of taxes and investments to expand financial resources
 - 
