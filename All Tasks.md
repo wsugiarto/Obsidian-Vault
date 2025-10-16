@@ -1,5 +1,5 @@
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
-- [ ] submit mgt 12 ai 📅 2025-10-16
+- [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
 - [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-17 📅 2025-10-17
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-16 📅 2025-10-16 ✅ 2025-10-16
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-15 📅 2025-10-15 ✅ 2025-10-15
@@ -12,7 +12,7 @@
 - [x] MGT 12 submit ripped from headlines 📅 2025-10-12 ✅ 2025-10-08
 - [x] MGT 12 pre class 📅 2025-10-06 ✅ 2025-10-06
 - [x] CSE 167 wrap it up 📅 2025-10-06 ✅ 2025-10-06
-- [ ] MGT 12 Ethics of AI HW Saturdady 📅 2025-10-25
+- [x] MGT 12 Ethics of AI HW Saturdady 📅 2025-10-25 ✅ 2025-10-16
 - [x] get as much 167 done as possible 📅 2025-10-05 ✅ 2025-10-05
 - [x] MGT 12 Monday's check in 📅 2025-10-04 ✅ 2025-10-04
 - [x] CSE 167 get as much done as possible 📅 2025-10-04 ✅ 2025-10-04
