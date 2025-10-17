@@ -1,16 +1,17 @@
 
 # **Today**
 ```tasks
-(not done and
-due today and
-sort by description and
-hide backlinks and
-hide recurrence rule)
-OR no due date
+not done
+due today
+sort by description
+hide backlinks
+hide recurrence rule
+
+no due date
 
 ```
 
-
+yup 
 
 # **This Week's**
 ```tasks
