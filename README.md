@@ -2,14 +2,12 @@
 # **Today**
 ```tasks
 not done
-due today
+(due today) OR (no due date)
 sort by description
 hide backlinks
 hide recurrence rule
-
-no due date
-
 ```
+
 
 yup 
 
@@ -53,13 +51,5 @@ done today
 # **Overall Tasks**
 ```tasks
 not done
-
-```
-
-
-
-
-```tasks
-no due date
 
 ```
