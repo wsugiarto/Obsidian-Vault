@@ -2,7 +2,7 @@
 # **Today**
 ```tasks
 not done
-due today
+due today OR no due date
 sort by description
 hide backlinks
 hide recurrence rule
