@@ -43,4 +43,3 @@ Strategies for achieving financial goals
 	- a good spending plan allowing you to stay within income while allowing saving and investments
 	- Have insurance protection
 	- become informed of taxes and investments to expand financial resources
-- 
