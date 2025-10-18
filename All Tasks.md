@@ -1,7 +1,10 @@
+- [ ] mgt 12 monday checkin
+- [ ] cse 167 2 questions
 - [ ] check atnt
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-17 📅 2025-10-17
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-18 📅 2025-10-18
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-17 📅 2025-10-17 ✅ 2025-10-18
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-16 📅 2025-10-16 ✅ 2025-10-16
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-15 📅 2025-10-15 ✅ 2025-10-15
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-14 📅 2025-10-14 ✅ 2025-10-14
