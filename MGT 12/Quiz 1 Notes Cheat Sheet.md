@@ -5,9 +5,9 @@ Personal Financial Planning:
 - Financial Process:
 	- Steps: 
 		1. Determine current financial situation 
-		2. -> Develop financial goals 
-		3. -> Identify alternative courses of action 
-		4. -> evaluate your alternatives
+		2. Develop financial goals 
+		3. Identify alternative courses of action 
+		4. evaluate your alternatives
 			1. Consider:
 					- Life situation, personal values, and economic factors
 			2. Assess: 
