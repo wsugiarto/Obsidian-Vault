@@ -1,5 +1,5 @@
-- [ ] mgt 12 monday checkin
-- [ ] cse 167 2 questions
+- [x] mgt 12 monday checkin ✅ 2025-10-19
+- [x] cse 167 2 questions ✅ 2025-10-19
 - [ ] check atnt
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
