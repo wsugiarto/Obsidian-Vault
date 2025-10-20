@@ -9,8 +9,6 @@ hide recurrence rule
 ```
 
 
-yup 
-
 # **This Week's**
 ```tasks
 not done

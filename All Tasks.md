@@ -32,7 +32,8 @@
 - [x] Testing 🔁 every 2 days 📅 2025-09-24 ✅ 2025-09-24
 Tasks Added Here:
 - [x] Doing Leetcode ✅ 2025-09-24
-- [ ] Applying for jobs 🔁 every day 📅 2025-09-29
+- [ ] Applying for jobs 🔁 every day 📅 2025-10-21
+- [x] Applying for jobs 🔁 every day 📅 2025-10-20 ✅ 2025-10-20
 - [x] Applying for jobs 🔁 every day 📅 2025-09-28 ✅ 2025-10-14
 - [x] Applying for jobs 🔁 every day 📅 2025-09-27 ✅ 2025-09-27
 - [x] Applying for jobs 🔁 every day 📅 2025-09-27 ✅ 2025-09-27
