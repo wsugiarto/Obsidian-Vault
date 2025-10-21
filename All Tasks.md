@@ -1,3 +1,5 @@
+- [ ] Next do the CSE 132A
+- [ ] Work on uni apps FIRST
 - [x] cse 167 1Q ✅ 2025-10-20
 - [x] mgt 12 monday checkin ✅ 2025-10-19
 - [x] cse 167 2 questions ✅ 2025-10-19
