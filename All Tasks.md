@@ -1,3 +1,5 @@
+- [ ] CSE 167 HW2 📅 2025-10-29
+- [ ] mgt 12 HOW 📅 2025-10-26
 - [x] Next do the CSE 132A ✅ 2025-10-21
 - [x] Work on uni apps FIRST ✅ 2025-10-21
 - [x] cse 167 1Q ✅ 2025-10-20
