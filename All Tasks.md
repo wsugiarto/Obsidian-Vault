@@ -1,12 +1,13 @@
-- [ ] Next do the CSE 132A
-- [ ] Work on uni apps FIRST
+- [x] Next do the CSE 132A ✅ 2025-10-21
+- [x] Work on uni apps FIRST ✅ 2025-10-21
 - [x] cse 167 1Q ✅ 2025-10-20
 - [x] mgt 12 monday checkin ✅ 2025-10-19
 - [x] cse 167 2 questions ✅ 2025-10-19
 - [ ] check atnt
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-21 📅 2025-10-21
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-22 📅 2025-10-22
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-21 📅 2025-10-21 ✅ 2025-10-21
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-20 📅 2025-10-20 ✅ 2025-10-20
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-19 📅 2025-10-19 ✅ 2025-10-19
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-18 📅 2025-10-18 ✅ 2025-10-19
