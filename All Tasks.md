@@ -1,5 +1,5 @@
 - [ ] Do a decent amount of CSE 132A
-- [ ] Uni essays
+- [x] Uni essays ✅ 2025-10-23
 - [ ] CSE 167 HW2 📅 2025-10-29
 - [ ] mgt 12 HOW 📅 2025-10-26
 - [x] Next do the CSE 132A ✅ 2025-10-21
