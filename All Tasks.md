@@ -1,3 +1,5 @@
+- [ ] Do a decent amount of CSE 132A
+- [ ] Uni essays
 - [ ] CSE 167 HW2 📅 2025-10-29
 - [ ] mgt 12 HOW 📅 2025-10-26
 - [x] Next do the CSE 132A ✅ 2025-10-21
@@ -8,7 +10,9 @@
 - [ ] check atnt
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-22 📅 2025-10-22
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-24 📅 2025-10-24
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-23 📅 2025-10-23 ✅ 2025-10-23
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-22 📅 2025-10-22 ✅ 2025-10-23
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-21 📅 2025-10-21 ✅ 2025-10-21
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-20 📅 2025-10-20 ✅ 2025-10-20
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-19 📅 2025-10-19 ✅ 2025-10-19
