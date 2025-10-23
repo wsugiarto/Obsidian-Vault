@@ -20,7 +20,7 @@
 - [x] MGT AI HW 📅 2025-10-14 ✅ 2025-10-14
 - [x] Do MGT Pre Class 📅 2025-10-14 ✅ 2025-10-14
 - [x] CSE 167 Final Check 📅 2025-10-13 ✅ 2025-10-13
-- [ ] MGT 12 Pre class 📅 2025-10-12
+- [x] MGT 12 Pre class 📅 2025-10-12 ✅ 2025-10-23
 - [x] 132A hw more questions 📅 2025-10-08 ✅ 2025-10-08
 - [x] MGT 12 submit ripped from headlines 📅 2025-10-12 ✅ 2025-10-08
 - [x] MGT 12 pre class 📅 2025-10-06 ✅ 2025-10-06

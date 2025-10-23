@@ -2,12 +2,11 @@
 # **Today**
 ```tasks
 not done
-(due today) OR (no due date)
+(due today) OR (no due date) OR (due yesterday)
 sort by description
 hide backlinks
 hide recurrence rule
 ```
-
 
 # **This Week's**
 ```tasks
