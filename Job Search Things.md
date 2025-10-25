@@ -12,16 +12,17 @@ FAANG++
 
 
 Others
-1. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
-2. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
-3. Aurora	Software Engineer I - Remote Assist	Mountain View, California
-4. Cox	Software Engineer I	Carmel IN
-5. Atlas World Group	Software Developer - Associate	US US IN Evansville
-6. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
-7. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-8. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-9. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-10. Persona	Software Engineer - 2026 New Grad	San Francisco
-11. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-12. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-13. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+1. HERE Technologies	Software Engineer I	US IL Chicago
+2. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
+3. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
+4. Aurora	Software Engineer I - Remote Assist	Mountain View, California
+5. Cox	Software Engineer I	Carmel IN
+6. Atlas World Group	Software Developer - Associate	US US IN Evansville
+7. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+8. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+9. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+10. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+11. Persona	Software Engineer - 2026 New Grad	San Francisco
+12. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+13. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+14. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
