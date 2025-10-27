@@ -1,3 +1,4 @@
+- [x] mgt 12 ripped from headlines ✅ 2025-10-27
 - [ ] uni apps
 - [ ] 132A study
 - [ ] cs tutor apps
