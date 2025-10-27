@@ -1,3 +1,6 @@
+- [ ] uni apps
+- [ ] 132A study
+- [ ] cs tutor apps
 - [ ] Change grading option Nov 6 📅 2025-11-06
 - [x] Do a decent amount of CSE 132A ✅ 2025-10-23
 - [x] Uni essays ✅ 2025-10-23
