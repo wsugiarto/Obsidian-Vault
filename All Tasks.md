@@ -1,3 +1,4 @@
+- [ ] mgt 12 checkin
 - [x] mgt 12 ripped from headlines ✅ 2025-10-27
 - [ ] uni apps
 - [x] 132A study ✅ 2025-10-27
