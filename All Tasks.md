@@ -1,3 +1,7 @@
+- [x] mgt 12 ripped from headlines ✅ 2025-10-27
+- [ ] uni apps
+- [ ] 132A study
+- [ ] cs tutor apps
 - [ ] Change grading option Nov 6 📅 2025-11-06
 - [x] Do a decent amount of CSE 132A ✅ 2025-10-23
 - [x] Uni essays ✅ 2025-10-23
@@ -11,8 +15,10 @@
 - [x] check atnt ✅ 2025-10-25
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-27 📅 2025-10-27
-- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-26 📅 2025-10-26 ✅ 2025-10-26
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-28 📅 2025-10-28
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-27 📅 2025-10-27 ✅ 2025-10-27
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-26 📅 2025-10-26 ✅ 2025-10-27
+>>>>>>> origin/main
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-25 📅 2025-10-25 ✅ 2025-10-25
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-24 📅 2025-10-24 ✅ 2025-10-25
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-23 📅 2025-10-23 ✅ 2025-10-23
