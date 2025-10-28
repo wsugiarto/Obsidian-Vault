@@ -19,7 +19,6 @@
 - [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-28 📅 2025-10-28
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-27 📅 2025-10-27 ✅ 2025-10-27
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-26 📅 2025-10-26 ✅ 2025-10-27
->>>>>>> origin/main
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-25 📅 2025-10-25 ✅ 2025-10-25
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-24 📅 2025-10-24 ✅ 2025-10-25
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-23 📅 2025-10-23 ✅ 2025-10-23
