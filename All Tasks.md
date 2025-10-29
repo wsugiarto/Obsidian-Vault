@@ -1,3 +1,4 @@
+- [ ] CSE 132A chapter 2-7
 - [x] mgt 12 checkin ✅ 2025-10-28
 - [x] mgt 12 ripped from headlines ✅ 2025-10-27
 - [ ] uni apps
