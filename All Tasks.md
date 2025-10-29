@@ -1,4 +1,7 @@
-- [ ] CSE 132A chapter 2-7
+- [ ] MGT 12 CS Chp 5
+- [x] MGT 12 CS Chp 3 ✅ 2025-10-29
+- [ ] MGT 12 HOW 2
+- [x] CSE 132A chapter 2-7 ✅ 2025-10-29
 - [x] mgt 12 checkin ✅ 2025-10-28
 - [x] mgt 12 ripped from headlines ✅ 2025-10-27
 - [ ] uni apps
