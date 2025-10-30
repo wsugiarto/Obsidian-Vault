@@ -1,6 +1,6 @@
-- [ ] MGT 12 CS Chp 5
+- [x] MGT 12 CS Chp 5 ✅ 2025-10-30
 - [x] MGT 12 CS Chp 3 ✅ 2025-10-29
-- [ ] MGT 12 HOW 2
+- [x] MGT 12 HOW 2 ✅ 2025-10-30
 - [x] CSE 132A chapter 2-7 ✅ 2025-10-29
 - [x] mgt 12 checkin ✅ 2025-10-28
 - [x] mgt 12 ripped from headlines ✅ 2025-10-27
@@ -20,7 +20,8 @@
 - [x] check atnt ✅ 2025-10-25
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-30 📅 2025-10-30
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-31 📅 2025-10-31
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-30 📅 2025-10-30 ✅ 2025-10-30
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-29 📅 2025-10-29 ✅ 2025-10-29
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-28 📅 2025-10-28 ✅ 2025-10-28
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-27 📅 2025-10-27 ✅ 2025-10-27
