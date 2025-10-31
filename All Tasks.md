@@ -67,4 +67,4 @@ Tasks Added Here:
 - [x] Applying for jobs 🔁 every day 📅 2025-09-25 ✅ 2025-09-25
 - [x] Applying for jobs 🔁 every day 📅 2025-09-24 ✅ 2025-09-24
 - [x] Do something ✅ 2025-09-25
-- [ ] Work on university applications 📅 2025-10-31
+- [ ] Work on university applications 📅 2025-11-02
