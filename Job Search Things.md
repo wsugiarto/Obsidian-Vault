@@ -14,17 +14,18 @@ FAANG++
 Others
 1. CVS Health	Associate Software Development Engineer	TX Work from home
 2. Insulet	Associate Software Test Engineer - Hybrid - San Diego - CA	San Diego, California
-3. HERE Technologies	Software Engineer I	US IL Chicago
-4. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
-5. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
-6. Aurora	Software Engineer I - Remote Assist	Mountain View, California
-7. Cox	Software Engineer I	Carmel IN
-8. Atlas World Group	Software Developer - Associate	US US IN Evansville
-9. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
-10. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-11. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-12. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-13. Persona	Software Engineer - 2026 New Grad	San Francisco
-14. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-15. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-16. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+3. Expedia Group	Software Development Engineer I	Washington Seattle Campus
+4. HERE Technologies	Software Engineer I	US IL Chicago
+5. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
+6. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
+7. Aurora	Software Engineer I - Remote Assist	Mountain View, California
+8. Cox	Software Engineer I	Carmel IN
+9. Atlas World Group	Software Developer - Associate	US US IN Evansville
+10. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+11. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+12. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+13. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+14. Persona	Software Engineer - 2026 New Grad	San Francisco
+15. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+16. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+17. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
