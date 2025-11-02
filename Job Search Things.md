@@ -12,17 +12,18 @@ FAANG++
 
 
 Others
-1. HERE Technologies	Software Engineer I	US IL Chicago
-2. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
-3. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
-4. Aurora	Software Engineer I - Remote Assist	Mountain View, California
-5. Cox	Software Engineer I	Carmel IN
-6. Atlas World Group	Software Developer - Associate	US US IN Evansville
-7. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
-8. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-9. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-10. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-11. Persona	Software Engineer - 2026 New Grad	San Francisco
-12. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-13. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-14. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+1. CVS Health	Associate Software Development Engineer	TX Work from home
+2. HERE Technologies	Software Engineer I	US IL Chicago
+3. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
+4. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
+5. Aurora	Software Engineer I - Remote Assist	Mountain View, California
+6. Cox	Software Engineer I	Carmel IN
+7. Atlas World Group	Software Developer - Associate	US US IN Evansville
+8. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+9. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+10. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+11. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+12. Persona	Software Engineer - 2026 New Grad	San Francisco
+13. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+14. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+15. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
