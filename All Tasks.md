@@ -1,3 +1,4 @@
+- [x] UT austin Statment DOne ✅ 2025-11-03
 - [x] pay palisade ✅ 2025-11-03
 - [x] MGT 12 CS Chp 5 ✅ 2025-10-30
 - [x] MGT 12 CS Chp 3 ✅ 2025-10-29
@@ -5,7 +6,7 @@
 - [x] CSE 132A chapter 2-7 ✅ 2025-10-29
 - [x] mgt 12 checkin ✅ 2025-10-28
 - [x] mgt 12 ripped from headlines ✅ 2025-10-27
-- [ ] uni apps
+- [x] uni apps ✅ 2025-11-03
 - [x] 132A study ✅ 2025-10-27
 - [x] cs tutor apps ✅ 2025-10-28
 - [ ] Change grading option Nov 6 📅 2025-11-06
@@ -70,4 +71,4 @@ Tasks Added Here:
 - [x] Applying for jobs 🔁 every day 📅 2025-09-25 ✅ 2025-09-25
 - [x] Applying for jobs 🔁 every day 📅 2025-09-24 ✅ 2025-09-24
 - [x] Do something ✅ 2025-09-25
-- [ ] Work on university applications 📅 2025-11-03
+- [ ] Work on university applications 📅 2025-11-04
