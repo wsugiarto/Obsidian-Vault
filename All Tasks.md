@@ -1,3 +1,4 @@
+- [ ] mgt 12 wed check in 📅 2025-11-04
 - [x] UT austin Statment DOne ✅ 2025-11-03
 - [x] pay palisade ✅ 2025-11-03
 - [x] MGT 12 CS Chp 5 ✅ 2025-10-30
@@ -22,7 +23,9 @@
 - [x] check atnt ✅ 2025-10-25
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-02 📅 2025-11-02
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-04 📅 2025-11-04
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-03 📅 2025-11-03 ✅ 2025-11-03
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-02 📅 2025-11-02 ✅ 2025-11-03
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-01 📅 2025-11-01 ✅ 2025-11-01
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-31 📅 2025-10-31 ✅ 2025-11-01
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-10-30 📅 2025-10-30 ✅ 2025-10-30
