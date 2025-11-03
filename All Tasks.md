@@ -1,3 +1,4 @@
+- [ ] pay palisade
 - [x] MGT 12 CS Chp 5 ✅ 2025-10-30
 - [x] MGT 12 CS Chp 3 ✅ 2025-10-29
 - [x] MGT 12 HOW 2 ✅ 2025-10-30
