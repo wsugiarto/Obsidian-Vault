@@ -14,3 +14,9 @@ group by e.studentid, studentname having count(distinct e.courseid) = (select co
 ```
 
 Above removes students who have not taken all courses. 
+
+Things to do:
+1. Practice functions
+2. Practice Regex
+3. Practice EXISTS
+4. Practice making a view
