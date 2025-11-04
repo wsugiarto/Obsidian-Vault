@@ -1,4 +1,4 @@
-- [ ] mgt 12 wed check in 📅 2025-11-04
+- [x] mgt 12 wed check in 📅 2025-11-04 ✅ 2025-11-04
 - [x] UT austin Statment DOne ✅ 2025-11-03
 - [x] pay palisade ✅ 2025-11-03
 - [x] MGT 12 CS Chp 5 ✅ 2025-10-30
