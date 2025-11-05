@@ -30,3 +30,5 @@ Others
 16. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
 17. Everlaw	Software Engineer - Early Career	Oakland, California, United States
 18. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+19. XILO JSWE
+20. 
