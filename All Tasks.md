@@ -15,7 +15,7 @@
 - [x] uni apps ✅ 2025-11-03
 - [x] 132A study ✅ 2025-10-27
 - [x] cs tutor apps ✅ 2025-10-28
-- [ ] Change grading option Nov 6 📅 2025-11-06
+- [x] Change grading option Nov 6 📅 2025-11-06 ✅ 2025-11-05
 - [x] Do a decent amount of CSE 132A ✅ 2025-10-23
 - [x] Uni essays ✅ 2025-10-23
 - [x] CSE 167 HW2 📅 2025-10-29 ✅ 2025-10-28
