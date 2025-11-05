@@ -1,3 +1,8 @@
+- [ ] CSE 167 record videos
+- [ ] mgt 12 look at stocks hw
+- [ ] mgt 12 finish spending tracker
+- [ ] Winter Class Second Pass Tue 12:30pm 📅 2025-11-17
+- [ ] Winter Class First Pass Tue 12:20pm 📅 2025-11-10
 - [x] mgt 12 wed check in 📅 2025-11-04 ✅ 2025-11-04
 - [x] UT austin Statment DOne ✅ 2025-11-03
 - [x] pay palisade ✅ 2025-11-03
