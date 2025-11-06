@@ -32,3 +32,7 @@ Others
 18. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
 19. XILO JSWE
 20. INTUIT SWE 1
+21. Andalusia Labs · San Francisco, CA (Remote)
+22. LPL Financial
+
+
