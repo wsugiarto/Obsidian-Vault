@@ -2,7 +2,7 @@
 - [ ] Look at classes for next quarter
 - [ ] uni try to submit essays
 - [x] CSE 167 record videos ✅ 2025-11-08
-- [ ] mgt 12 invest 100k
+- [x] mgt 12 invest 100k ✅ 2025-11-08
 - [x] mgt 12 finish spending tracker ✅ 2025-11-05
 - [ ] Winter Class Second Pass Tue 12:30pm 📅 2025-11-17
 - [ ] Winter Class First Pass Tue 12:20pm 📅 2025-11-10
