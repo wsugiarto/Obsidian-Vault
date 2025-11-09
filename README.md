@@ -3,7 +3,7 @@
 ```tasks
 not done
 (due today) OR (no due date) OR (due yesterday)
-sort by description
+sort by due date
 hide backlinks
 hide recurrence rule
 ```
