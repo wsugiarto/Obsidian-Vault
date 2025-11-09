@@ -1,7 +1,7 @@
 - [ ] mgt daily checkin 📅 2025-11-09
 - [ ] palisade auto pay setup
 - [ ] cse 132 PA
-- [ ] Look at classes for next quarter
+- [x] Look at classes for next quarter ✅ 2025-11-09
 - [ ] uni try to submit essays
 - [x] CSE 167 record videos ✅ 2025-11-08
 - [x] mgt 12 invest 100k ✅ 2025-11-08
