@@ -1,3 +1,4 @@
+- [ ] sdge payments
 - [x] mgt daily checkin 📅 2025-11-09 ✅ 2025-11-09
 - [ ] palisade auto pay setup
 - [ ] cse 132 PA
