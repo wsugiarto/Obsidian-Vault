@@ -4,7 +4,7 @@
 - [x] sdge payments ✅ 2025-11-09
 - [x] mgt daily checkin 📅 2025-11-09 ✅ 2025-11-09
 - [ ] palisade auto pay setup
-- [ ] cse 132 PA
+- [x] cse 132 PA ✅ 2025-11-11
 - [x] Look at classes for next quarter ✅ 2025-11-09
 - [ ] uni try to submit essays
 - [x] CSE 167 record videos ✅ 2025-11-08
