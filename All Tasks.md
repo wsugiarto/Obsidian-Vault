@@ -1,5 +1,5 @@
 - [ ] mgt 12 quiz
-- [ ] mgt 12 checkin
+- [x] mgt 12 checkin ✅ 2025-11-11
 - [ ] mgt 12 stocks
 - [x] sdge payments ✅ 2025-11-09
 - [x] mgt daily checkin 📅 2025-11-09 ✅ 2025-11-09
