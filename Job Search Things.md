@@ -36,5 +36,6 @@ Others
 22. LPL Financial
 23. General Motors Software Engineer - Early Career 
 24. Meshy SWE
+25. Zoom SWE
 
 
