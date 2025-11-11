@@ -1,8 +1,4 @@
-things to ask:
-1. If I complete my degree audit next quarter does that mean I will graduate?
-	1. As an international student, how does this affect my I 20
-	2. Can i stay for more classes in the spring quarter.
-2. Can I just take a CS class in P/NP to avoid graduating early.
+
 # **Today**
 ```tasks
 not done
