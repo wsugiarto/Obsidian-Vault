@@ -37,7 +37,9 @@
 - [x] check atnt ✅ 2025-10-25
 - [x] final 132 check 📅 2025-10-16 ✅ 2025-10-16
 - [x] submit mgt 12 ai 📅 2025-10-16 ✅ 2025-10-16
-- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-09 📅 2025-11-09
+- [ ] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-11 📅 2025-11-11
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-10 📅 2025-11-10 ✅ 2025-11-12
+- [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-09 📅 2025-11-09 ✅ 2025-11-12
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-08 📅 2025-11-08 ✅ 2025-11-09
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-07 📅 2025-11-07 ✅ 2025-11-09
 - [x] MGT 12 Personal balance sheet 🔁 every day 🛫 2025-11-06 📅 2025-11-06 ✅ 2025-11-09
