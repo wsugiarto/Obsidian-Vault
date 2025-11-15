@@ -20,4 +20,7 @@ Berkeley
 GPA for 
 
 Dear Professor,
-I am currently submitting applications for graduate schools and it seems Interfolio is not supported for these schools. Could you help in submitting the letter of recommendation to these schools below?  
+I am currently submitting applications for graduate schools and it seems Interfolio is not supported for these schools. Could you help in submitting the letter of recommendation to these schools below? 
+1. UT Austin Computer Science MSCS Program
+2. UC Berkeley
+3. Stanford
