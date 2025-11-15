@@ -15,3 +15,6 @@ Focus this month:
 Stanford, UT
 UCSD
 Berkeley
+
+
+GPA for 
