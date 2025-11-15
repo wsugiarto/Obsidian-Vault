@@ -18,3 +18,6 @@ Berkeley
 
 
 GPA for 
+
+Dear Professor,
+I am currently submitting applications for graduate schools and it seems Interfolio is not supported for these schools. Could you help in submitting the letter of recommendation to these schools below?  
