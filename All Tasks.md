@@ -1,8 +1,8 @@
 - [x] did my essays ✅ 2025-11-16
-- [ ] try to submit cse 167
-- [ ] mgt 12 quiz
+- [x] try to submit cse 167 ✅ 2025-11-16
+- [x] mgt 12 quiz ✅ 2025-11-16
 - [x] mgt 12 checkin ✅ 2025-11-11
-- [ ] mgt 12 stocks
+- [x] mgt 12 stocks ✅ 2025-11-16
 - [x] sdge payments ✅ 2025-11-09
 - [x] mgt daily checkin 📅 2025-11-09 ✅ 2025-11-09
 - [ ] palisade auto pay setup
