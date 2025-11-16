@@ -1,3 +1,4 @@
+- [ ] try to submit cse 167
 - [ ] mgt 12 quiz
 - [x] mgt 12 checkin ✅ 2025-11-11
 - [ ] mgt 12 stocks
