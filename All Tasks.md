@@ -1,3 +1,4 @@
+- [x] did my essays ✅ 2025-11-16
 - [ ] try to submit cse 167
 - [ ] mgt 12 quiz
 - [x] mgt 12 checkin ✅ 2025-11-11
