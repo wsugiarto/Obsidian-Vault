@@ -12,26 +12,27 @@ FAANG++
 
 GitHub
 1. Peraton	Software Engineering - Associate	Herndon, VA
-2. CVS Health	Associate Software Development Engineer	TX Work from home
-3. Insulet	Associate Software Test Engineer - Hybrid - San Diego - CA	San Diego, California
-4. Expedia Group	Software Development Engineer I	Washington Seattle Campus
-5. Morningstar	Associate Software Engineer	Chicago
-6. HERE Technologies	Software Engineer I	US IL Chicago
-7. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
-8. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
-9. Aurora	Software Engineer I - Remote Assist	Mountain View, California
-10. Cox	Software Engineer I	Carmel IN
-11. Atlas World Group	Software Developer - Associate	US US IN Evansville
-12. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
-13. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-14. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-15. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-16. Persona	Software Engineer - 2026 New Grad	San Francisco
-17. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-18. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-19. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
-20. Andalusia Labs · San Francisco, CA (Remote)
-21. Anatomage	3D Software Junior Developer	Santa Clara, California, US
+2. Typeface AI	Software Engineer I	Bellevue, WA
+3. CVS Health	Associate Software Development Engineer	TX Work from home
+4. Insulet	Associate Software Test Engineer - Hybrid - San Diego - CA	San Diego, California
+5. Expedia Group	Software Development Engineer I	Washington Seattle Campus
+6. Morningstar	Associate Software Engineer	Chicago
+7. HERE Technologies	Software Engineer I	US IL Chicago
+8. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
+9. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
+10. Aurora	Software Engineer I - Remote Assist	Mountain View, California
+11. Cox	Software Engineer I	Carmel IN
+12. Atlas World Group	Software Developer - Associate	US US IN Evansville
+13. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+14. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+15. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+16. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+17. Persona	Software Engineer - 2026 New Grad	San Francisco
+18. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+19. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+20. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+21. Andalusia Labs · San Francisco, CA (Remote)
+22. Anatomage	3D Software Junior Developer	Santa Clara, California, US
 
 
 LinkedIn
