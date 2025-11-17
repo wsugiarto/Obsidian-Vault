@@ -1,3 +1,5 @@
+- [ ] mgt 12 stock simulation 📅 2025-11-22
+- [ ] mgt 12 spending tracker 📅 2025-11-22
 - [x] did my essays ✅ 2025-11-16
 - [x] try to submit cse 167 ✅ 2025-11-16
 - [x] mgt 12 quiz ✅ 2025-11-16
