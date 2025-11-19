@@ -28,6 +28,14 @@ Thank you again.
 Regards,  
 Wilson Sugiarto
 
+Dear Professor,
+I apologize if you were busy and have not had the chance to reply, but I just wanted to follow up my previous email, since I thought it may have been lost as I sent it over the weekend. I thought I would also give you the deadlines for each program (the earliest one is on December 2). I have already sent all 3 requests to the jeldon@ucsd.edu email address, so I hope you could help upload them at your earliest convenience. Thank you again for writing me the letters.
+1. UT Austin Computer Science MSCS Program  - December 15 2025
+2. UC Berkeley  - January 7 2026
+3. Stanford  - December 2 2025
+Regards,
+Wilson Sugiarto
+
 Profs:
 First Name: Jishen
 Last Name: Zhao
