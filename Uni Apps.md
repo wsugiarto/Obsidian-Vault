@@ -21,9 +21,9 @@ GPA for
 
 Dear Professor,  
 Thank you again for writing me a letter of recommendation. I am currently submitting applications for the graduate schools and it seems Interfolio is not supported for these schools. Could you help in submitting the letter of recommendation to these schools below? I have already sent the request from each of the school's portals. The earliest due are by December 2, so I would greatly appreciate it if you could submit them at your earliest convenience before December.  
-1. UT Austin Computer Science MSCS Program  
-2. UC Berkeley  
-3. Stanford  
+1. UT Austin Computer Science MSCS Program  - December 15 2025
+2. UC Berkeley  - January 7 2026
+3. Stanford  - December 2 2025
 Thank you again.  
 Regards,  
 Wilson Sugiarto
