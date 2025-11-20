@@ -1,6 +1,6 @@
 - [ ] finish cse 132a
 - [ ] wrap up  mgt 12
-- [ ] wrap up uni essays
+- [x] wrap up uni essays ✅ 2025-11-20
 - [ ] cse 132A Final 📅 2025-12-11
 - [ ] cse 167 final project 📅 2025-12-12
 - [ ] mgt 12 stock simulation 📅 2025-11-22
