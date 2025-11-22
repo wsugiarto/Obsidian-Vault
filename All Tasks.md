@@ -1,5 +1,7 @@
+- [ ] shadertoy things
+- [ ] study cse 132
 - [ ] finish cse 132a
-- [ ] wrap up  mgt 12
+- [x] wrap up  mgt 12 ✅ 2025-11-22
 - [x] wrap up uni essays ✅ 2025-11-20
 - [ ] cse 132A Final 📅 2025-12-11
 - [ ] cse 167 final project 📅 2025-12-12
