@@ -5,7 +5,7 @@
 - [x] wrap up uni essays ✅ 2025-11-20
 - [ ] cse 132A Final 📅 2025-12-11
 - [ ] cse 167 final project 📅 2025-12-12
-- [ ] mgt 12 stock simulation 📅 2025-11-22
+- [x] mgt 12 stock simulation 📅 2025-11-22 ✅ 2025-11-22
 - [x] mgt 12 spending tracker 📅 2025-11-22 ✅ 2025-11-22
 - [x] did my essays ✅ 2025-11-16
 - [x] try to submit cse 167 ✅ 2025-11-16
