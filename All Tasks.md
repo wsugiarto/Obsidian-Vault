@@ -14,7 +14,7 @@
 - [x] mgt 12 stocks ✅ 2025-11-16
 - [x] sdge payments ✅ 2025-11-09
 - [x] mgt daily checkin 📅 2025-11-09 ✅ 2025-11-09
-- [ ] palisade auto pay setup
+- [x] palisade auto pay setup ✅ 2025-11-22
 - [x] cse 132 PA ✅ 2025-11-11
 - [x] Look at classes for next quarter ✅ 2025-11-09
 - [ ] uni try to submit essays
