@@ -17,6 +17,14 @@ UCSD
 Berkeley
 
 
+Dear Professor, 
+I hope you have been well. Just a follow up and reminder that my earliest deadline for the letter of recommendation is on Dec 2, which is next Tuesday. If you could also upload the letters to the other 2 schools too that would be helpful. Thank you again for your time and patience. 
+
+Here were the schools' deadlines
+1. Stanford  - December 2 2025
+2. UT Austin Computer Science MSCS Program  - December 15 2025
+3. UC Berkeley  - January 7 2026
+
 GPA for 
 
 Dear Professor,  
