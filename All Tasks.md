@@ -1,3 +1,4 @@
+- [ ] resubmit cse 167
 - [ ] shadertoy things
 - [ ] study cse 132
 - [x] finish cse 132a ✅ 2025-11-22
