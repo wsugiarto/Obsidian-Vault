@@ -1,4 +1,5 @@
-- [ ] resubmit cse 167
+- [ ] send reminder email to jishen
+- [x] resubmit cse 167 ✅ 2025-12-01
 - [ ] shadertoy things
 - [ ] study cse 132
 - [x] finish cse 132a ✅ 2025-11-22
@@ -18,7 +19,7 @@
 - [x] palisade auto pay setup ✅ 2025-11-22
 - [x] cse 132 PA ✅ 2025-11-11
 - [x] Look at classes for next quarter ✅ 2025-11-09
-- [ ] uni try to submit essays
+- [x] uni try to submit essays ✅ 2025-12-01
 - [x] CSE 167 record videos ✅ 2025-11-08
 - [x] mgt 12 invest 100k ✅ 2025-11-08
 - [x] mgt 12 finish spending tracker ✅ 2025-11-05
