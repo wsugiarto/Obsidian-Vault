@@ -12,31 +12,33 @@ FAANG++
 
 GitHub
 1. Affirm	Software Engineer - Early Career
-2. Peraton	Software Engineering - Associate	Herndon, VA
-3. Typeface AI	Software Engineer I	Bellevue, WA
-4. OptiTrack	Associate Software Engineer	Corvallis, OR
-5. Benchling	Software Engineer - New Grad - 2026	San Francisco, CA
-6. Profound	SWE - New Grad - NY	New York City, San Francisco, and Buenos Aires
-7. CVS Health	Associate Software Development Engineer	TX Work from home
-8. Insulet	Associate Software Test Engineer - Hybrid - San Diego - CA	San Diego, California
-9. Expedia Group	Software Development Engineer I	Washington Seattle Campus
-10. Morningstar	Associate Software Engineer	Chicago
-11. HERE Technologies	Software Engineer I	US IL Chicago
-12. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
-13. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
-14. Aurora	Software Engineer I - Remote Assist	Mountain View, California
-15. Cox	Software Engineer I	Carmel IN
-16. Atlas World Group	Software Developer - Associate	US US IN Evansville
-17. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
-18. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
-19. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
-20. IXL Learning	Software Engineer - New Grad	San Mateo, CA
-21. Persona	Software Engineer - 2026 New Grad	San Francisco
-22. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
-23. Everlaw	Software Engineer - Early Career	Oakland, California, United States
-24. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
-25. Andalusia Labs · San Francisco, CA (Remote)
-26. Anatomage	3D Software Junior Developer	Santa Clara, California, US
+2. Jobgether	Software Engineer I & II	USA
+3. Jobgether	Software Engineer in Test I - Remote	USA
+4. Peraton	Software Engineering - Associate	Herndon, VA
+5. Typeface AI	Software Engineer I	Bellevue, WA
+6. OptiTrack	Associate Software Engineer	Corvallis, OR
+7. Benchling	Software Engineer - New Grad - 2026	San Francisco, CA
+8. Profound	SWE - New Grad - NY	New York City, San Francisco, and Buenos Aires
+9. CVS Health	Associate Software Development Engineer	TX Work from home
+10. Insulet	Associate Software Test Engineer - Hybrid - San Diego - CA	San Diego, California
+11. Expedia Group	Software Development Engineer I	Washington Seattle Campus
+12. Morningstar	Associate Software Engineer	Chicago
+13. HERE Technologies	Software Engineer I	US IL Chicago
+14. Promise	Software Engineer - Forward Deployed AI - New Grad	Washington, D C
+15. Nuro	Software Engineer - AI Platform - New Grad	Mountain View, California HQ
+16. Aurora	Software Engineer I - Remote Assist	Mountain View, California
+17. Cox	Software Engineer I	Carmel IN
+18. Atlas World Group	Software Developer - Associate	US US IN Evansville
+19. Flexport	Software Engineer I - Import Team	Bellevue, Washington, United States
+20. DXC Technology	Analyst I Software Engineering	ITA MI CERNUSCO SUL NAVIGLI
+21. TeleTracking Technologies	Software Engineer I	Pittsburgh, PA
+22. IXL Learning	Software Engineer - New Grad	San Mateo, CA
+23. Persona	Software Engineer - 2026 New Grad	San Francisco
+24. RippleMatch	Plaid - Software Engineering - New Grad - application via RippleMatch	San Francisco, CA
+25. Everlaw	Software Engineer - Early Career	Oakland, California, United States
+26. Nextdoor	Software Engineer - New Grad 2026	Dallas, TX
+27. Andalusia Labs · San Francisco, CA (Remote)
+28. Anatomage	3D Software Junior Developer	Santa Clara, California, US
 
 
 LinkedIn
