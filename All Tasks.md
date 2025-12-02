@@ -1,4 +1,4 @@
-- [ ] send reminder email to jishen
+- [x] send reminder email to jishen ✅ 2025-12-02
 - [x] resubmit cse 167 ✅ 2025-12-01
 - [ ] shadertoy things
 - [ ] study cse 132
