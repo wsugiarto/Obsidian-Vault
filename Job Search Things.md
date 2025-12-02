@@ -1,14 +1,15 @@
 FAANG++
-1. Google	Software Engineer - Early Career - Campus - 2026	Mountain View, CA, USA
-2. Twitch Software Engineer I Irvine, CA
-3. Twitch	Software Engineer I	San Francisco, CA
-4. Figma	Early Career - Software Engineer - 2026	San Francisco, CA New York, NY
-5. Pinterest	Software Engineer University Grad	San Francisco, CA, US Palo Alto, CA, US Seattle, WA, US
-6. OpenAI	Software Engineer - Applied Emerging Talent - 2026	San Francisco
-7. Twitch	Frontend Engineer I	San Francisco, CA
-8. Stripe	Software Engineer - New Grad	San Francisco, Seattle
-9. Adobe	2026 University Graduate - Software Engineer	San Jose
-10. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
+1. NVIDIA	Deep Learning Software Engineer - Inference - New College Grad 2026	Santa Clara, CA
+2. Google	Software Engineer - Early Career - Campus - 2026	Mountain View, CA, USA
+3. Twitch Software Engineer I Irvine, CA
+4. Twitch	Software Engineer I	San Francisco, CA
+5. Figma	Early Career - Software Engineer - 2026	San Francisco, CA New York, NY
+6. Pinterest	Software Engineer University Grad	San Francisco, CA, US Palo Alto, CA, US Seattle, WA, US
+7. OpenAI	Software Engineer - Applied Emerging Talent - 2026	San Francisco
+8. Twitch	Frontend Engineer I	San Francisco, CA
+9. Stripe	Software Engineer - New Grad	San Francisco, Seattle
+10. Adobe	2026 University Graduate - Software Engineer	San Jose
+11. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
 
 GitHub
 1. Affirm	Software Engineer - Early Career
