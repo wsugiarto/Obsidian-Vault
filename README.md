@@ -1,4 +1,9 @@
-
+CSE 132
+- practice hw1 and 2
+- practice recursive
+- practice midterm
+- Review slides
+MGT 12 review
 # **Today**
 ```tasks
 not done
