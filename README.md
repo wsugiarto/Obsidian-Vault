@@ -1,7 +1,5 @@
 CSE 132
-- practice recursive
 - practice midterm
-- Review slides
 MGT 12 review
 # **Today**
 ```tasks
