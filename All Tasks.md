@@ -1,5 +1,5 @@
 - [ ] check i20
-- [ ] ask mom if TB headset is at thome
+- [x] ask mom if TB headset is at thome ✅ 2025-12-13
 - [x] send reminder email to jishen ✅ 2025-12-02
 - [x] resubmit cse 167 ✅ 2025-12-01
 - [x] shadertoy things ✅ 2025-12-13
