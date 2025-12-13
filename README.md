@@ -1,6 +1,4 @@
-CSE 132
-- practice midterm
-MGT 12 review
+
 # **Today**
 ```tasks
 not done

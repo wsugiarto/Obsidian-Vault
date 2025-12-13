@@ -1,12 +1,14 @@
+- [ ] check i20
+- [ ] ask mom if TB headset is at thome
 - [x] send reminder email to jishen ✅ 2025-12-02
 - [x] resubmit cse 167 ✅ 2025-12-01
-- [ ] shadertoy things
-- [ ] study cse 132
+- [x] shadertoy things ✅ 2025-12-13
+- [x] study cse 132 ✅ 2025-12-13
 - [x] finish cse 132a ✅ 2025-11-22
 - [x] wrap up  mgt 12 ✅ 2025-11-22
 - [x] wrap up uni essays ✅ 2025-11-20
 - [ ] cse 132A Final 📅 2025-12-11
-- [ ] cse 167 final project 📅 2025-12-12
+- [x] cse 167 final project 📅 2025-12-12 ✅ 2025-12-13
 - [x] mgt 12 stock simulation 📅 2025-11-22 ✅ 2025-11-22
 - [x] mgt 12 spending tracker 📅 2025-11-22 ✅ 2025-11-22
 - [x] did my essays ✅ 2025-11-16
