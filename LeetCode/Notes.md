@@ -31,4 +31,11 @@
 			- Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 			- Notice that the solution set must not contain duplicate triplets.
 			- Iterate through each element and use 2 sum to find the target which is just 0-nums[i]
-				- To avoid duplicates 
+				- To avoid duplicates when iterating just keep track of a prev and if its the same skip the 2 sum for that
+				- Inside the 2 sum you should also do the same for the left pointer, if you've found a triplet of it already
+		- Container With Most Water
+			- You are given an integer array `height` of length `n`. There are `n` vertical lines drawn such that the two endpoints of the `ith` line are `(i, 0)` and `(i, height[i])`.
+			- Find two lines that together with the x-axis form a container, such that the container contains the most water.
+			- Return _the maximum amount of water a container can store_.
+			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
+				- Increment l or r depending on which one has a smaller height.
