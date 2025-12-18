@@ -18,4 +18,17 @@
 		- A subarray is a contiguous **non-empty** sequence of elements within an array.
 		- make the usual prefix sum array, then youre basically looking at each index of prefix[i] how much you need to get to k
 			- You can do this by making a hash table for those k - prefix[i] values. This hash table counts the number of times you see that value as you iterate, so just add this to your total count. 
-	- 
+
+# Two Pointers
+- Use this when the problem is asking for pairs or elements in a sorted list that must satisfy a condition
+	- Problems
+		- Two Sum II
+			- Given a **1-indexed** array of integers `numbers` that is already **_sorted in non-decreasing order_**, find two numbers such that they add up to a specific `target` number. Let these two numbers be `numbers[index1]` and `numbers[index2]` where `1 <= index1 < index2 <= numbers.length`.
+			- Return _the indices of the two numbers,_ `index1` _and_ `index2`_, **added by one** as an integer array_ `[index1, index2]` _of length 2._
+			- The tests are generated such that there is **exactly one solution**. You **may not** use the same element twice.
+			- Classic Two Pointers l,r at start and end, then just increment based on if total is less/greater than target
+		- 3 Sum
+			- Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
+			- Notice that the solution set must not contain duplicate triplets.
+			- Iterate through each element and use 2 sum to find the target which is just 0-nums[i]
+				- To avoid duplicates 
