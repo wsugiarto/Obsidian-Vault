@@ -1,6 +1,7 @@
 
 # Prefix Sum
 ![[Pasted image 20251218163244.png]]
+- Good for questions asking for the sum of subarrays
 - Making an array where array[i] is the sum of all values until index i
 - P[j] - P[i-1]
 - Problems
