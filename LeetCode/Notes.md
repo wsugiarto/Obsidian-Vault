@@ -10,4 +10,6 @@
 	- Contiguous Array
 		- Given a binary array `nums`, return _the maximum length of a contiguous subarray with an equal number of_ `0` _and_ `1`.
 		- Make a prefix array except just consider the 0s as -1 and 1 as 1, so it acts like a counter
-		- make a hash table to keep track of the last time you 
+		- make a hash table to keep track of the last time you saw a value in the prefix array
+		- Using that hash table you can easily find the longest by looking for equal values of prefix[i] in the hash table.
+	- 
