@@ -57,3 +57,33 @@
 					- increment r  and remove from the tracking set
 		- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 			- Similar to prev question except use a dictionary to track if anything is above 0 (negatives are ok)
+# Fast and Slow Pointers
+- This is used to identify IF a cycle exists, it doesn't find where the cycle is/where it starts
+- You need to do the second half of the algorithm for it to find the cycle entrance:
+```python
+slow = nums[0]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+```
+-  Reset the slow to the start and increment both at the same speed
+- Problems:
+	- [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+		- This is just the first part of the algorithm to identify the existence of a cycle
+			```python
+			def hasCycle(self, head: Optional[ListNode]) -> bool:
+			        slow, fast = head, head
+			        while fast is not None and fast.next is not None:
+			            slow = slow.next
+			            fast= fast.next.next
+			            if fast == slow:
+			                return True
+			        return False
+			```
+
+	- [Happy Number](https://leetcode.com/problems/happy-number/)
+		- The important thing here is that you don't need a linked list, anything can act like a linked list for example here its the next function
+		- Also here we don't need to find duplicates or anything so we don't need the second phase
+	- [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+		- Here we need to first use the first phase of the algo to enter the cycle (question already confirms that there is one)
+		- Then use the second phase to just get the entrance
