@@ -39,3 +39,13 @@
 			- Return _the maximum amount of water a container can store_.
 			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
 				- Increment l or r depending on which one has a smaller height.
+# Sliding Window
+- Used to find a subarray/substring that satisfies a condition
+- Generally, it works by:
+	- Updating r at the end of the loop
+	- Checking if that new r broke the condition, if it did
+		- probably update left until it's fixed again
+		- You can typically track the condition using sets, flags or dicts
+	- Problems
+		- [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+		- 
