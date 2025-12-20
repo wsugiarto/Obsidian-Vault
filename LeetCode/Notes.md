@@ -48,4 +48,12 @@
 		- You can typically track the condition using sets, flags or dicts
 	- Problems
 		- [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
-		- 
+			- Standard sliding window of moving l and r at the end, then comparing to prev averages
+			- The optimization here is that averages can be compared with just sums, dont average (divide by k) until the return just compare sums
+		- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+			- Use the set to track the repeating charactes
+			- while loop is while r < len(s)
+				- if condition breaks and l < r
+					- increment r  and remove from the tracking set
+		- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+			- Similar to prev question except use a dictionary to track if anything is above 0 (negatives are ok)
