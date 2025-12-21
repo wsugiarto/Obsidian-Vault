@@ -1,6 +1,6 @@
 
 # Prefix Sum
-![[C:\nObsidian Vault\laptop-vault\Remote-Notes\Pictures\Pasted image 20251218163207.pg]]
+![[Pasted image 20251218163207.png]]
 - Good for questions asking for the sum of subarrays
 - Making an array where array[i] is the sum of all values until index i
 - P[j] - P[i-1]
