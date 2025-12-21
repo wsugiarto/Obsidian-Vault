@@ -1,6 +1,6 @@
 
 # Prefix Sum
-![[Pasted image 20251218163244.png]]
+![[C:\nObsidian Vault\laptop-vault\Remote-Notes\Pictures\Pasted image 20251218163207.pg]]
 - Good for questions asking for the sum of subarrays
 - Making an array where array[i] is the sum of all values until index i
 - P[j] - P[i-1]
@@ -87,3 +87,24 @@ slow = nums[0]
 	- [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 		- Here we need to first use the first phase of the algo to enter the cycle (question already confirms that there is one)
 		- Then use the second phase to just get the entrance
+# Linked List Reversals
+- you only need this for these types of questions where they tell you to do a reversal
+- Generally you always want the prev, curr and some variant of the next pointer. 
+	- Just remember that you shouldn't restrain yourself to this idea and that you should just imagine how each pointer is meant to change like in the third problem
+- Problems
+	- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+		- Most basic / foundational algorithm solves this
+		- prev will eventually end up in the last element of the linked list to reverse, which becomes the new head
+	- [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+		- Just traverse until you reach the starting node of the part you want to reverse, then do the basic algorithm
+		- Couple important changes / additions:
+			- You are reversing a portion of the linked list (usually), so you need to save the node before and after that section you changed
+				- Sometimes those can be nulls as the left or right could be the start or end of the original list
+	- [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+		- This is where you shouldn't limit the basic algorithm as you're only way to solve these problems
+			- The point of that algorithm was to teach you the logic of manipulating linked lists and saving important pointers
+		- Important changes/ additions from previous questions:
+			- You are basically reversing sets of linked lists (in this case sets of 2)
+			- So in each iteration of the loop you are dealing with the 2 nodes, then in the next iteration you deal with the next 2
+			- Thus, a couple important nodes you need to save are the starting node of the next set , and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
+				- I also made a second var, this is realistically just the nxt var i usually use but its definitely more intuitive more me
