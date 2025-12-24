@@ -108,3 +108,53 @@ slow = nums[0]
 			- So in each iteration of the loop you are dealing with the 2 nodes, then in the next iteration you deal with the next 2
 			- Thus, a couple important nodes you need to save are the starting node of the next set , and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
 				- I also made a second var, this is realistically just the nxt var i usually use but its definitely more intuitive more me
+# Monotonic Stacks
+- These are used when you want to find the next smallest/largest element of an element in an array. 
+- The algorithm below is pretty universal
+	- if you want the next biggest element, you want a decreasing stack
+	- Just remember the time when you are popping is basically when you find that next smallest/largest element,  so this is your queue to do what you need to
+```python
+	class Solution:
+    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        stack = []
+        res = [-1] * len(nums1)
+        nextLarger = {}
+
+        # Use a monotonic decreasing stack
+        for i in range(len(nums2)):
+            while stack and nums2[stack[-1]] < nums2[i]:
+                index = stack.pop()
+                nextLarger[nums2[index]] = nums2[i]
+            stack.append(i)
+            if nums2[i] not in nextLarger:
+                nextLarger[nums2[i]] = -1
+        for i in range(len(nums1)):
+            res[i] = nextLarger[nums1[i]]
+        return res
+```
+- Problems
+	- [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
+		- Just look at solution above
+		- Something to note is that we just stored the values instead of indices in nextLarger (both key and value)
+	- [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+		- Only difference here is that instead of storing indexes, we just did a calculation for each index in the original array
+	- [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+		- This problem wants us to find the next smallest height, so when we pop we can keep track of how far left we can go
+		- This problem has some confusing index calculation
+		- Also when iterating, since we want to consider the entire width of the array, we want to make sure to go 1 over the length of the array to do that. 
+# Top K Elements
+- Finding the top k biggest/smallest elements 
+- Just use heaps and sorting
+	- In python use heapq.heapify(heap), heapq.heappush(heap, val), heapq.heappop(heap)
+	- In python heapify is a min heap
+		- Convert all to negative vals for max heap
+- Problems
+	- [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+		- Literally just the basic algorithm of heapifying then popping k times
+		- Make sure to convert to negatives for max heap, remember to convert res to positive again in the end
+	- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+		- Remember you can do this for dictionaries in Python
+			- `[[-v, k] for k,v in count.items()]`
+		- when you heapify it sorts based on the first element if the heap is storing tuples/arrays
+		- 
+		
