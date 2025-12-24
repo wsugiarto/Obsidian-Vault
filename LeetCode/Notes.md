@@ -156,5 +156,6 @@ slow = nums[0]
 		- Remember you can do this for dictionaries in Python
 			- `[[-v, k] for k,v in count.items()]`
 		- when you heapify it sorts based on the first element if the heap is storing tuples/arrays
-		- 
+	- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
+		- the trick to this is just not adding all possible pairs, just push the first k rows, with just the first column, then pop in while loop, but after each pop, try adding the next column of the row you just popped, this automatically makes sure that if the next col is a duplicate value you also get that  
 		
