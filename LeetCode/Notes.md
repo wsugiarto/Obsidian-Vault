@@ -175,7 +175,7 @@ slow = nums[0]
 					- If its after, then just insert the current interval (don't add the newInterval)
 			- Overlap
 				- combine the newInterval with the current one
-				- newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]
+				- `newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]`
 	- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 		- Here you don't need to make a merged list, just keep track of the end of the last node you omitted or kept (min of last node and node you might want to add)
 		- Note this question is slightly different where overlap is only if the end > nextInterval's start
