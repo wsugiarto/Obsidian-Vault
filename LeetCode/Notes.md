@@ -179,3 +179,39 @@ slow = nums[0]
 	- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 		- Here you don't need to make a merged list, just keep track of the end of the last node you omitted or kept (min of last node and node you might want to add)
 		- Note this question is slightly different where overlap is only if the end > nextInterval's start
+# Modified Binary Search
+
+Problems
+- In the while loop when you have l,r pointers, you typically want `while l <= r`
+	- because you have arrays like `[1]` where l and r will be equal
+- `mid = (l+r)//2`
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+	- Determine which side of the array is sorted left side of mid or right side of mid
+		- Check using `nums[l] <= nums[mid]` -> this means left side is sorted
+		- with this you can check accordingly
+```python
+    def search(self, nums: List[int], target: int) -> int:
+        l,r = 0, len(nums)-1
+        while l <= r: #because of arrays like [1]
+            mid = (l + r)//2
+            if target == nums[mid]:
+                return mid
+            # Determine if left or right side of the array is sorted
+            elif nums[l] <= nums[mid]:
+                if target > nums[mid] or target < nums[l]:
+                    l = mid + 1
+                else:
+                    r = mid-1
+            else: # IF right side is sorted
+                if target < nums[mid] or target > nums[r]:
+                    r = mid -1
+                else:
+                    l = mid + 1
+        return -1 
+```
+- [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+	- The condition is just if `nums[mid-1] > nums[mid]`
+	- 
+- [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+	- Not really a binary search
+	- You just start at top right then go left column if target is smaller, go down a row if target is bigger
