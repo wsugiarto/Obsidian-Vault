@@ -146,6 +146,7 @@ slow = nums[0]
 - Finding the top k biggest/smallest elements 
 - Just use heaps and sorting
 	- In python use heapq.heapify(heap), heapq.heappush(heap, val), heapq.heappop(heap)
+		- Note that when doing  heapq.heapify(heap), you **don't** need the heap =  heapq.heapify(heap). 
 	- In python heapify is a min heap
 		- Convert all to negative vals for max heap
 - Problems
