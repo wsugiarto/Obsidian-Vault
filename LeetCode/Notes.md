@@ -159,4 +159,23 @@ slow = nums[0]
 		- when you heapify it sorts based on the first element if the heap is storing tuples/arrays
 	- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 		- the trick to this is just not adding all possible pairs, just push the first k rows, with just the first column, then pop in while loop, but after each pop, try adding the next column of the row you just popped, this automatically makes sure that if the next col is a duplicate value you also get that  
-		
+# Intervals
+- Key here is looking for overlaps
+	- An overlap occurs when your last interval's end > added interval's start, look for this and it's all good 
+- Problems
+	- [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+		- Basically just check if end >= start and if it is just merge by changing the last interval's end to the max of both
+		- else just append if not overlap
+	- [Insert Interval](https://leetcode.com/problems/insert-interval/)
+		- Best advice is to split cases between overlapping and non overlapping
+			- Non Overlap is 2 cases
+				- Before the current interval
+					- If its before then just add the newInterval then the rest of the array
+				- After current interval
+					- If its after, then just insert the current interval (don't add the newInterval)
+			- Overlap
+				- combine the newInterval with the current one
+				- newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]
+	- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+		- Here you don't need to make a merged list, just keep track of the end of the last node you omitted or kept (min of last node and node you might want to add)
+		- Note this question is slightly different where overlap is only if the end > nextInterval's start
