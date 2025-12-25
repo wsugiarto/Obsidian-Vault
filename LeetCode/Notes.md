@@ -211,7 +211,9 @@ Problems
 ```
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 	- The condition is just if `nums[mid-1] > nums[mid]`
-	- 
+	- Then check `if nums[mid] >= nums[l]:`  
+		- need >= because l = mid happens a lot, which is trivially true for sorted arrays
+		- Means left side is sorted so just track the left most as the min for now
 - [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 	- Not really a binary search
 	- You just start at top right then go left column if target is smaller, go down a row if target is bigger
