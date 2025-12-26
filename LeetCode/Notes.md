@@ -432,3 +432,64 @@ Problems
 	            time += 1
 	        return time if curFresh == 0 else -1
 	```
+
+# Matrix Traversal
+- Utilize DFS or BFS to search from a particular point like looking for islands
+- Problems
+	- [Flood Fill](https://leetcode.com/problems/flood-fill/)
+		- Standard BFS works well here
+		- Just remember the first/starting point needs to be changed too (i did this before the while loop)
+	```python
+	from collections import deque
+	class Solution:
+	    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+	        visited = set()
+	        visited.add((sr,sc))
+	        q = deque()
+	        q.append((sr,sc))
+	        original = image[sr][sc]
+	        image[sr][sc] = color
+	        directions = [(1,0), (-1,0), (0,1), (0,-1)]
+	        while q:
+	            popped = q.pop()
+	            for dr, dc in directions:
+	                nr = dr + popped[0]
+	                nc = dc + popped[1]
+	                if nr in range(len(image)) and nc in range(len(image[0])) and image[nr][nc] == original and (nr,nc) not in visited :
+	                    visited.add((nr,nc))
+	                    q.append((nr,nc))
+	                    image[nr][nc] = color
+	        return image
+	```
+	- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+		- Also can use BFS
+		- Basically the same thing as last question except make bfs a helper, and run on any square that is a "1", to convert all adjacent ones to "0"
+			- Every BFS run, you increase the counter
+	```python
+	from collections import deque
+	class Solution:
+	    def numIslands(self, grid: List[List[str]]) -> int:
+	        def bfs(r,c):
+	            visited = set()
+	            q= deque()
+	            q.append((r,c))
+	            visited.add((r,c))
+	            grid[r][c] = "0"
+	            directions = [(1,0), (-1,0), (0,1), (0,-1)]
+	            while q:
+	                popped = q.pop()
+	                for dr,dc in directions:
+	                    nr = popped[0] + dr
+	                    nc = popped[1] + dc
+	                    if nr in range(len(grid)) and nc in range(len(grid[0])) and grid[nr][nc] == "1" and (nr,nc) not in visited:
+	                        visited.add((nr,nc))
+	                        q.append((nr,nc))
+	                        grid[nr][nc] = "0"
+	        count = 0
+	        for r in range(len(grid)):
+	            for c in range(len(grid[0])):
+	                if grid[r][c] == "1":
+	                    bfs(r,c)
+	                    count += 1
+	        return count
+	```
