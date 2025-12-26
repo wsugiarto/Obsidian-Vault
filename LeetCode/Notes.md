@@ -280,3 +280,79 @@ Problems
 	        postorder(root)
 	        return res
 	```
+
+# DFS
+- Just used to traverse a graph to find a certain pattern
+- Problems
+	- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+		- use a hash map to map from old nodes to new nodes (copied nodes)
+		- Whenever you call dfs(node)
+			- you are creating the copy if its not made
+			- if its made already you know you made its neighbors already
+			- If not then you iterate on its neighbors and make copies for those
+	```python
+	def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+	        if not node:
+	            return None
+	        new = {}
+	        def dfs(node):
+	            if node in new:
+	                return new[node]
+	            copy = Node(node.val)
+	            new[node] = copy
+	            for n in node.neighbors:
+	                newNei = dfs(n)
+	                copy.neighbors.append(newNei)
+	            return copy
+	        return dfs(node)
+	```
+	 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+		 - just make a hashmap to make it easier for a dfs traversal
+		 - need to make a set for detecting cycles
+			 - When dfsing, check if its in that cycles set, if not add it, then start dfsing on the prereqs
+				 - After that iteration is done remove it from the cycle set and add to output
+			- With our output array we can use that to check if a course was done already, so we can early exit in dfs if we already took it
+	```python
+	def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+	        prereqs = {i:[] for i in range(numCourses)}
+	        for c, p in prerequisites:
+	            prereqs[c].append(p)
+	        output = []
+	        visit = set()
+	        cycle = set()
+	        def dfs(c):
+	            if c in cycle:
+	                return False
+	            if c in output:
+	                return True
+	            cycle.add(c)
+	            for pre in prereqs[c]:
+	                if dfs(pre) == False:
+	                    return False
+	            cycle.remove(c)
+	            # visit.add(c)
+	            output.append(c)
+	            return True
+	        for i in range(numCourses):
+	            if dfs(i) == False:
+	                return []
+	        return output  
+	```
+	- [Path Sum II](https://leetcode.com/problems/path-sum-ii/)
+		- Just remember that in python when you pass a list, dict, and other objects into a function, it doesn't make a copy so u are modifying the same object again and again
+	```python
+	 def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+	        res = []
+	        def dfs(node, total, path):
+	            if not node: 
+	                return 
+	            total = total + node.val
+	            path = path.copy()
+	            path.append(node.val)
+	            if not node.left and not node.right and total == targetSum:
+	                res.append(path)
+	            dfs(node.left, total, path)
+	            dfs(node.right, total, path)
+	        dfs(root, 0 ,[])
+	        return res
+	```
