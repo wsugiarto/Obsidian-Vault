@@ -356,3 +356,79 @@ Problems
 	        dfs(root, 0 ,[])
 	        return res
 	```
+
+# BFS
+- Use a deque and sometimes a visited set
+- You usually need to account for empty inputs since the while loop usually won't deal with it
+- When you append the q with the new elements, this is typically when you want to add to the visited too.
+- In python you need to import the deque
+- Problems
+	- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+		- Very Standard BFS
+	```python
+	from collections import deque
+	class Solution:
+	    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+	        if root == None:
+	            return []
+	        q = deque()
+	        q.append(root)
+	        output = []
+	        while q:
+	            length = len(q)
+	            sub = []
+	            for i in range(length):
+	                popped = q.popleft()
+	                if popped.left:
+	                    q.append(popped.left)
+	                if popped.right:
+	                    q.append(popped.right)
+	                sub.append(popped.val)
+	            output.append(sub)
+	        return output
+	```
+	- [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
+		- The difference here is the way we get new things in the deque
+		- We also only add fresh oranges to explore, since we already explored rotten oranges
+	```python
+	from collections import deque
+	class Solution:
+	    def orangesRotting(self, grid: List[List[int]]) -> int:
+	        # Do a bfs
+	        # put rottens in the deque at first 
+	        # keep a dq of (r,c)s
+	        # keep track of time
+	        # keep track of number of fresh oranges currently and prev
+	        # if number of fresh oranges not == 0 when cur = prev then its impossible
+	        q = deque()
+	        curFresh = 0
+	        prevFresh = 0
+	        for r in range(len(grid)):
+	            for c in range(len(grid[0])):
+	                if (grid[r][c] == 2):
+	                    q.append((r,c))
+	
+	                elif grid[r][c] == 1:
+	                    curFresh += 1
+	        prevFresh = curFresh
+	        time = 0 
+	        visited = set()
+	        directions = [[-1,0], [1,0], [0,-1], [0,1]]
+	        while q and curFresh>0 :
+	
+	            length = len(q)
+	            for i in range(length):
+	                popped = q.popleft()
+	                
+	                for dr, dc in directions:
+	                    if popped[0] + dr in range(len(grid)) and popped[1] + dc in range(len(grid[0])):
+	                        new = (popped[0] + dr, popped[1] + dc)
+	                        if new not in visited and grid[popped[0] + dr][popped[1] + dc] ==1:
+	                            q.append(new)
+	                            visited.add(popped)
+	                            if grid[popped[0] + dr][popped[1] + dc] == 1:
+	                                grid[popped[0] + dr][popped[1] + dc] = 2
+	                                curFresh -=1
+	            time += 1
+	        return time if curFresh == 0 else -1
+	```
