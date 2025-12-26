@@ -226,20 +226,57 @@ Problems
 		- root to leaf would just be a preorder traversal
 		- Every time you meet a node you add to path, then when there's a split you call the recursive traversal to account for the split
 		- If you find a leaf just append it to the final result array
-```python
-def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        def preorder(node, path, result):
-            if not node:
-                return
-            path = path + "->" + str(node.val) if path else str(node.val)
-            if not node.left and not node.right:
-                result.append(path)
-            preorder(node.left, path, result)
-            preorder(node.right, path, result)
-        result = []
-        path = ""
-        preorder(root, path, result)
-        return result
-		``` 
+	```python 
+				  def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+				        def preorder(node, path, result):
+				            if not node:
+				                return
+				            path = path + "->" + str(node.val) if path else str(node.val)
+				            if not node.left and not node.right:
+				                result.append(path)
+				            preorder(node.left, path, result)
+				            preorder(node.right, path, result)
+				        result = []
+				        path = ""
+				        preorder(root, path, result)
+				        return result
+	``` 
 	- [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
-- 
+		- Smallest is always bottom left, so inorder traversal
+		- Global vars are very useful 
+			- use nonlocal for them insider recursive function
+	```python
+	def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+	        # do a post order traversal
+	        smallest = root.val
+	        counter = k
+	        def inorder(node):
+	            nonlocal counter, smallest
+	            if not node or counter == 0:
+	                return
+	            inorder(node.left)
+	            counter -= 1
+	            if counter == 0:
+	                smallest = node.val
+	                return
+	            inorder(node.right)
+	        inorder(root)
+	        return smallest
+	```
+	- [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+		- Use a global var again to keep track of the max
+		- its ok to just add the curr val with left and right because we set the left and right to be at least 0, so negatives are accounted for already
+	```python
+	def maxPathSum(self, root: Optional[TreeNode]) -> int:
+	        res = float("-inf")
+	        def postorder(node):
+	            if not node:
+	                return 0
+	            nonlocal res
+	            left= max(0, postorder(node.left))
+	            right=  max(0,postorder(node.right))
+	            res = max(res, node.val + left+ right)
+	            return node.val + max(left,right)
+	        postorder(root)
+	        return res
+	```
