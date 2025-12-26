@@ -217,3 +217,29 @@ Problems
 - [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 	- Not really a binary search
 	- You just start at top right then go left column if target is smaller, go down a row if target is bigger
+# Binary Tree Traversals
+- PreOrder: root -> left -> right
+- InOrder: left -> root -> right
+- PostOrder: left -> right -> root
+- Problems:
+	- [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+		- root to leaf would just be a preorder traversal
+		- Every time you meet a node you add to path, then when there's a split you call the recursive traversal to account for the split
+		- If you find a leaf just append it to the final result array
+```python
+def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        def preorder(node, path, result):
+            if not node:
+                return
+            path = path + "->" + str(node.val) if path else str(node.val)
+            if not node.left and not node.right:
+                result.append(path)
+            preorder(node.left, path, result)
+            preorder(node.right, path, result)
+        result = []
+        path = ""
+        preorder(root, path, result)
+        return result
+		``` 
+	- [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+- 
