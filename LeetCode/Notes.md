@@ -493,3 +493,42 @@ Problems
 	                    count += 1
 	        return count
 	```
+	- [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+		- This is very similar to previous question
+		- You just run bfs on the borders and if its land
+		- The difference is that you mark these lands connected to the border as some other character first and reconvert them later
+	 ```python
+	class Solution:
+	    def solve(self, board: List[List[str]]) -> None:
+	        """
+	        Do not return anything, modify board in-place instead.
+	        """
+	        def bfs(r,c):
+	            visited = set()
+	            q= deque()
+	            q.append((r,c))
+	            visited.add((r,c))
+	            directions = [(1,0), (-1,0), (0,1), (0,-1)]
+	            board[r][c] = "T"
+	            while q:
+	                popped = q.pop()
+	                for dr,dc in directions:
+	                    nr = popped[0] + dr
+	                    nc = popped[1] + dc
+	                    if nr in range(len(board)) and nc in range(len(board[0])) and board[nr][nc] == "O" and (nr,nc) not in visited:
+	                        visited.add((nr,nc))
+	                        q.append((nr,nc))
+	                        board[nr][nc] = "T"
+	        for r in range(len(board)):
+	            for c in range(len(board[0])):
+	                if (r in [0, len(board)-1] or c in [0, len(board[0])-1]) and board[r][c] == "O":
+	                    bfs(r,c)
+	        for r in range(len(board)):
+	            for c in range(len(board[0])):
+	                if board[r][c] == "O":
+	                    board[r][c] = "X"
+	        for r in range(len(board)):
+	            for c in range(len(board[0])):
+	                if board[r][c] == "T":
+	                    board[r][c] = "O"
+	```
