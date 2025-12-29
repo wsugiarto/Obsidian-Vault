@@ -532,3 +532,84 @@ Problems
 	                if board[r][c] == "T":
 	                    board[r][c] = "O"
 	```
+
+# Back Tracking
+- Good for problems that need you to find all possible solutions (like permutations) or most solutions given a constraint
+	- Usually these are the same except you just make a check before you call the helper backtrack function
+- In backtracking you are going to share the lists you use to make the solutions, so you usually want to make copies before inserting into your output
+- Remember in back tracking you need to do clean ups after the helper function call so it can explore more cases
+- Problems:
+	- [Permutations](https://leetcode.com/problems/permutations/)
+		- Use permute to find the permutations when you exclude the first element
+		- Then insert, the element into every possible position
+	```python
+	class Solution:
+	    def permute(self, nums: List[int]) -> List[List[int]]:
+	        if len(nums) == 0:
+	            return [[]]
+	        perms = self.permute(nums[1:])
+	        res = []
+	        for perm in perms:
+	            for i in range(len(perm)+1):
+	                p_copy = perm.copy()
+	                p_copy.insert(i, nums[0])
+	                res.append(p_copy)
+	        return res
+	```
+	- [Subsets](https://leetcode.com/problems/subsets/)
+		- Use the helper to iterate each index and decide whether to include that index or not
+		- Good example of cleaning up 
+	```python
+	class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        if len(nums) == 0:
+            return [[]]
+        res = []
+        subset = []
+        def helper(i):
+            if i == len(nums):
+                res.append(subset.copy())
+                return
+            
+            subset.append(nums[i])
+            helper(i+1)
+            subset.pop()
+            helper(i+1)
+        helper(0)
+        return res
+	```
+	- [N-Queens](https://leetcode.com/problems/n-queens/)
+		- Put one queen in each row, check ifs ok to put there based on the column, pos and neg diags. 
+			- If you can reach the end add to output
+		- Not a scary hard, you just need to know how to check conditions for diagonals 
+			- positive diagonals = row + column index is constant across a diagonal
+			- negative diagonals = row - column
+		- Also do clean ups after calling the helper function
+	``` python 
+	class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        cols = set()
+        posDiags = set()
+        negDiags = set()
+        res  = []
+        board = [["."]* n for i in range(n)]
+        def backtrack(r):
+            if r == n:
+                copy = board.copy()
+                copy = ["".join(row) for row in board]
+                res.append(copy)``
+            for c in range(n):
+                if c in cols or (r+c) in posDiags or (r-c) in negDiags:
+                    continue
+                cols.add(c)
+                posDiags.add(r+c)
+                negDiags.add(r-c)
+                board[r][c] = "Q"
+                backtrack(r+1)
+                cols.remove(c)
+                posDiags.remove(r+c)
+                negDiags.remove(r-c)
+                board[r][c] = "."
+        backtrack(0)
+        return res
+	```
