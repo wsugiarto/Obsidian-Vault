@@ -613,3 +613,150 @@ Problems
         backtrack(0)
         return res
 	```
+
+# Dynamic Programming
+- Use this problem when trying to find the optimal substructure or overlapping subproblems
+- There's a lot of different DP patterns to use
+	- Fibonacci - > `dp[n] = dp[n-1] + dp[n-2]
+	- Knapsack
+	- Longest Common Subsequence
+	- Longest Increasing Subsequence
+	- Subset Sum
+- Sometimes especially for Fibonacci or some knapsacks you don't need to make a whole array, you just need the last 2 previous dp indexes or whichever indexes you need
+	- do this if the previous indexes you need are consistent
+	- do this to save memory
+- Problems
+	- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+		- Simple Fibonacci question
+		- Use first, second instead of array to save memory
+		- its just second = second + first
+	```python 
+	class Solution:
+	    def climbStairs(self, n: int) -> int:
+	        first = 1
+	        second = 1
+	        res = 1
+	        if n < 2:
+	            return 1
+	         
+	        for i in range(n-1):
+	            temp = second
+	            second = second + first
+	            first = temp
+	        return second
+	```
+	- [House Robber](https://leetcode.com/problems/house-robber/)
+		- Basically same as stairs problem, but not straight fibonacci.
+		- Take or Skip DP pattern
+		- Decide if you want to rob the current house then take `dp[n-2]` or don't take the house and take `dp[n-1]`
+	```python
+	class Solution:
+    def rob(self, nums: List[int]) -> int:
+        first = nums[0]
+        if len(nums) < 2:
+            return first
+        second = max(nums[1], first)
+        for i in range(len(nums)-2):
+            temp = second
+            second = max(second, first + nums[i+2])
+            first = temp
+        return second
+	```
+	- [Coin Change](https://leetcode.com/problems/coin-change/)
+		- Here you want dp to have `dp[i]` be the minimum amount for amount = i, then build off that
+		- For each amount i, you want to check the minimum amount of coins against using all the coin types available
+	```python
+	class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        dp = [-1]  * (amount+1)
+        dp[0] = 0
+        for i in range(amount+1):
+            for j in range(len(coins)-1,-1,-1):
+                coin = coins[j]
+                # don't need this since when its i == coin, the last conditional
+                # also catches this because of dp[0]
+                # if i == coin:
+                #     dp[i] = 1
+                #     break
+                if i - coin < 0:
+                    continue
+                if dp[i-coin] != -1:
+                    dp[i] = min(dp[i-coin] + 1, dp[i]) if dp[i] != -1 else dp[i-coin] + 1
+                    
+        print(amount)
+        return dp[amount]
+
+	```
+	- [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+		- Remember subsequence != substring
+			- subsequences don't have to be consecutive, just after one another
+		- You want dp to be 2D where i and j are the length of substrings of text1 and text2 
+		- Your base cases are just when one or both substrings are 0, so its just 0
+		- For finding `dp[i][j]` you want to check if the last index is the same, because those are the 2 you are adding/checking
+			- if they are then you can increment from the previous i/j -1
+			- If not just get the max from `[i-1][j] or [i][j-1]`
+	```python 
+	class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        #dp[i][j] checks longest subsequence for text1[0:i+1] and text2[0:j+1]
+        dp = [[0] * (len(text2) + 1) for i in range(len(text1) + 1)] 
+        # when i or j = 0, then thats just when there are no characters, so its 0
+        for i in range(1,len(text1)+1):
+            for j in range(1,len(text2)+1):
+                # think of i and j as the length of text1 and text2
+                # check the current character which would be i-1 or j-1 since i and j 
+                # are lengths.
+                # if they are the same we can extend our subsequence
+                if text1[i-1] == text2[j-1]:
+                    dp[i][j] = dp[i-1][j-1] + 1
+                else:
+                # if its not the same, we look at the previous maxes, from when we had a shorter text1 or text2
+                    dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+        return dp[len(text1)][len(text2)]
+	```
+	- [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+		- Here the dp is the LIS until our index `dp[i]`
+		- we need to check that last index against all previous indexes and check which one has the longest based on its dp
+			- We of course need to check first if our index is larger
+		- The return is important here
+			- we want the max in our dp because our dp is based on including the last index 
+			- so our last index might be smaller than the previous, so its a short subsequence
+	```python
+	class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        dp = [1] * (len(nums))
+        for i in range(1,len(dp)):
+            # compare index i, with all previous numbers and if i is bigger, we can check
+            # our currenet dp with dp[j] + 1 since dp[j] already has a LIS and i is bigger
+            # than j
+            for j in range(i):
+                # This condition makes sure that dp[i] is where we NEED to have nums[i],
+                # this means that the final answer might not be dp[-1], since we could
+                # have nums[-1] be some really small number
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[j]+1, dp[i])
+
+        return max(dp)
+	```
+	- [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+		- Dumbass name, its asking if you can split the list into 2 equal sum subsets
+		- `dp[i]` is whether we can make the sum i with SOME elements
+			- each dp is set to False initially except i = 0
+			- which is basically guaranteed to use some since we are only going until half the sum of our total sum
+		- One number at a time, we see what sums we can make
+			- its important to iterate backwards because if we iterate forward we could be reusing the same number as a duplicate, which is not allowed
+	```python 
+	class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        
+        target = sum(nums) // 2
+        if sum(nums) %2 != 0:
+            return False
+        dp = [False] * (target+1)
+        dp[0] = True
+        for num in nums:
+            for i in range(target, num-1,-1):
+                dp[i] = dp[i] or dp[i - num]
+        return dp[-1]
+
+	```
