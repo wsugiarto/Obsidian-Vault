@@ -1,5 +1,5 @@
 
-# Prefix Sum
+# 1. Prefix Sum
 ![[Pasted image 20251218163207.png]]
 - Good for questions asking for the sum of subarrays
 - Making an array where array[i] is the sum of all values until index i
@@ -19,7 +19,7 @@
 		- make the usual prefix sum array, then youre basically looking at each index of prefix[i] how much you need to get to k
 			- You can do this by making a hash table for those k - prefix[i] values. This hash table counts the number of times you see that value as you iterate, so just add this to your total count. 
 
-# Two Pointers
+# 2. Two Pointers
 - Use this when the problem is asking for pairs or elements in a sorted list that must satisfy a condition
 	- Problems
 		- Two Sum II
@@ -39,7 +39,7 @@
 			- Return _the maximum amount of water a container can store_.
 			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
 				- Increment l or r depending on which one has a smaller height.
-# Sliding Window
+# 3. Sliding Window
 - Used to find a subarray/substring that satisfies a condition
 - Generally, it works by:
 	- Updating r at the end of the loop
@@ -57,7 +57,7 @@
 					- increment r  and remove from the tracking set
 		- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 			- Similar to prev question except use a dictionary to track if anything is above 0 (negatives are ok)
-# Fast and Slow Pointers
+# 4. Fast and Slow Pointers
 - This is used to identify IF a cycle exists, it doesn't find where the cycle is/where it starts
 - You need to do the second half of the algorithm for it to find the cycle entrance:
 ```python
@@ -87,7 +87,7 @@ slow = nums[0]
 	- [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 		- Here we need to first use the first phase of the algo to enter the cycle (question already confirms that there is one)
 		- Then use the second phase to just get the entrance
-# Linked List Reversals
+# 5. Linked List Reversals
 - you only need this for these types of questions where they tell you to do a reversal
 - Generally you always want the prev, curr and some variant of the next pointer. 
 	- Just remember that you shouldn't restrain yourself to this idea and that you should just imagine how each pointer is meant to change like in the third problem
@@ -108,7 +108,7 @@ slow = nums[0]
 			- So in each iteration of the loop you are dealing with the 2 nodes, then in the next iteration you deal with the next 2
 			- Thus, a couple important nodes you need to save are the starting node of the next set , and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
 				- I also made a second var, this is realistically just the nxt var i usually use but its definitely more intuitive more me
-# Monotonic Stacks
+# 6. Monotonic Stacks
 - These are used when you want to find the next smallest/largest element of an element in an array. 
 - The algorithm below is pretty universal
 	- if you want the next biggest element, you want a decreasing stack
@@ -142,7 +142,7 @@ slow = nums[0]
 		- This problem wants us to find the next smallest height, so when we pop we can keep track of how far left we can go
 		- This problem has some confusing index calculation
 		- Also when iterating, since we want to consider the entire width of the array, we want to make sure to go 1 over the length of the array to do that. 
-# Top K Elements
+# 7. Top K Elements
 - Finding the top k biggest/smallest elements 
 - Just use heaps and sorting
 	- In python use heapq.heapify(heap), heapq.heappush(heap, val), heapq.heappop(heap)
@@ -159,7 +159,7 @@ slow = nums[0]
 		- when you heapify it sorts based on the first element if the heap is storing tuples/arrays
 	- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 		- the trick to this is just not adding all possible pairs, just push the first k rows, with just the first column, then pop in while loop, but after each pop, try adding the next column of the row you just popped, this automatically makes sure that if the next col is a duplicate value you also get that  
-# Intervals
+# 8. Intervals
 - Key here is looking for overlaps
 	- An overlap occurs when your last interval's end > added interval's start, look for this and it's all good 
 - Problems
@@ -179,7 +179,7 @@ slow = nums[0]
 	- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 		- Here you don't need to make a merged list, just keep track of the end of the last node you omitted or kept (min of last node and node you might want to add)
 		- Note this question is slightly different where overlap is only if the end > nextInterval's start
-# Modified Binary Search
+# 9. Modified Binary Search
 
 Problems
 - In the while loop when you have l,r pointers, you typically want `while l <= r`
@@ -217,7 +217,7 @@ Problems
 - [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 	- Not really a binary search
 	- You just start at top right then go left column if target is smaller, go down a row if target is bigger
-# Binary Tree Traversals
+# 10. Binary Tree Traversals
 - PreOrder: root -> left -> right
 - InOrder: left -> root -> right
 - PostOrder: left -> right -> root
@@ -281,7 +281,7 @@ Problems
 	        return res
 	```
 
-# DFS
+# 11. DFS
 - Just used to traverse a graph to find a certain pattern
 - Problems
 	- [Clone Graph](https://leetcode.com/problems/clone-graph/)
@@ -357,7 +357,7 @@ Problems
 	        return res
 	```
 
-# BFS
+# 12. BFS
 - Use a deque and sometimes a visited set
 - You usually need to account for empty inputs since the while loop usually won't deal with it
 - When you append the q with the new elements, this is typically when you want to add to the visited too.
@@ -433,7 +433,7 @@ Problems
 	        return time if curFresh == 0 else -1
 	```
 
-# Matrix Traversal
+# 13. Matrix Traversal
 - Utilize DFS or BFS to search from a particular point like looking for islands
 - Problems
 	- [Flood Fill](https://leetcode.com/problems/flood-fill/)
@@ -533,7 +533,7 @@ Problems
 	                    board[r][c] = "O"
 	```
 
-# Back Tracking
+# 14. Back Tracking
 - Good for problems that need you to find all possible solutions (like permutations) or most solutions given a constraint
 	- Usually these are the same except you just make a check before you call the helper backtrack function
 - In backtracking you are going to share the lists you use to make the solutions, so you usually want to make copies before inserting into your output
@@ -614,7 +614,7 @@ Problems
         return res
 	```
 
-# Dynamic Programming
+# 15. Dynamic Programming
 - Use this problem when trying to find the optimal substructure or overlapping subproblems
 - There's a lot of different DP patterns to use
 	- Fibonacci - > `dp[n] = dp[n-1] + dp[n-2]
