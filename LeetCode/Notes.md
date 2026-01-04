@@ -336,6 +336,32 @@ slow = nums[0]
 		- Couple important changes / additions:
 			- You are reversing a portion of the linked list (usually), so you need to save the node before and after that section you changed
 				- Sometimes those can be nulls as the left or right could be the start or end of the original list
+	```python
+	class Solution:
+    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+        if not head or not head.next or left == right:
+            return head
+        curr = head
+        prev= None
+        nxt = None
+        for i in range(left-1):
+            prev= curr
+            curr = curr.next
+        start = prev # Node before the first node to be reved
+        leftStart = curr # first node to be reved (should be last in the end)
+        for i in range (right-left+1):
+            nxt = curr.next
+            curr.next = prev
+            prev= curr
+            curr = nxt
+        last = curr #node after the portion we reversed
+        if start:
+            start.next = prev
+        if leftStart:
+            leftStart.next = last
+
+        return head if left != 1 else prev
+	```
 	- [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 		- This is where you shouldn't limit the basic algorithm as you're only way to solve these problems
 			- The point of that algorithm was to teach you the logic of manipulating linked lists and saving important pointers
@@ -344,6 +370,24 @@ slow = nums[0]
 			- So in each iteration of the loop you are dealing with the 2 nodes, then in the next iteration you deal with the next 2
 			- Thus, a couple important nodes you need to save are the starting node of the next set , and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
 				- I also made a second var, this is realistically just the nxt var i usually use but its definitely more intuitive more me
+	```python
+	class Solution:
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev = ListNode(0, head)
+        start = prev
+        curr = head
+        nxt = None
+        while curr and curr.next:
+            nextSet = curr.next.next
+            second = curr.next
+
+            prev.next = second
+            second.next = curr
+            curr.next = nextSet
+            prev = curr
+            curr = nextSet
+        return start.next
+	```
 # 6. Monotonic Stacks
 - These are used when you want to find the next smallest/largest element of an element in an array. 
 - The algorithm below is pretty universal
@@ -374,21 +418,65 @@ slow = nums[0]
 		- Something to note is that we just stored the values instead of indices in nextLarger (both key and value)
 	- [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
 		- Only difference here is that instead of storing indexes, we just did a calculation for each index in the original array
+	```python
+	class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        answer = [0] * len(temperatures)
+        stack = []
+        #need a decreasing monotonic stack
+        for i in range(len(temperatures)):
+            while stack and temperatures[stack[-1]] < temperatures[i]:
+                index = stack.pop()
+                answer[index] = i - index
+            stack.append(i)
+        return answer 
+	```
 	- [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 		- This problem wants us to find the next smallest height, so when we pop we can keep track of how far left we can go
 		- This problem has some confusing index calculation
 		- Also when iterating, since we want to consider the entire width of the array, we want to make sure to go 1 over the length of the array to do that. 
+	```python
+	class Solution:
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        stack = []
+        maxArea = 0
+
+        for i in range(len(heights)+1):
+            checkHeight= heights[i] if i < len(heights) else 0
+            while stack and heights[stack[-1]] > checkHeight:
+                index = stack.pop()
+                height = heights[index]
+                left= stack[-1] if stack else -1
+                width = i - left -1
+                maxArea = max(maxArea, width* height)
+                
+            stack.append(i)
+
+        return maxArea
+
+	```
 # 7. Top K Elements
 - Finding the top k biggest/smallest elements 
 - Just use heaps and sorting
-	- In python use heapq.heapify(heap), heapq.heappush(heap, val), heapq.heappop(heap)
-		- Note that when doing  heapq.heapify(heap), you **don't** need the heap =  heapq.heapify(heap). 
-	- In python heapify is a min heap
-		- Convert all to negative vals for max heap
+	- In python use `heapq.heapify(heap), heapq.heappush(heap, val), heapq.heappop(heap)`
+		- Note that when doing  `heapq.heapify(heap)`, you **don't** need the `heap =  heapq.heapify(heap)`. 
+	- In python `heapify` is a min heap
+		- Convert all to negative values for max heap
 - Problems
 	- [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 		- Literally just the basic algorithm of heapifying then popping k times
 		- Make sure to convert to negatives for max heap, remember to convert res to positive again in the end
+		```python
+		class Solution:
+		    def findKthLargest(self, nums: List[int], k: int) -> int:
+		        heap = [-1*num for num in nums]
+		        heapq.heapify(heap)
+		        res = 0
+		        while k >0:
+		            res = heapq.heappop(heap)
+		            k-=1
+		        return -res
+		```
 	- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 		- Remember you can do this for dictionaries in Python
 			- `[[-v, k] for k,v in count.items()]`
