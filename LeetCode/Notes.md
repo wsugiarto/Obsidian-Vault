@@ -481,8 +481,41 @@ slow = nums[0]
 		- Remember you can do this for dictionaries in Python
 			- `[[-v, k] for k,v in count.items()]`
 		- when you heapify it sorts based on the first element if the heap is storing tuples/arrays
+	```python 
+	class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count = {}
+        for num in nums:
+            count[num] = count.get(num, 0) + 1
+        heap = [[-v, k] for k,v in count.items()]
+        heapq.heapify(heap)
+        res = []
+        while k > 0:
+            _, key = heapq.heappop(heap)
+            res.append(key)
+            k -=1
+        return res
+	```
 	- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 		- the trick to this is just not adding all possible pairs, just push the first k rows, with just the first column, then pop in while loop, but after each pop, try adding the next column of the row you just popped, this automatically makes sure that if the next col is a duplicate value you also get that  
+	```python 
+	class Solution:
+    def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+        heap = []
+        n1 = len(nums1)
+        n2 = len(nums2)
+        res = []
+        for i in range(min(k, n1)):
+            heapq.heappush(heap, [nums1[i] + nums2[0], i, 0])
+        while k > 0:
+            _, i, j = heapq.heappop(heap)
+            if j+1 < n2:
+                heapq.heappush(heap, [nums1[i] + nums2[j+1], i, j+1])
+            res.append([nums1[i], nums2[j]])
+            k-=1
+        return res
+
+	```
 # 8. Intervals
 - Key here is looking for overlaps
 	- An overlap occurs when your last interval's end > added interval's start, look for this and it's all good 
@@ -490,6 +523,23 @@ slow = nums[0]
 	- [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 		- Basically just check if end >= start and if it is just merge by changing the last interval's end to the max of both
 		- else just append if not overlap
+	```python 
+	class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        intervals.sort()
+        merged = []
+        
+        for interval in intervals:
+            if not merged:
+                merged.append(interval)
+                continue
+            if merged[-1][1] >= interval[0]:
+                merged[-1][1] = max(interval[1], merged[-1][1])
+            else:
+                merged.append(interval)
+        return merged
+
+	```
 	- [Insert Interval](https://leetcode.com/problems/insert-interval/)
 		- Best advice is to split cases between overlapping and non overlapping
 			- Non Overlap is 2 cases
@@ -500,9 +550,61 @@ slow = nums[0]
 			- Overlap
 				- combine the newInterval with the current one
 				- `newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]`
+	```python
+	class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        merged = []
+        newAdded= False
+        i = 0 
+        for inv in intervals:
+
+            # check overlapping vs non overlapping
+
+            #-- Non Overlapping --
+            # Before current inv
+            if inv[0] > newInterval[1]:
+                merged.append(newInterval)
+                return merged + intervals[i:]
+
+            # After current inv
+            elif inv[1] < newInterval[0]:
+                merged.append(inv)
+
+            # -- Overlap --
+            else:
+                newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]
+
+            i += 1
+        merged.append(newInterval)
+        return merged
+
+	```
 	- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 		- Here you don't need to make a merged list, just keep track of the end of the last node you omitted or kept (min of last node and node you might want to add)
 		- Note this question is slightly different where overlap is only if the end > nextInterval's start
+	```python
+	class Solution:
+    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+        # Sort the intervals
+        intervals.sort()
+        # Iterate
+        isFirst = True
+        removed = 0
+        for inv in intervals:
+            # if start of traversal
+            if isFirst:
+                end = inv[1]
+                isFirst = False
+                continue
+            # If Overlapping
+            if end > inv[0]:
+                end = min(end, inv[1])
+                removed += 1 
+            # Not Overlapping
+            else:
+                end = inv[1]
+        return removed
+	```
 # 9. Modified Binary Search
 
 Problems
@@ -538,9 +640,45 @@ Problems
 	- Then check `if nums[mid] >= nums[l]:`  
 		- need >= because l = mid happens a lot, which is trivially true for sorted arrays
 		- Means left side is sorted so just track the left most as the min for now
+	```python
+	class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        l,r = 0, len(nums)-1
+        mini = float(inf)
+        while l <= r :
+            mid = (l+r)//2
+            if nums[mid-1] > nums[mid]:
+                return nums[mid]
+            if nums[mid] >= nums[l]:
+                mini = min(mini,nums[l])
+                l = mid + 1
+            else:
+                mini = min(mini, nums[mid])
+                r = mid-1
+        return mini 
+	```
 - [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 	- Not really a binary search
 	- You just start at top right then go left column if target is smaller, go down a row if target is bigger
+```python
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        #search between the rows  by looking at the max value (right most side)
+        rows = len(matrix)
+        cols = len(matrix[0])
+
+        r = 0
+        c = cols-1
+        while r < rows and c >= 0:
+            if matrix[r][c] == target:
+                return True
+            if matrix[r][c] > target:
+                c -= 1
+            else:
+                r+= 1
+        return False
+
+```
 # 10. Binary Tree Traversals
 - PreOrder: root -> left -> right
 - InOrder: left -> root -> right
