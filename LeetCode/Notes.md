@@ -6,26 +6,77 @@
 - P[j] - P[i-1]
 - Problems
 	- When you make the prefix array make it len(n) +1 so its easier to do the P[j] - P[i-1] formula
-	- Range Sum Query
+	- [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
 		- This is just an easy question so just follow the general notes above
-	- Contiguous Array
+	```python
+	class NumArray:
+    def __init__(self, nums: List[int]):
+        self.nums = nums
+    def sumRange(self, left: int, right: int) -> int:
+        prefix = self.nums[:]
+        for i in range(len(prefix)):
+            if i > 0:
+                prefix[i] = prefix[i] + prefix[i-1]
+        return prefix[right] - prefix[left-1] if left >0 else prefix[right]
+	```
+	- [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 		- Given a binary array `nums`, return _the maximum length of a contiguous subarray with an equal number of_ `0` _and_ `1`.
 		- Make a prefix array except just consider the 0s as -1 and 1 as 1, so it acts like a counter
 		- make a hash table to keep track of the last time you saw a value in the prefix array
 		- Using that hash table you can easily find the longest by looking for equal values of prefix[i] in the hash table.
-	- Subarray Sum Equals K
+	```python 
+	class Solution:
+    def findMaxLength(self, nums: List[int]) -> int:
+        #make an array len(nums) 
+        prefix = [0] * (len(nums) +1)
+        last = {}
+        for i in range(len(nums)):
+            if nums[i] == 0:
+                prefix[i+1] = prefix[i] -1
+            else:
+                prefix[i+1]= prefix[i] + 1
+        for i in range(len(nums)+1):
+            last[prefix[i]] = i
+        # make a dict where i track the last location of a num
+        # iterate one time through prefix and calculate max distance using dict
+        maxi = 0
+        for i in range(len(prefix)):
+            if maxi < last[prefix[i]] - i:
+                maxi = last[prefix[i]] - i
+        return maxi
+	```
+	- [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 		- Given an array of integers `nums` and an integer `k`, return _the total number of subarrays whose sum equals to_ `k`.
 		- A subarray is a contiguous **non-empty** sequence of elements within an array.
-		- make the usual prefix sum array, then youre basically looking at each index of prefix[i] how much you need to get to k
-			- You can do this by making a hash table for those k - prefix[i] values. This hash table counts the number of times you see that value as you iterate, so just add this to your total count. 
+		- make the usual prefix sum array, then you're basically looking at each index of prefix[i] how much you need to get to k
+			- You can do this by making a hash table for those k - prefix[i] values. This hash table counts the number of times you see that value as you iterate, so just add this to your total count.
+	```python
+	class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        prefix = [0] * (len(nums) +1)
+        for i in range(len(nums)):
+            prefix[i+1] = prefix[i] + nums[i]
+        # now we havethe prefix sum array
+        # using this ?
+        count = 0
+        seen = {}
+        seen[0] = 1
+        for i in range(1, len(prefix)):
+            current = prefix[i]
+            need = current - k
+            if need in seen:
+                count += seen[need]
+            if current not in seen:
+                seen[current] = 1
+            else:
+                seen[current] +=1
+        return count
+	```
 
 # 2. Two Pointers
 - Use this when the problem is asking for pairs or elements in a sorted list that must satisfy a condition
 	- Problems
 		- Two Sum II
-			- Given a **1-indexed** array of integers `numbers` that is already **_sorted in non-decreasing order_**, find two numbers such that they add up to a specific `target` number. Let these two numbers be `numbers[index1]` and `numbers[index2]` where `1 <= index1 < index2 <= numbers.length`.
-			- Return _the indices of the two numbers,_ `index1` _and_ `index2`_, **added by one** as an integer array_ `[index1, index2]` _of length 2._
-			- The tests are generated such that there is **exactly one solution**. You **may not** use the same element twice.
 			- Classic Two Pointers l,r at start and end, then just increment based on if total is less/greater than target
 		- 3 Sum
 			- Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
