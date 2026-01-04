@@ -78,18 +78,74 @@
 	- Problems
 		- Two Sum II
 			- Classic Two Pointers l,r at start and end, then just increment based on if total is less/greater than target
+		```python
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        l,r = 0, len(numbers)-1
+        while l < r:
+            left = numbers[l]
+            right = numbers[r]
+            total = left + right
+            if (total == target):
+                return [l+1, r+1]
+            elif(total > target):
+                r = r -1
+            else: 
+                l = l + 1
+        return [-1,-1] 
+		```
 		- 3 Sum
 			- Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 			- Notice that the solution set must not contain duplicate triplets.
 			- Iterate through each element and use 2 sum to find the target which is just 0-nums[i]
 				- To avoid duplicates when iterating just keep track of a prev and if its the same skip the 2 sum for that
 				- Inside the 2 sum you should also do the same for the left pointer, if you've found a triplet of it already
+		```python
+		class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # Iterate through each index, then do a 2 pointer 2 sum from that point 
+        prev = -123123123
+        res = []
+        nums.sort()
+        for i in range(len(nums)):
+            if prev == nums[i]:
+                continue
+            prev = nums[i]
+            l,r  = i+1, len(nums)-1
+            target = 0-nums[i]
+            while l < r:
+                total = nums[l] + nums[r]
+                if total == target:
+                    res.append([nums[i], nums[l], nums[r]])
+                    l += 1
+                    r -= 1
+                    while l < r and nums[l] == nums[l-1]:
+                        l += 1
+                elif total > target:
+                    r = r-1
+                else:
+                    l = l+1
+        return res        
+		```
 		- Container With Most Water
-			- You are given an integer array `height` of length `n`. There are `n` vertical lines drawn such that the two endpoints of the `ith` line are `(i, 0)` and `(i, height[i])`.
-			- Find two lines that together with the x-axis form a container, such that the container contains the most water.
-			- Return _the maximum amount of water a container can store_.
 			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
 				- Increment l or r depending on which one has a smaller height.
+			```python
+			class Solution:
+			    def maxArea(self, height: List[int]) -> int:
+			        maxArea = 0
+			        l,r = 0, len(height)-1
+			        while l < r:
+			            w= r - l
+			            h = min(height[l],height[r])
+			            area = w*h
+			            maxArea = max(area, maxArea)
+			            if height[l] < height[r]:
+			                l += 1
+			            else: 
+			                r-=1
+			        return maxArea
+			```
 # 3. Sliding Window
 - Used to find a subarray/substring that satisfies a condition
 - Generally, it works by:
@@ -99,15 +155,91 @@
 		- You can typically track the condition using sets, flags or dicts
 	- Problems
 		- [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+			- Question asks for max subarray length k
 			- Standard sliding window of moving l and r at the end, then comparing to prev averages
 			- The optimization here is that averages can be compared with just sums, dont average (divide by k) until the return just compare sums
+		``` python
+		class Solution:
+		    def findMaxAverage(self, nums: List[int], k: int) -> float:
+		        l = 0
+		        r = l + k - 1
+		        avg = 0
+		        for i in range(l, r+1):
+		            avg+= nums[i]
+		        highest = avg
+		        
+		        l+= 1
+		        r+=1
+		        while r < len(nums):
+		            avg += nums[r]
+		            avg -= nums[l-1]
+		            highest = max(highest, avg)
+		            r += 1
+		            l += 1
+		        return highest/k
+		```
 		- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 			- Use the set to track the repeating characters
 			- while loop is while r < len(s)
 				- if condition breaks and l < r
 					- increment r  and remove from the tracking set
+		```python
+		class Solution:
+		    def lengthOfLongestSubstring(self, s: str) -> int:
+		        tracker = set()
+		        # tracker to track count of chars
+		        # iterate and have a maxcounter, then a sliding window approach of adding the next r and removing the previous l
+		        l,r = 0,0
+		        longest = 0
+		        while r < len(s):
+		            while l < r and s[r] in tracker: # check if this new r is in tracker, if it is keep removing l until
+		            # its not
+		                tracker.remove(s[l])
+		                l+= 1
+		            tracker.add(s[r]) # add the new r, because previously we incremented at the end of the loop
+		            longest = max(longest , (r-l+1))
+		            r+= 1
+		        return longest
+		```
 		- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 			- Similar to prev question except use a dictionary to track if anything is above 0 (negatives are ok)
+	``` python
+	class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        # tracker hashmap to count the chars
+        # chars to fix variable
+        # minimum length right now
+        # do a sliding window where:
+            #move right at the end of the loop
+            # move left when we fulfilled the condition, until its broken
+
+        tracker = {}
+        for c in t:
+            tracker[c] = tracker.setdefault(c, 0) +1
+        fixesLeft = len(t)
+        minLen = 99999999999999999999999999
+        minStr = ""
+
+        def helper(tracker):
+            for k in tracker:
+                if tracker[k] > 0:
+                    return False
+            return True
+        l, r = 0,0
+        while r < len(s):
+            if s[r] in tracker:
+                tracker[s[r]] -=1
+            while l <= r and helper(tracker):
+                if minLen >  r-l+1 :
+                    minLen = r-l+1
+                    minStr = s[l:r+1]
+                if s[l] in tracker:
+                    tracker[s[l]] += 1
+                l += 1
+            r+= 1
+            
+        return minStr
+	```
 # 4. Fast and Slow Pointers
 - This is used to identify IF a cycle exists, it doesn't find where the cycle is/where it starts
 - You need to do the second half of the algorithm for it to find the cycle entrance:
