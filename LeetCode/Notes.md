@@ -267,9 +267,50 @@ slow = nums[0]
 	- [Happy Number](https://leetcode.com/problems/happy-number/)
 		- The important thing here is that you don't need a linked list, anything can act like a linked list for example here its the next function
 		- Also here we don't need to find duplicates or anything so we don't need the second phase
+	```python
+	class Solution:
+    def isHappy(self, n: int) -> bool:
+        def next(n):
+            total =0
+            while n > 0:
+                d=  n % 10
+                d = d*d
+                total += d
+                n = n//10
+            return total
+        slow = n
+        if next(n) == 1 or next(next(n)) == 1:
+            return True
+        fast = next(next(n))
+
+        while fast != slow and fast != 1:
+            slow = next(slow)
+            fast = next(next(fast))
+            if fast == slow :
+                return False
+        return fast == 1
+	```
 	- [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 		- Here we need to first use the first phase of the algo to enter the cycle (question already confirms that there is one)
 		- Then use the second phase to just get the entrance
+	```python
+	class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        slow = nums[0]
+        fast = nums[0]
+
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+            if slow == fast:
+                break
+        slow = nums[0]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+
+        return slow
+	```
 # 5. Linked List Reversals
 - you only need this for these types of questions where they tell you to do a reversal
 - Generally you always want the prev, curr and some variant of the next pointer. 
@@ -278,6 +319,18 @@ slow = nums[0]
 	- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 		- Most basic / foundational algorithm solves this
 		- prev will eventually end up in the last element of the linked list to reverse, which becomes the new head
+	```python
+	class Solution:
+	    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+	        prev = None
+	        curr = head
+	        while curr:
+	            nxt = curr.next
+	            curr.next = prev
+	            prev= curr
+	            curr = nxt
+	        return prev
+	```
 	- [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
 		- Just traverse until you reach the starting node of the part you want to reverse, then do the basic algorithm
 		- Couple important changes / additions:
