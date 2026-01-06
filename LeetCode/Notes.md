@@ -824,6 +824,7 @@ class Solution:
 - You usually need to account for empty inputs since the while loop usually won't deal with it
 - When you append the q with the new elements, this is typically when you want to add to the visited too.
 - In python you need to import the deque
+- use `popleft()` for bfs
 - Problems
 	- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 		- Very Standard BFS
@@ -831,7 +832,7 @@ class Solution:
 	from collections import deque
 	class Solution:
 	    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-	        if root == None:
+	        if root == None: # you will usually need this
 	            return []
 	        q = deque()
 	        q.append(root)
