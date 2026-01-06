@@ -7,7 +7,7 @@
 - [x] finish cse 132a ✅ 2025-11-22
 - [x] wrap up  mgt 12 ✅ 2025-11-22
 - [x] wrap up uni essays ✅ 2025-11-20
-- [ ] cse 132A Final 📅 2025-12-11
+- [x] cse 132A Final 📅 2025-12-11 ✅ 2026-01-06
 - [x] cse 167 final project 📅 2025-12-12 ✅ 2025-12-13
 - [x] mgt 12 stock simulation 📅 2025-11-22 ✅ 2025-11-22
 - [x] mgt 12 spending tracker 📅 2025-11-22 ✅ 2025-11-22
@@ -25,7 +25,7 @@
 - [x] CSE 167 record videos ✅ 2025-11-08
 - [x] mgt 12 invest 100k ✅ 2025-11-08
 - [x] mgt 12 finish spending tracker ✅ 2025-11-05
-- [ ] Winter Class Second Pass Tue 12:30pm 📅 2025-11-17
+- [x] Winter Class Second Pass Tue 12:30pm 📅 2025-11-17 ✅ 2026-01-06
 - [x] Winter Class First Pass Tue 12:20pm 📅 2025-11-10 ✅ 2025-11-11
 - [x] mgt 12 wed check in 📅 2025-11-04 ✅ 2025-11-04
 - [x] UT austin Statment DOne ✅ 2025-11-03
