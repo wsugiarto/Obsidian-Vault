@@ -1060,7 +1060,7 @@ class Solution:
             if r == n:
                 copy = board.copy()
                 copy = ["".join(row) for row in board]
-                res.append(copy)``
+                res.append(copy)
             for c in range(n):
                 if c in cols or (r+c) in posDiags or (r-c) in negDiags:
                     continue
