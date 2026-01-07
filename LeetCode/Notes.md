@@ -1079,12 +1079,36 @@ class Solution:
 
 # 15. Dynamic Programming
 - Use this problem when trying to find the optimal substructure or overlapping subproblems
+	- Optimal Substructure
+		- Solution depends on solutions of its subroblems
+			- ex. House Robber, solution depends on robbing previous houses
+	- Overlapping Subproblems
+		- The same subproblem appears again and again like in Fibonacci
+		```
+		fib(5)
+		 ├─ fib(4)
+		 │   ├─ fib(3)
+		 │   │   ├─ fib(2)
+		 │   │   └─ fib(1)
+		 │   └─ fib(2)
+		 └─ fib(3)
+		     ├─ fib(2)
+		     └─ fib(1)
+
+		```
 - There's a lot of different DP patterns to use
 	- Fibonacci - > `dp[n] = dp[n-1] + dp[n-2]
 	- Knapsack
 	- Longest Common Subsequence
 	- Longest Increasing Subsequence
 	- Subset Sum
+- Memoization vs Tabulation
+	- Memoization 
+		- Uses recursion and has a cache of some kind (could be a table)
+		- Also called top down approach
+	- Tabulation
+		- Iterative, the usual dp table
+		- also called bottom up approach
 - Sometimes especially for Fibonacci or some knapsacks you don't need to make a whole array, you just need the last 2 previous dp indexes or whichever indexes you need
 	- do this if the previous indexes you need are consistent
 	- do this to save memory
