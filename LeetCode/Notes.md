@@ -812,7 +812,7 @@ class Solution:
 	            path = path.copy()
 	            path.append(node.val)
 	            if not node.left and not node.right and total == targetSum:
-	                res.append(path)
+	                res.append(path) # if you do copy here instead of above, the path will get fucked if u don't reach targetSum
 	            dfs(node.left, total, path)
 	            dfs(node.right, total, path)
 	        dfs(root, 0 ,[])
