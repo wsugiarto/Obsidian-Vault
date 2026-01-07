@@ -897,19 +897,23 @@ class Solution:
 	```
 ## Extra: Dijkstra's Algorithm
 ```python
-def dalg(node):
+def dalg(graph, start):
+	# graph is a dictionary with graph[node] = [neighbor, weight]
 	pq = []
 	heapq.heapify(pq)
 	heapq.heappush(pq, (0, node))
+	
+	dist = {i:float("inf") for node in graph}
+	dist[start] = 0
 	
 	while pq:
 		dist, popped = heapq.heappop(pq)
 		curDist = poppest.dist
 		
-		if curDist < dist:
+		if curDist < dist[popped]:
 			continue
 		for nei in popped.neighbors:
-			if dist + nei
+			if dist[nei] + 
 		
 ```
 # 13. Matrix Traversal
