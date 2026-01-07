@@ -1,8 +1,11 @@
 Next quarter I plan to enroll in 2 grad classes as an undergrad. I will be finishing my degree audit this quarter, but I want to submit the DDA in spring and graduate in Spring.
 
-I want to know if it is ok for me to take only the 2 grad classes as an undergrad and also declare part time student(I am an international student), since it's also my last undergrad quarter. 
+Next quarter (Spring) I want to know if it is ok for me to take only the 2 grad classes as an undergrad and also declare part time student(I am an international student), since it's also my last undergrad quarter. 
 
-Regarding enrolling in grad classes, from what I understand i also need to send easy requests for those grad classes since I'm still an undergrad. So for the first and second passes, do I still enroll in other classes, since I'm technically already done with my degree audit?
+Regarding enrolling in those 2 grad classes, from what I understand i also need to send easy requests for those grad classes since I'm still an undergrad. So for the first and second passes of enrollment, do I still enroll in other classes, since I'm technically already done with my degree audit?
+
+I would appreciate any advice
+I-20 Update how?
 # **Today**
 ```tasks
 not done
