@@ -368,7 +368,7 @@ slow = nums[0]
 		- Important changes/ additions from previous questions:
 			- You are basically reversing sets of linked lists (in this case sets of 2)
 			- So in each iteration of the loop you are dealing with the 2 nodes, then in the next iteration you deal with the next 2
-			- Thus, a couple important nodes you need to save are the starting node of the next set , and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
+			- Thus, a couple important nodes you need to save are the starting node of the next set, the ending node of current set, and if the next set even has a second or first node to begin with (using the while condition `while curr and curr.next`)
 				- I also made a second var, this is realistically just the nxt var i usually use but its definitely more intuitive more me
 	```python
 	class Solution:
