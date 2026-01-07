@@ -896,24 +896,33 @@ class Solution:
 	        return time if curFresh == 0 else -1
 	```
 ## Extra: Dijkstra's Algorithm
+- Algorithm only works for non negative weights
+- (E+V)log V runtime
 ```python
 def dalg(graph, start):
-	# graph is a dictionary with graph[node] = [neighbor, weight]
+	# graph is a dictionary with graph[node] = array of [neighbor, weight]s
+	# start is starting node
+	# return dict where dict[node] is shortest distance from start
 	pq = []
 	heapq.heapify(pq)
-	heapq.heappush(pq, (0, node))
+	heapq.heappush(pq, (0, start))
 	
-	dist = {i:float("inf") for node in graph}
+	dist = {node:float("inf") for node in graph}
 	dist[start] = 0
 	
 	while pq:
-		dist, popped = heapq.heappop(pq)
-		curDist = poppest.dist
+		curDist, popped = heapq.heappop(pq)
 		
-		if curDist < dist[popped]:
+		
+		if curDist > dist[popped]:
 			continue
-		for nei in popped.neighbors:
-			if dist[nei] + 
+		for nei, weight in graph[popped]:
+			if currDist + weight >= dist[nei]:
+				continue
+			else:
+				dist[nei] = currDist + weight
+				heapq.heappush(pq, (currDist+weight, nei))
+	return dist
 		
 ```
 # 13. Matrix Traversal
