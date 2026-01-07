@@ -1131,7 +1131,7 @@ class Solution:
 	```python
 	class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        dp = [-1]  * (amount+1)
+        dp = [-1]  * (amount+1) # better to just use float(inf) here 
         dp[0] = 0
         for i in range(amount+1):
             for j in range(len(coins)-1,-1,-1):
