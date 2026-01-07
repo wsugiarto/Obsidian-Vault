@@ -895,7 +895,23 @@ class Solution:
 	            time += 1
 	        return time if curFresh == 0 else -1
 	```
-
+## Extra: Dijkstra's Algorithm
+```python
+def dalg(node):
+	pq = []
+	heapq.heapify(pq)
+	heapq.heappush(pq, (0, node))
+	
+	while pq:
+		dist, popped = heapq.heappop(pq)
+		curDist = poppest.dist
+		
+		if curDist < dist:
+			continue
+		for nei in popped.neighbors:
+			if dist + nei
+		
+```
 # 13. Matrix Traversal
 - Utilize DFS or BFS to search from a particular point like looking for islands
 - Problems
