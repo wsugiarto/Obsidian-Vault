@@ -1,5 +1,5 @@
-- [ ] review how to write python classes
-- [ ] review coding notes
+- [x] review how to write python classes ✅ 2026-01-07
+- [x] review coding notes ✅ 2026-01-07
 - [x] check i20 ✅ 2025-12-18
 - [x] ask mom if TB headset is at thome ✅ 2025-12-13
 - [x] send reminder email to jishen ✅ 2025-12-02
