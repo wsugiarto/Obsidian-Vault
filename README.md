@@ -2,8 +2,12 @@ Good Afternoon Jaeh,
 
 Thank you again for taking the time to interview me today for the SWE new grad role. I genuinely enjoyed working through the problems with you during the interview. 
 
-I found it especially helpful as I am early in my interview journey and working to improve my skills. 
-Thank you again for taking the time to interview me for the New Grad SWE role. I really enjoyed working through the problem with you and appreciated how you guided the discussion.
+I found it especially helpful as I am early in my interview journey and working to improve my skills. If you are willing to, I would appreciate any feedback you may have on areas I could improve on. Perhaps I spent too long talking or clarifying the question and approach before writing the code, not talking enough about edge cases, or just writing the solution too slowly after explaining the approach. I would appreciate any advice.
+
+Thank you again for your time and the interview today.
+
+Regards,
+Wilson Sugiarto
 
 I found the conversation particularly valuable, especially around reasoning through the algorithm and tradeoffs. If you’re open to it, I’d really appreciate any feedback you might have on my approach or areas I could improve on, as I’m actively working on becoming a stronger engineer.
 
