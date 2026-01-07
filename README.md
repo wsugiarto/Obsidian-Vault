@@ -1,4 +1,4 @@
-Good Afternoon Jaeh,
+Good Afternoon,
 
 Thank you again for taking the time to interview me today for the SWE new grad role. I genuinely enjoyed working through the problems with you during the interview. 
 
