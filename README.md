@@ -1,8 +1,8 @@
 Good Afternoon,
 
-Thank you again for taking the time to interview me today for the SWE new grad role. I genuinely enjoyed working through the problems with you during the interview. 
+Thank you again for taking the time to interview me today for the SWE new grad role. I genuinely enjoyed our discussions on my experiences and theoretical scenarios. 
 
-I found it especially helpful as I am early in my interview journey and working to improve my skills. If you are willing to, I would appreciate any feedback based on today's interview on how I could improve my approach or communication for future technical interviews. 
+I found it especially helpful as I am early in my interview journey and working to improve my skills. If you are willing to, I would appreciate any feedback based on today's interview on how I could communicate experiences or approach the theoretical scenarios more effectively.
 
 Thank you again for your time and the interview today.
 
