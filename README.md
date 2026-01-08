@@ -1,4 +1,7 @@
-
+Updates on what do next Spring:
+- I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
+- I am allowed to finish degree this quarter (winter)
+- I just need to send EASy requests when schedule of classes release
 I-20 Update how?
 # **Today**
 ```tasks
