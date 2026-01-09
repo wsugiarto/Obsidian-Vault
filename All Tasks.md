@@ -1,3 +1,5 @@
+- [ ] CSE 160 Midterm 📅 2026-02-10
+- [ ] SIO 45 Midterm 📅 2026-02-06
 - [ ] SIO 45 Quiz and Discussion 📅 2026-01-11
 - [x] review how to write python classes ✅ 2026-01-07
 - [x] review coding notes ✅ 2026-01-07
