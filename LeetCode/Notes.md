@@ -896,8 +896,10 @@ class Solution:
 	        return time if curFresh == 0 else -1
 	```
 ## Extra: Dijkstra's Algorithm
+- Use this when you have to moving on a grid/graph has different costs each step
+	- Look for questions that minimize the maximum ...
 - Algorithm only works for non negative weights
-- (E+V)log V runtime
+- (E+V)log V runtime, E+V space
 ```python
 def dalg(graph, start):
 	# graph is a dictionary with graph[node] = array of [neighbor, weight]s
@@ -925,6 +927,59 @@ def dalg(graph, start):
 	return dist
 		
 ```
+- Problems:
+	- [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)
+		- Same solution as always honestly
+		```python
+		class Solution:
+    def minimumEffortPath(self, heights: List[List[int]]) -> int:
+        pq = []
+        pq.append((0,0,0))
+        rows = len(heights)
+        cols = len(heights[0])
+        effort = {(i,j):float("inf") for i in range(rows) for j in range(cols)}
+        effort[(0,0)] = 0
+        directions  = [(1,0), (-1, 0), (0,1), (0,-1)]
+        while pq:
+            curEffort, r, c  = heapq.heappop(pq)
+            if curEffort > effort[(r,c)]:
+                continue
+            for dr, dc in directions:
+                nr = r + dr
+                nc = c + dc
+                if nr in range(rows) and nc in range(cols):
+                    newEdgeDiff = abs(heights[nr][nc] - heights[r][c])
+                    if effort[(nr,nc)] > max(newEdgeDiff, effort[(r,c)]):
+                        effort[(nr,nc)] = max(newEdgeDiff, effort[(r,c)])
+                        heapq.heappush(pq, (effort[(nr,nc)], nr, nc))
+        return effort[(rows-1, cols-1)]
+		```
+	- [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)
+		- The question tries to trick you with time t, but it actually doesn't matter because you can move infinitely within a single time t
+		- So the real question is asking for the path with the least elevation
+	```python
+	class Solution:
+    def swimInWater(self, grid: List[List[int]]) -> int:
+        pq = []
+        pq.append((grid[0][0],0,0))
+        rows = len(grid)
+        cols = len(grid[0])
+        elevations = {(i,j):float("inf") for i in range(rows) for j in range(cols)}
+        elevations[(0,0)] = grid[0][0]
+        directions = [(1,0) , (-1,0), (0,1), (0,-1)]
+        while pq:
+            currElev , r, c = heapq.heappop(pq)
+            if currElev > elevations[(r,c)]:
+                continue
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if nr in range(rows) and nc in range(cols):
+                    checkMax = max(grid[nr][nc], currElev)
+                    if checkMax < elevations[(nr,nc)]:
+                        elevations[(nr,nc)] = checkMax
+                        heapq.heappush(pq, (checkMax, nr, nc))
+        return elevations[(rows-1, cols-1)]
+	```
 # 13. Matrix Traversal
 - Utilize DFS or BFS to search from a particular point like looking for islands
 - Problems
