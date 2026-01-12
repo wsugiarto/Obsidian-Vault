@@ -907,39 +907,34 @@ class Solution:
 		- important to use BFS because of how we are removing nodes and adding , so we want a queue
 		```python
 		from collections import deque
-class Solution(object):
-    def findMinHeightTrees(self, n, edges):
-        #using bfs
-        # find all neighbors
-        if n == 1:
-            return [0]
-        neis = {i:[] for i in range(n)}
-        degrees = {i: 0 for i in range(n)}
-        for a, b in edges:
-            neis[a].append(b)
-            neis[b].append(a)
-            degrees[a] += 1
-            degrees[b] += 1
-        q  = deque()
-        for key, val in degrees.items():
-            if val == 1:
-                q.append(key)
-        remaining = n
-        while remaining > 2:
-            length = len(q)
-            for _ in range(length):
-                remaining -= 1
-                node  = q.popleft()
-                for nei in neis[node]:
-                    degrees[nei] -=1
-                    if degrees[nei] == 1:
-                        q.append(nei)
-        return list(q)
-                    
-
-
-
-        
+		class Solution(object):
+		    def findMinHeightTrees(self, n, edges):
+		        #using bfs
+		        # find all neighbors
+		        if n == 1:
+		            return [0]
+		        neis = {i:[] for i in range(n)}
+		        degrees = {i: 0 for i in range(n)}
+		        for a, b in edges:
+		            neis[a].append(b)
+		            neis[b].append(a)
+		            degrees[a] += 1
+		            degrees[b] += 1
+		        q  = deque()
+		        for key, val in degrees.items():
+		            if val == 1:
+		                q.append(key)
+		        remaining = n
+		        while remaining > 2:
+		            length = len(q)
+		            for _ in range(length):
+		                remaining -= 1
+		                node  = q.popleft()
+		                for nei in neis[node]:
+		                    degrees[nei] -=1
+		                    if degrees[nei] == 1:
+		                        q.append(nei)
+		        return list(q)
 		```
 ## Extra: Dijkstra's Algorithm
 - Use this when you have to moving on a grid/graph has different costs each step
