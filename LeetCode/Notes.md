@@ -769,8 +769,12 @@ class Solution:
 	        return dfs(node)
 	```
 	 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
-		 - just make a hashmap to make it easier for a dfs traversal
+		 - just make a hash map to make it easier for a dfs traversal
 		 - This is a topological sort question
+			 - To do topological sort you must make sure its on a DAG (Directed Acyclic Graph)
+				 - If not guaranteed, then you must
+			 - Keep track of a visited, cycle set
+			 - Do dfs in a post order way, so append to output at the end so the order is correct
 		 - need to make a set for detecting cycles
 			 - When dfsing, check if its in that cycles set, if not add it, then start dfsing on the prereqs
 				 - After that iteration is done remove it from the cycle set and add to output
