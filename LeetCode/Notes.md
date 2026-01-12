@@ -900,6 +900,10 @@ class Solution:
 	            time += 1
 	        return time if curFresh == 0 else -1
 	```
+	- [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
+		- Use BFS to explore from leaf nodes (layer by layer)
+		- The property here is that you want to chip away the leaves, after each step until you reach 1 or 2 nodes.
+			- Its 1 or 2 nodes because eventually that's just how 
 ## Extra: Dijkstra's Algorithm
 - Use this when you have to moving on a grid/graph has different costs each step
 	- Look for questions that minimize the maximum ...
