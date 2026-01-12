@@ -770,6 +770,7 @@ class Solution:
 	```
 	 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
 		 - just make a hashmap to make it easier for a dfs traversal
+		 - This is a topological sort question
 		 - need to make a set for detecting cycles
 			 - When dfsing, check if its in that cycles set, if not add it, then start dfsing on the prereqs
 				 - After that iteration is done remove it from the cycle set and add to output
