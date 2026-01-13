@@ -1372,3 +1372,35 @@ def dalg(graph, start):
         return dp[-1]
 
 	```
+# Sorting Problems
+- Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
+- Bucket Sort
+	- 2 kinds,\
+		- index of the array is the actual value of the num
+		- index is the frequency
+	- Use this when the max num is small or if the frequency has a small range
+	- for the 2 kinds pick based on question
+		- if its asking for most frequent use index by frequency
+		- if its asking for simple counting just use index by num
+- Problems
+	- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) using Bucket Sort
+		- Use frequency indexed so you can iterate backwards from highest freq
+		```python
+		class Solution:
+		    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+		        counter = {}
+		        res = []
+		        buckets = [[] for i in range(len(nums)+1)]
+		       
+		        for num in nums:
+		            counter[num] = counter.get(num, 0) + 1
+		        for num, freq in counter.items():
+		            buckets[freq].append(num)
+		        for i in range(len(buckets)-1,-1,-1):
+		            for num in buckets[i]:
+		                    
+		                res.append(num)
+		                k -= 1
+		                if k <= 0:
+		                    return res
+		```
