@@ -4,11 +4,11 @@ It's nice to meet you Dan. Thank you for this opportunity to interview. I have i
 - Travel Address (if applicable): I am currently living in San Diego, more specifically in La Jolla near the UC San Diego campus.
 - Updated Documents: Your latest resume/CV and unofficial transcripts. Please ensure all academic and professional experiences include start/end months and years.
     
-- Competing Timelines: Any deadlines related to competing offers or other late-stage interviews.
+- Competing Timelines: None
     
-- Visa Sponsorship: Do you now, or will you in the future, require sponsorship for an employment visa (e.g., H-1B) to work legally in [the United States / Canada]?
-    
-- Coding Language: What is your preferred coding language for interviews?.  
+- Visa Sponsorship: Do you now, or will you in the future, require sponsorship for an employment visa (e.g., H-1B) to work legally in [the United States / Canada]? I am currently studying as an international student with an F1 visa, so I would like sponsorship for H-1B in the future. 
+- Coding Language: Python
+
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
 - I am allowed to finish degree this quarter (winter)
