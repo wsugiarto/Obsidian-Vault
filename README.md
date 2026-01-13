@@ -1,5 +1,5 @@
 Good Afternoon,
-It's nice to meet you Dan. Thank you for this opportunity to interview. Regarding the interview schedule I was wondering if interviews are available during weekends since I will be doing the interviews during the schoo I have included my responses for the questions below: 
+It's nice to meet you Dan.  I am extremely gra for this opportunity to interview. Regarding the interview schedule I was wondering if interviews are available during weekends and many days I need to set aside for the appointment since I will be doing the interviews during the school quarter and I would have to likely travel by plane. I have included my responses for the questions below: 
 - Preferred Interview Location: Bay Area Office is most preferred.
 - Travel Address (if applicable): I am currently living in San Diego, more specifically in La Jolla near the UC San Diego campus.
 - Updated Documents: Your latest resume/CV and unofficial transcripts. Please ensure all academic and professional experiences include start/end months and years.
