@@ -1,5 +1,14 @@
 Good Afternoon,
-I just wanted to check in and make sure everything is moving a long smoothly and I haven't missed any emails from the POC. As of right now, I have not received any follow ups, so I just wanted to confirm.  
+It's nice to meet you Dan. Thank you for this opportunity to interview. I have included my responses for the questions below: 
+- Preferred Interview Location: Bay Area Office is most preferred.
+- Travel Address (if applicable): I am currently living in San Diego, more specifically in La Jolla near the UC San Diego campus.
+- Updated Documents: Your latest resume/CV and unofficial transcripts. Please ensure all academic and professional experiences include start/end months and years.
+    
+- Competing Timelines: Any deadlines related to competing offers or other late-stage interviews.
+    
+- Visa Sponsorship: Do you now, or will you in the future, require sponsorship for an employment visa (e.g., H-1B) to work legally in [the United States / Canada]?
+    
+- Coding Language: What is your preferred coding language for interviews?.  
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
 - I am allowed to finish degree this quarter (winter)
