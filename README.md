@@ -1,8 +1,15 @@
+Good Afternoon,
+I just wanted to check in and make sure everything is moving a long smoothly and I haven't missed any emails from the POC. As of right now, I have not received any follow ups, so I just wanted to confirm.  
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
 - I am allowed to finish degree this quarter (winter)
 - I just need to send EASy requests when schedule of classes release
 I-20 Update how?
+
+CSE 160 points:
+Correct : 10 * 2
+Wrong: 5 * 0 
+
 # **Today**
 ```tasks
 not done
