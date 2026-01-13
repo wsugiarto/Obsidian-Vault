@@ -1,13 +1,14 @@
 Good Afternoon,
-It's nice to meet you Dan.  I am extremely gra for this opportunity to interview. Regarding the interview schedule I was wondering if interviews are available during weekends and many days I need to set aside for the appointment since I will be doing the interviews during the school quarter and I would have to likely travel by plane. I have included my responses for the questions below: 
+It's nice to meet you Dan.  I am extremely grateful for this opportunity to interview. Regarding the interview schedule I was wondering if interviews are available during weekends and how many days I need to set aside for the appointment since I will be doing the interviews during the school quarter and I would have to travel by plane. I have included my responses for the questions below: 
 - Preferred Interview Location: Bay Area Office is most preferred.
 - Travel Address (if applicable): I am currently living in San Diego, more specifically in La Jolla near the UC San Diego campus.
 - Updated Documents: Your latest resume/CV and unofficial transcripts. Please ensure all academic and professional experiences include start/end months and years.
-    
 - Competing Timelines: None
-    
 - Visa Sponsorship: Do you now, or will you in the future, require sponsorship for an employment visa (e.g., H-1B) to work legally in [the United States / Canada]? I am currently studying as an international student with an F1 visa, so I would like sponsorship for H-1B in the future. 
 - Coding Language: Python
+Thank you again for this amazing opportunity.
+Best,
+Wilson 
 
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
