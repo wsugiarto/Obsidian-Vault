@@ -1,14 +1,10 @@
-Good Evening,
-It's nice to meet you Dan. I am extremely grateful for this opportunity to interview. Regarding the interview schedule, are interviews available during weekends and how many days do I need to set aside for the appointment since I will be doing the interviews during the school quarter and I would have to travel by plane? I have included my responses for the questions below: 
-- Preferred Interview Location: Bay Area Office is most preferred.
-- Travel Address (if applicable): I am currently living in San Diego, more specifically in La Jolla near the UC San Diego campus. Actual Address: 8800 Lombard Pl, San Diego CA 92122
-- Updated Documents: Attached below
-- Competing Timelines: None
-- Visa Sponsorship: I am currently studying as an international student with an F1 visa, so I would like sponsorship for H-1B in the future. 
-- Coding Language: Python
-Thank you again for this amazing opportunity.
-Best,
-Wilson 
+Good Afternoon,
+Thank you for clarifying. I'm not sure which time frame is suitable for the schedule so I will just list some of the earlier ones first and also according to my preference. 
+1.  Wednesday Feb 4
+2.  Monday Feb 2
+3.  Friday Jan 30
+4.  Wednesday Jan 28 
+5.  Feb 13/16
 
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
