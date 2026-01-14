@@ -1,5 +1,5 @@
 Good Afternoon,
-Thank you for clarifying. I'm not sure which time frame is suitable for the schedule so I will just list some of the earlier ones first and also according to my preference. 
+Thank you for clarifying. I'm not sure which time frame is suitable for the schedule so I will just list some of the earlier ones first and also according to my preference. I also have not been contacted by the scheduling team like last time where they gave me a link to fill out dates. 
 1.  Wednesday Feb 4
 2.  Monday Feb 2
 3.  Friday Jan 30
