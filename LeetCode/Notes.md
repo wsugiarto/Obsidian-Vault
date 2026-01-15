@@ -823,7 +823,21 @@ class Solution:
 	        dfs(root, 0 ,[])
 	        return res
 	```
-	- 
+	- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+		- Using DFS you just need to keep track of the lower and upper bounds at the current node
+			- so if you go left child update the upper bound, keep lower
+			- if go right child, update lower bound, keep upper
+		```python 
+		class Solution:
+	    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+	        def dfs(node, lower_bound, upper_bound):
+	            if not node:
+	                return True
+	            if not (lower_bound < node.val < upper_bound):
+	                return False
+	            return dfs(node.left, lower_bound, node.val) and dfs(node.right, node.val, upper_bound)
+	        return dfs(root, float("-inf"), float("inf"))
+		```
 
 # 12. BFS
 - Use a deque and sometimes a visited set
