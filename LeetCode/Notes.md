@@ -1377,7 +1377,7 @@ def dalg(graph, start):
 		- Quite simple but just make sure you get why the dp length is len +1
 		- It might be confusing for the indexing in the loop i because of our dp length, but just think of each index in dp as up until i (exclusive) its possible to make this using wordDict
 		- In the dfs approach, we need to use memo as a tracker to avoid redoing dfs(i) on things we've already run or else its exponential time
-			- 
+			- The memo at the end just means we failed to reach the end of the string, so its impossible from that index, so set memo[i] to false
 		```python
 		class Solution:
 		    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
