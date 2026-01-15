@@ -823,6 +823,7 @@ class Solution:
 	        dfs(root, 0 ,[])
 	        return res
 	```
+	- 
 
 # 12. BFS
 - Use a deque and sometimes a visited set
@@ -1085,7 +1086,7 @@ def dalg(graph, start):
 		- This is very similar to previous question
 		- You just run bfs on the borders and if its land
 		- The difference is that you mark these lands connected to the border as some other character first and reconvert them later
-	 ```python
+	-  ```python
 	class Solution:
 	    def solve(self, board: List[List[str]]) -> None:
 	        """
@@ -1372,6 +1373,23 @@ def dalg(graph, start):
         return dp[-1]
 
 	```
+	- [Word Break](https://leetcode.com/problems/word-break/)
+		- Quite simple but just make sure you get why the dp length is len +1
+		- It might be confusing for the indexing in the loop i because of our dp length, but just think of each index in dp as up until i (exclusive) its possible to make this using wordDict
+		```python
+		class Solution:
+		    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+		        dp = [False] * (len(s) + 1)
+		        dp[0] = True
+		        for i in range(len(s)+1):
+		            if dp[i] == True:
+		                for word in wordDict:
+		                    if i + len(word) <= len(s) and s[i:i+len(word)] in wordDict:
+		                        dp[i+len(word)] = True
+		                        if dp[-1] == True:
+		                            return True
+		        return dp[-1]
+		```
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
 - Bucket Sort
