@@ -5,6 +5,8 @@ Thank you for clarifying. I'm not sure which time frame is suitable for the sche
 3.  Friday Jan 30
 4.  Wednesday Jan 28 
 5.  Feb 13/16
+Earliest Dates if needed: 
+6. 26, 28, 30 January also work
 
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
