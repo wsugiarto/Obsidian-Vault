@@ -1376,6 +1376,8 @@ def dalg(graph, start):
 	- [Word Break](https://leetcode.com/problems/word-break/)
 		- Quite simple but just make sure you get why the dp length is len +1
 		- It might be confusing for the indexing in the loop i because of our dp length, but just think of each index in dp as up until i (exclusive) its possible to make this using wordDict
+		- In the dfs approach, we need to use memo as a tracker to avoid redoing dfs(i) on things we've already run or else its exponential time
+			- 
 		```python
 		class Solution:
 		    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
@@ -1389,6 +1391,23 @@ def dalg(graph, start):
 		                        if dp[-1] == True:
 		                            return True
 		        return dp[-1]
+		# DFS approach
+		class Solution:
+		    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+		        memo  = {}
+		        def dfs(i):
+		            if i == len(s):
+		                return True
+		            if i in memo:
+		                return memo[i]
+		            for word in wordDict:
+		                if i + len(word) <= len(s) and s[i:i + len(word)] == word:
+		                    if dfs(i+len(word)):
+		                        memo[i] = True
+		                        return True 
+		            memo[i] = False
+		            return False
+		        return dfs(0)
 		```
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
