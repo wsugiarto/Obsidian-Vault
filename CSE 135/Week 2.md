@@ -1,4 +1,4 @@
-Perf Mantra
+Perf (Performance) Mantra
 - Send less data, less often, from nearby and only when needed
 - To send less data, make use of caching
 	- When caching beware of stale data
@@ -12,3 +12,7 @@ Security Mantra
 Abstractions and APIs
 - Dont adopt them if you don't understand what is being abstracted
 	- you don't need to see the low level code , but you need to know how/what it does 
+
+Problems are often found in
+- Perf Mantras, Security Mantras, Maintenance costs, bugs
+- 
