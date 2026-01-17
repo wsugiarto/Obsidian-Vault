@@ -1442,6 +1442,47 @@ def dalg(graph, start):
 		            return False
 		        return dfs(0)
 		```
+	- ## Below are mostly interval DP questions
+	- [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
+		- The trick is to work from the smallest intervals first, so 3 coin intervals are essentially the base case
+		- The k in the k loop is imagined as the last balloon you burst
+			- you don't do `nums[k-1]*nums[k]*nums[k+1]` because k-1 and k+1 could have burst already
+		- Also note that `dp[l][r]` is exclusive on both sides
+		- Eventually we will build up until our largest range which is the original nums
+			- note we also padded the nums array with 1s on the ends, to account for going out of bounds
+		```python 
+		class Solution:
+		    def maxCoins(self, nums: List[int]) -> int:
+		        nums = [1] +nums + [1]
+		        dp = [[0] * len(nums) for i in range(len(nums))]
+		        for length in range(2,len(nums)):
+		            for l in range(len(nums)-length):
+		                r = l+ length
+		                for k in range(l+1, r):
+		                    dp[l][r] = max(dp[l][r], nums[l]*nums[k]*nums[r] + dp[l][k] + dp[k][r])
+		        return dp[0][len(nums)-1]
+
+		```
+	- [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+		- just track if our inner interval `dp[l+1][r-1]` is a palindrome, if it is and our l+1 <= r- 1are correct, then check for palindrome property
+		```python
+		class Solution:
+		    def countSubstrings(self, s: str) -> int:
+		        dp = [[False]*len(s) for _ in range(len(s))]
+		        count = 0
+		        for length in range(len(s)):
+		            for l in range(len(s)-length):
+		                r= l + length
+		                if l + 1 <= r-1 and dp[l+1][r-1] == False:
+		                    continue
+		                if s[l] == s[r]:
+		                    count += 1
+		                    dp[l][r] = True
+		        return count
+		```
+	- [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+		- Very similar to previous except we don't check if inner interval is palindrome, since it doesn't have to be
+		- If `s[l] == s[r]` just add 2 to the inner interval, else just get the maximum 
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
 - Bucket Sort
