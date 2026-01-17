@@ -1482,7 +1482,26 @@ def dalg(graph, start):
 		```
 	- [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
 		- Very similar to previous except we don't check if inner interval is palindrome, since it doesn't have to be
-		- If `s[l] == s[r]` just add 2 to the inner interval, else just get the maximum 
+		- If `s[l] == s[r]` just add 2 to the inner interval, else just get the maximum of skipping l or r
+			- It also accounts skipping both when you check those dps 
+			```python
+			class Solution:
+			    def longestPalindromeSubseq(self, s: str) -> int:
+			        dp = [[0]* len(s) for _ in range(len(s))]
+			        longest = 0
+			        for length in range(len(s)):
+			            for l in range(len(s)-length):
+			                r = l + length
+			                if s[l] == s[r]:
+			                    if l == r:
+			                        dp[l][r] = 1
+			                    else:
+			                        dp[l][r] = 2 + dp[l+1][r-1]
+			                        longest = max(dp[l][r], longest)
+			                else:
+			                    dp[l][r] = max(dp[l+1][r], dp[l][r-1])
+			        return dp[0][len(s)-1]
+			```
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
 - Bucket Sort
