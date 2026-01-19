@@ -127,6 +127,7 @@ class Solution:
         return res        
 		```
 		- Container With Most Water
+			- Note that the array is not sorted, but that's ok
 			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
 				- Increment l or r depending on which one has a smaller height.
 			```python
