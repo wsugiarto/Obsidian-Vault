@@ -315,6 +315,7 @@ slow = nums[0]
 - you only need this for these types of questions where they tell you to do a reversal
 - Generally you always want the prev, curr and some variant of the next pointer. 
 	- Just remember that you shouldn't restrain yourself to this idea and that you should just imagine how each pointer is meant to change like in the third problem
+- If it helps having a dummy node is useful for the return, but if you're reversing a part of the linked list, just think of the node before the first reversed node as that dummy node.
 - Problems
 	- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 		- Most basic / foundational algorithm solves this
