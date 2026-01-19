@@ -10,14 +10,13 @@
 		- This is just an easy question so just follow the general notes above
 	```python
 	class NumArray:
-    def __init__(self, nums: List[int]):
-        self.nums = nums
-    def sumRange(self, left: int, right: int) -> int:
-        prefix = self.nums[:]
-        for i in range(len(prefix)):
-            if i > 0:
-                prefix[i] = prefix[i] + prefix[i-1]
-        return prefix[right] - prefix[left-1] if left >0 else prefix[right]
+	    def __init__(self, nums: List[int]):
+	        self.nums = nums
+	        self.prefix = [0] *(len(nums)+1)
+	        for i in range(len(self.prefix)-1):
+	                self.prefix[i+1] = self.prefix[i] + self.nums[i]
+	    def sumRange(self, left: int, right: int) -> int:
+	        return self.prefix[right+1] - self.prefix[left]
 	```
 	- [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 		- Given a binary array `nums`, return _the maximum length of a contiguous subarray with an equal number of_ `0` _and_ `1`.
