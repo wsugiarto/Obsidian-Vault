@@ -556,18 +556,14 @@ slow = nums[0]
 	class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         merged = []
-        newAdded= False
         i = 0 
         for inv in intervals:
-
             # check overlapping vs non overlapping
-
             #-- Non Overlapping --
             # Before current inv
             if inv[0] > newInterval[1]:
                 merged.append(newInterval)
                 return merged + intervals[i:]
-
             # After current inv
             elif inv[1] < newInterval[0]:
                 merged.append(inv)
@@ -575,7 +571,6 @@ slow = nums[0]
             # -- Overlap --
             else:
                 newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]
-
             i += 1
         merged.append(newInterval)
         return merged
