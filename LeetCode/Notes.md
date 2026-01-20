@@ -523,6 +523,7 @@ slow = nums[0]
 - Problems
 	- [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 		- Basically just check if end >= start and if it is just merge by changing the last interval's end to the max of both
+		- Also note that sorting is needed
 		- else just append if not overlap
 	```python 
 	class Solution:
