@@ -10,14 +10,13 @@
 		- This is just an easy question so just follow the general notes above
 	```python
 	class NumArray:
-    def __init__(self, nums: List[int]):
-        self.nums = nums
-    def sumRange(self, left: int, right: int) -> int:
-        prefix = self.nums[:]
-        for i in range(len(prefix)):
-            if i > 0:
-                prefix[i] = prefix[i] + prefix[i-1]
-        return prefix[right] - prefix[left-1] if left >0 else prefix[right]
+	    def __init__(self, nums: List[int]):
+	        self.nums = nums
+	        self.prefix = [0] *(len(nums)+1)
+	        for i in range(len(self.prefix)-1):
+	                self.prefix[i+1] = self.prefix[i] + self.nums[i]
+	    def sumRange(self, left: int, right: int) -> int:
+	        return self.prefix[right+1] - self.prefix[left]
 	```
 	- [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 		- Given a binary array `nums`, return _the maximum length of a contiguous subarray with an equal number of_ `0` _and_ `1`.
@@ -128,6 +127,7 @@ class Solution:
         return res        
 		```
 		- Container With Most Water
+			- Note that the array is not sorted, but that's ok
 			- This was lwk easier than it looked, just keep track of l,r (start and end) as usual, then get the area and compare each time
 				- Increment l or r depending on which one has a smaller height.
 			```python
@@ -315,6 +315,7 @@ slow = nums[0]
 - you only need this for these types of questions where they tell you to do a reversal
 - Generally you always want the prev, curr and some variant of the next pointer. 
 	- Just remember that you shouldn't restrain yourself to this idea and that you should just imagine how each pointer is meant to change like in the third problem
+- If it helps having a dummy node is useful for the return, but if you're reversing a part of the linked list, just think of the node before the first reversed node as that dummy node.
 - Problems
 	- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 		- Most basic / foundational algorithm solves this
@@ -522,6 +523,7 @@ slow = nums[0]
 - Problems
 	- [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 		- Basically just check if end >= start and if it is just merge by changing the last interval's end to the max of both
+		- Also note that sorting is needed
 		- else just append if not overlap
 	```python 
 	class Solution:
@@ -554,18 +556,14 @@ slow = nums[0]
 	class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         merged = []
-        newAdded= False
         i = 0 
         for inv in intervals:
-
             # check overlapping vs non overlapping
-
             #-- Non Overlapping --
             # Before current inv
             if inv[0] > newInterval[1]:
                 merged.append(newInterval)
                 return merged + intervals[i:]
-
             # After current inv
             elif inv[1] < newInterval[0]:
                 merged.append(inv)
@@ -573,7 +571,6 @@ slow = nums[0]
             # -- Overlap --
             else:
                 newInterval = [min(newInterval[0], inv[0]), max(newInterval[1], inv[1])]
-
             i += 1
         merged.append(newInterval)
         return merged
@@ -772,8 +769,7 @@ class Solution:
 		 - just make a hash map to make it easier for a dfs traversal
 		 - This is a topological sort question
 			 - To do topological sort you must make sure its on a DAG (Directed Acyclic Graph)
-				 - If not guaranteed, then you must
-			 - Keep track of a visited, cycle set
+				 - If not guaranteed, then you must keep track of a visited, cycle set
 			 - Do dfs in a post order way, so append to output at the end so the order is correct
 		 - need to make a set for detecting cycles
 			 - When dfsing, check if its in that cycles set, if not add it, then start dfsing on the prereqs
@@ -856,6 +852,12 @@ class Solution:
 	                return -1
 	            return 1+max(left, right)
 	        return dfs(root) != -1
+	    def getHeight(self, node):
+		    if not node:
+			    return 0 
+		    leftHeight = getHeight(node.left)
+		    rightHeight = getHeight(node.right)
+		    return 1 + max(leftHeight,rightHeight)
 	```
 
 # 12. BFS
@@ -1442,6 +1444,66 @@ def dalg(graph, start):
 		            return False
 		        return dfs(0)
 		```
+	- ## Below are mostly interval DP questions
+	- [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
+		- The trick is to work from the smallest intervals first, so 3 coin intervals are essentially the base case
+		- The k in the k loop is imagined as the last balloon you burst
+			- you don't do `nums[k-1]*nums[k]*nums[k+1]` because k-1 and k+1 could have burst already
+		- Also note that `dp[l][r]` is exclusive on both sides
+		- Eventually we will build up until our largest range which is the original nums
+			- note we also padded the nums array with 1s on the ends, to account for going out of bounds
+		```python 
+		class Solution:
+		    def maxCoins(self, nums: List[int]) -> int:
+		        nums = [1] +nums + [1]
+		        dp = [[0] * len(nums) for i in range(len(nums))]
+		        for length in range(2,len(nums)):
+		            for l in range(len(nums)-length):
+		                r = l+ length
+		                for k in range(l+1, r):
+		                    dp[l][r] = max(dp[l][r], nums[l]*nums[k]*nums[r] + dp[l][k] + dp[k][r])
+		        return dp[0][len(nums)-1]
+
+		```
+	- [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+		- just track if our inner interval `dp[l+1][r-1]` is a palindrome, if it is and our l+1 <= r- 1are correct, then check for palindrome property
+		```python
+		class Solution:
+		    def countSubstrings(self, s: str) -> int:
+		        dp = [[False]*len(s) for _ in range(len(s))]
+		        count = 0
+		        for length in range(len(s)):
+		            for l in range(len(s)-length):
+		                r= l + length
+		                if l + 1 <= r-1 and dp[l+1][r-1] == False:
+		                    continue
+		                if s[l] == s[r]:
+		                    count += 1
+		                    dp[l][r] = True
+		        return count
+		```
+	- [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+		- Very similar to previous except we don't check if inner interval is palindrome, since it doesn't have to be
+		- If `s[l] == s[r]` just add 2 to the inner interval, else just get the maximum of skipping l or r
+			- It also accounts skipping both when you check those dps 
+			```python
+			class Solution:
+			    def longestPalindromeSubseq(self, s: str) -> int:
+			        dp = [[0]* len(s) for _ in range(len(s))]
+			        longest = 0
+			        for length in range(len(s)):
+			            for l in range(len(s)-length):
+			                r = l + length
+			                if s[l] == s[r]:
+			                    if l == r:
+			                        dp[l][r] = 1
+			                    else:
+			                        dp[l][r] = 2 + dp[l+1][r-1]
+			                        longest = max(dp[l][r], longest)
+			                else:
+			                    dp[l][r] = max(dp[l+1][r], dp[l][r-1])
+			        return dp[0][len(s)-1]
+			```
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
 - Bucket Sort

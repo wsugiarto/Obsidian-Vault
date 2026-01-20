@@ -5,7 +5,7 @@ Updates on what do next Spring:
 I-20 Update how?
 
 CSE 160 points:
-Correct : 10 * 2
+Correct : 10 * 3
 Wrong: 5 * 0 
 
 # **Today**
