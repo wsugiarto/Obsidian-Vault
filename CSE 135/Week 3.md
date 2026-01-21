@@ -11,6 +11,12 @@ Tuesday:
 3. Web Server response cycle
 	- Listen to requests, decode headers, authenticate and authorize, MIME type checking, make headers and send response, log
 4. Explain the idea of logical (address) to physical (resource mapping)? Do this for both static files and for executed code
+	- Logical address is basically the URL
+	- physical resource is the file in the web server
+		- /var/www/your_file
+	- You can add a route, which uses code like NodeJS that runs the URL on code to return a physical resource location
+	- Routing with NodeJS is fine , but like HTML there were ways to use the original service like Apache instead of NodeJS to do the same thing
 5. List some tasks we might take to harden our web server
+	- 
 6. List some other tasks we might perform when administering our web server
 7. Explain what log files can track on a web server and why log files are important from an analytics point of view
