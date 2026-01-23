@@ -20,3 +20,18 @@ Tuesday:
 	- 
 6. List some other tasks we might perform when administering our web server
 7. Explain what log files can track on a web server and why log files are important from an analytics point of view
+
+
+# Thursday
+- Different web servers are mostly the same 
+	- They share core features like 
+		- port
+		- webroot
+		- index file
+		- MIME mapping
+		- error pages
+		- logging 
+		- auth
+		- dev support
+	- Some areas that may be differnet 
+		- DX, GUI, Syntax, and Performance
