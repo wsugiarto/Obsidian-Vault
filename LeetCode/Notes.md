@@ -1444,6 +1444,25 @@ def dalg(graph, start):
 		            return False
 		        return dfs(0)
 		```
+	- Unique Paths
+		- This is a problem solved using a top down approach
+		- When doing top down you want to have a cache so you don't keep repeating function calls
+		```python
+		class Solution:
+		    def uniquePaths(self, m: int, n: int) -> int:
+		        cache = {}
+		        def dfs(r,c):
+		            if r== m-1 and c == n-1:
+		                return 1
+		            if r not in range(m) or c not in range(n):
+		                return 0
+		            if (r,c) in cache:
+		                return cache[(r,c)]
+		            total = dfs(r+1,c) + dfs(r, c+1)
+		            cache[(r,c)] = total
+		            return total
+		        return dfs(0,0)
+		```
 	- ## Below are mostly interval DP questions
 	- [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
 		- The trick is to work from the smallest intervals first, so 3 coin intervals are essentially the base case
