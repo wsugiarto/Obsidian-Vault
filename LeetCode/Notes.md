@@ -1463,6 +1463,36 @@ def dalg(graph, start):
 		            return total
 		        return dfs(0,0)
 		```
+	- [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)
+		- This is a problem that requires understanding of overlapping intervals (but not much) and DP
+		- `dp[i]` is max profit for jobs until index i
+		- Here we want to sort by end times because since we want our dp to be until index i, then its weird if we sort by start and that job at i ends really late or some earlier job ends later than that job
+		- Here we use binary search to find the last non overlapping job, to avoid iterating over the whole array again and again
+			- Allows for O(nlogn) time instead of O(n^2)
+		```python
+		class Solution:
+		    def jobScheduling(self, startTime: List[int], endTime: List[int], profit: List[int]) -> int:
+		        jobs = sorted(zip(startTime, endTime, profit), key=lambda x:x[1])
+		        ends = [e for _,e,_ in jobs]
+		        dp = [0]*len(jobs)
+		        def find_last_non_overlap(start):
+		            l,r = 0, len(ends)-1
+		            res=  -1
+		            while l<=r:
+		                mid = (l+r)//2
+		                if ends[mid] <= start:
+		                    res = mid
+		                    l = mid +1
+		                else:
+		                    r = mid -1
+		            return res
+		        for i, (s,e,p) in enumerate(jobs):
+		            last = find_last_non_overlap(s)
+		            take = p+ dp[last] if last != -1 else p
+		            skip = dp[i-1] if i> 0 else 0
+		            dp[i] = max(take, skip)
+		        return dp[-1]
+		```
 	- ## Below are mostly interval DP questions
 	- [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
 		- The trick is to work from the smallest intervals first, so 3 coin intervals are essentially the base case
