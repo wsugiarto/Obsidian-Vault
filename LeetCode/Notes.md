@@ -1555,3 +1555,32 @@ def dalg(graph, start):
 		                if k <= 0:
 		                    return res
 		```
+	- [Sort Colors](https://leetcode.com/problems/sort-colors/)
+		- Use the Dutch National Flag Algorithm
+		- The Dutch national flag algorithm involves sorting the `nums` array by partitioning it into 3 segments.
+		- `nums[0]...nums[low - 1]` : This part should consist of **all zeroes**.
+		- `nums[low]...nums[mid - 1]` : This part should consist of **all ones**.
+		- `nums[mid]...nums[end of array]` : This part should consist of **all twos**.
+		```python
+		class Solution:
+		    def sortColors(self, nums: List[int]) -> None:
+		        low, mid = 0,0 
+		        high = len(nums)-1
+		        while mid <= high:
+		        #if 0 then swap with low and increment both mid and low
+		            if nums[mid] == 0:
+		                temp = nums[low]
+		                nums[low] = nums[mid]
+		                nums[mid] = temp
+		                mid+= 1
+		                low += 1
+		        #if 1 then just increment mid
+		            elif nums[mid] == 1:
+		                mid += 1
+		        #if 2 then decrement only high and swap mid and high
+		            else:
+		                temp = nums[high]
+		                nums[high] = nums[mid]
+		                nums[mid] = temp
+		                high -=1
+		```
