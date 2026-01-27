@@ -977,6 +977,36 @@ class Solution:
 			- Here we make buckets, where `buckets[x]` is an `[array of words]` , that fit the pattern x
 			- x is something like `*og` or `d*g` 
 			- Then we just put in the starting word in the queue together with the current distance as a pair
+			- For the neighbors we look for every type of pattern we can 
+		```python
+		from collections import defaultdict, deque
+		class Solution:
+		    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+		        wordSet = set(wordList)
+		        if endWord not in wordSet:
+		            return 0
+		        length = len(beginWord)
+		        buckets = defaultdict(list)
+		        for word in wordSet:
+		            for i in range(length):
+		                buckets[word[:i] +"*" + word[i+1:]].append(word)
+		        q = deque()
+		        q.append((beginWord, 1))
+		        visited = set()
+		        visited.add(beginWord)
+		        while q:
+		            word, dist = q.popleft()
+		            if word == endWord:
+		                return dist
+		            for i in range(length):
+		                neighbors = buckets[word[:i] +"*" + word[i+1:]]
+		                for nei in neighbors:
+		                    if nei not in visited:
+		                        q.append((nei, dist+1))
+		                buckets[word[:i] +"*" + word[i+1:]].clear()
+		        return 0
+		```
+		
 ## Extra: Dijkstra's Algorithm
 - Use this when you have to moving on a grid/graph has different costs each step
 	- Look for questions that minimize the maximum ...
@@ -1677,4 +1707,37 @@ def dalg(graph, start):
 		            result.append([name]+ sorted(email))
 		        return result
 
+		```
+# String Processing
+- Generally just questions where you process strings
+- Problems:
+	- [Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+		- idk wat to say about this
+		```python
+		class Solution:
+		    def calculate(self, s: str) -> int:
+		        res =0 
+		        num =0
+		        sign = 1
+		        stack = []
+		
+		        for c in s:
+		            if c.isdigit():
+		                num = num*10 + int(c)
+		            elif c == "+" or c == "-":
+		                res += sign*num
+		                num = 0
+		                sign = 1 if c =="+" else -1
+		            elif c == "(":
+		                stack.append((res, sign))
+		                res =0
+		                num =0 
+		                sign =1
+		            elif c== ")":
+		                res += sign*num
+		                num =0 
+		                resPrev, signPrev = stack.pop()
+		                res = resPrev + (signPrev *res)
+		
+		        return res +sign * num   
 		```
