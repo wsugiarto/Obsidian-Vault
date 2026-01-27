@@ -1614,3 +1614,60 @@ def dalg(graph, start):
 		                nums[mid] = temp
 		                high -=1
 		```
+# Disjoin Set Union (Union Find)
+- This algorithm is for questions, where you have a bunch of items/nodes that belong to the same group as another item, given some piece of information/connecting factor
+	- When asked if some pair belongs together, use DSU
+- Ex. accounts sharing an email (there is a root email connecting all of them)
+- Implementation of DSU:
+	```python 
+	class DSU:
+	    def __init__(self):
+	        self.parent = {} # root of item
+	        self.rank = {} # height
+	    def find(self, x):
+	        if x not in self.parent: # if x has not been seen
+	            self.parent[x] = x
+	            self.rank[x] = 0
+	        if self.parent[x] != x: # recursively find parent
+	            self.parent[x] = self.find(self.parent[x])
+	        return self.parent[x]
+	    def union(self, a,b):
+	        ra = self.find(a)
+	        rb = self.find(b)
+	        if ra == rb:
+	            return
+	        if self.rank[ra] < self.rank[rb]: #we want ra to be taller
+	            ra,rb= rb,ra
+	        self.parent[rb] = ra
+	        if self.rank[ra] == self.rank[rb]: #only increase height if same rank
+	            self.rank[ra] += 1
+	```
+- Problems:
+	- [Accounts Merge](https://leetcode.com/problems/accounts-merge/)
+		- This basically purely DSU
+		```python
+		class Solution:
+		    def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
+		        dsu = DSU()
+		        email_to_name = {}
+		        for account in accounts:
+		            name = account[0]
+		            # make first email the root
+		            firstEmail = account[1]
+		            for email in account[1:]:
+		                email_to_name[email] = name
+		                dsu.union(firstEmail, email)
+		        groups = {}
+		
+		        for email in email_to_name:
+		            root = dsu.find(email)
+		            if root not in groups:
+		                groups[root] = []
+		            groups[root].append(email)
+		        result = []
+		        for root, email in groups.items():
+		            name = email_to_name[root]
+		            result.append([name]+ sorted(email))
+		        return result
+
+		```
