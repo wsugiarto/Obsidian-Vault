@@ -1656,9 +1656,11 @@ def dalg(graph, start):
 		            firstEmail = account[1]
 		            for email in account[1:]:
 		                email_to_name[email] = name
+	#this union will catch the common email, since firstEmail will eventually be 
+	#absorbed into the bigger set if it ever encounters it
 		                dsu.union(firstEmail, email)
 		        groups = {}
-		
+		#Everything here is just making the actual result
 		        for email in email_to_name:
 		            root = dsu.find(email)
 		            if root not in groups:
