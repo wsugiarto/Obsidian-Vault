@@ -972,6 +972,11 @@ class Solution:
 		                        q.append(nei)
 		        return list(q)
 		```
+	- [Word Ladder](https://leetcode.com/problems/word-ladder/)
+		- This is bfs but the hard part is figuring out the neighbors
+			- Here we make buckets, where `buckets[x]` is an `[array of words]` , that fit the pattern x
+			- x is something like `*og` or `d*g` 
+			- Then we just put in the starting word in the queue together with the current distance as a pair
 ## Extra: Dijkstra's Algorithm
 - Use this when you have to moving on a grid/graph has different costs each step
 	- Look for questions that minimize the maximum ...
