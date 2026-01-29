@@ -1621,6 +1621,7 @@ def dalg(graph, start):
 		                    return res
 		```
 	- [Sort Colors](https://leetcode.com/problems/sort-colors/)
+		- This question is asking to arrange an array of 0s, 1s, and 2s in order by changing the input array itself
 		- Use the Dutch National Flag Algorithm
 		- The Dutch national flag algorithm involves sorting the `nums` array by partitioning it into 3 segments.
 		- `nums[0]...nums[low - 1]` : This part should consist of **all zeroes**.
