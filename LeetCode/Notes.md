@@ -1300,7 +1300,7 @@ def dalg(graph, start):
 	- Subset Sum
 - Memoization vs Tabulation
 	- Memoization 
-		- Uses recursion and has a cache of some kind (could be a table)
+		- Uses recursion and has a cache of some kind hash table (could be a table)
 		- Also called top down approach
 	- Tabulation
 		- Iterative, the usual dp table
@@ -1365,10 +1365,7 @@ def dalg(graph, start):
                     continue
                 if dp[i-coin] != -1:
                     dp[i] = min(dp[i-coin] + 1, dp[i]) if dp[i] != -1 else dp[i-coin] + 1
-                    
-        print(amount)
         return dp[amount]
-
 	```
 	- [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 		- Remember subsequence != substring
