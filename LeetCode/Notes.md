@@ -1110,7 +1110,7 @@ def dalg(graph, start):
 	        image[sr][sc] = color
 	        directions = [(1,0), (-1,0), (0,1), (0,-1)]
 	        while q:
-	            popped = q.pop()
+	            popped = q.popleft()
 	            for dr, dc in directions:
 	                nr = dr + popped[0]
 	                nc = dc + popped[1]
