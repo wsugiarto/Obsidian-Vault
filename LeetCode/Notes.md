@@ -436,6 +436,7 @@ slow = nums[0]
 		- This problem wants us to find the next smallest height, so when we pop we can keep track of how far left we can go
 		- This problem has some confusing index calculation
 		- Also when iterating, since we want to consider the entire width of the array, we want to make sure to go 1 over the length of the array to do that. 
+		- To find its left boundary, we look at the element that is _now_ at the top of the stack (`stack[-1]`). This element `stack[-1]` represents the index of the **first bar to the left of `index` that is shorter than `heights[index]`**.
 	```python
 	class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
@@ -448,7 +449,7 @@ slow = nums[0]
                 index = stack.pop()
                 height = heights[index]
                 left= stack[-1] if stack else -1
-                width = i - left -1
+                width = (i -1)- left
                 maxArea = max(maxArea, width* height)
                 
             stack.append(i)
