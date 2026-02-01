@@ -1482,7 +1482,7 @@ def dalg(graph, start):
 		            return False
 		        return dfs(0)
 		```
-	- Unique Paths
+	- [Unique Paths](https://leetcode.com/problems/unique-paths/)
 		- This is a problem solved using a top down approach
 		- When doing top down you want to have a cache so you don't keep repeating function calls
 		```python
