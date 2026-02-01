@@ -453,8 +453,9 @@ slow = nums[0]
             while stack and heights[stack[-1]] > checkHeight:
                 index = stack.pop()
                 height = heights[index]
-                left= stack[-1] if stack else -1
-                width = (i -1)- left
+                left= stack[-1] if stack else -1 # its -1 because left is exclusive 
+                # left + 1 is the index with at least height
+                width = (i -1)- left # no need +1 because left is exclusive
                 maxArea = max(maxArea, width* height)
                 
             stack.append(i)
