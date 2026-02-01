@@ -1,4 +1,9 @@
 
+# Python making Lists tips:
+- When you want to make a list like `list[x][y]` , the way you form it is like this
+	- `list = [[startVal]* y for _ in range(x)]`
+	- Basically you flip the order of `[x][y]` when making it
+	- Its important to do `for _ in range(x)` when you are making copies of rows, because if you do `*x` instead, it will make copies to the exact same row
 # 1. Prefix Sum
 ![[Pasted image 20251218163207.png]]
 - Good for questions asking for the sum of subarrays
