@@ -5,7 +5,7 @@
 - Making an array where array[i] is the sum of all values until index i
 - P[j] - P[i-1]
 - Problems
-	- When you make the prefix array make it len(n) +1 so its easier to do the P[j] - P[i-1] formula
+	- When you make the prefix array make it len(n) +1 so its easier to do the `P[j] - P[i-1]` formula
 	- [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
 		- This is just an easy question so just follow the general notes above
 	```python
@@ -149,10 +149,12 @@ class Solution:
 # 3. Sliding Window
 - Used to find a subarray/substring that satisfies a condition
 - Generally, it works by:
-	- Updating r at the end of the loop
-	- Checking if that new r broke the condition, if it did
+	- Start both l,r at 0, then update the thing you're checking at the start of the loop
+	-  Checking if that new r broke the condition, if it did
 		- probably update left until it's fixed again
 		- You can typically track the condition using sets, flags or dicts
+	- Once you fix it or not, check if you can update your output
+	- Updating r at the end of the loop
 	- Problems
 		- [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 			- Question asks for max subarray length k
@@ -161,22 +163,18 @@ class Solution:
 		``` python
 		class Solution:
 		    def findMaxAverage(self, nums: List[int], k: int) -> float:
-		        l = 0
-		        r = l + k - 1
-		        avg = 0
-		        for i in range(l, r+1):
-		            avg+= nums[i]
-		        highest = avg
-		        
-		        l+= 1
-		        r+=1
+		        l,r = 0,0
+		        total = 0
+		        hi = float('-inf')
 		        while r < len(nums):
-		            avg += nums[r]
-		            avg -= nums[l-1]
-		            highest = max(highest, avg)
-		            r += 1
-		            l += 1
-		        return highest/k
+		            total += nums[r]
+		            if r-l+1 > k: 
+		                total -= nums[l]
+		                l += 1
+		            if (r-l+1) == k:
+		                 hi = max(hi, total)
+		            r+= 1
+		        return hi/k
 		```
 		- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 			- Use the set to track the repeating characters
