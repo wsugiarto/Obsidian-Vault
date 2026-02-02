@@ -1264,6 +1264,7 @@ def dalg(graph, start):
                 copy = board.copy()
                 copy = ["".join(row) for row in board]
                 res.append(copy)
+                return # so you dont uselessly loop 
             for c in range(n):
                 if c in cols or (r+c) in posDiags or (r-c) in negDiags:
                     continue
