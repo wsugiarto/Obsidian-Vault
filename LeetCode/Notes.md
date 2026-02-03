@@ -1,4 +1,9 @@
 
+# Python making Lists tips:
+- When you want to make a list like `list[x][y]` , the way you form it is like this
+	- `list = [[startVal]* y for _ in range(x)]`
+	- Basically you flip the order of `[x][y]` when making it
+	- Its important to do `for _ in range(x)` when you are making copies of rows, because if you do `*x` instead, it will make copies to the exact same row
 # 1. Prefix Sum
 ![[Pasted image 20251218163207.png]]
 - Good for questions asking for the sum of subarrays
@@ -446,8 +451,9 @@ slow = nums[0]
             while stack and heights[stack[-1]] > checkHeight:
                 index = stack.pop()
                 height = heights[index]
-                left= stack[-1] if stack else -1
-                width = (i -1)- left
+                left= stack[-1] if stack else -1 # its -1 because left is exclusive 
+                # left + 1 is the index with at least height
+                width = (i -1)- left # no need +1 because left is exclusive
                 maxArea = max(maxArea, width* height)
                 
             stack.append(i)
@@ -1256,6 +1262,7 @@ def dalg(graph, start):
                 copy = board.copy()
                 copy = ["".join(row) for row in board]
                 res.append(copy)
+                return # so you dont uselessly loop 
             for c in range(n):
                 if c in cols or (r+c) in posDiags or (r-c) in negDiags:
                     continue
@@ -1475,7 +1482,7 @@ def dalg(graph, start):
 		            return False
 		        return dfs(0)
 		```
-	- Unique Paths
+	- [Unique Paths](https://leetcode.com/problems/unique-paths/)
 		- This is a problem solved using a top down approach
 		- When doing top down you want to have a cache so you don't keep repeating function calls
 		```python
