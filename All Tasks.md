@@ -1,5 +1,5 @@
-- [ ] Do google reimbursements
-- [ ] Ask ISEO for part time status
+- [x] Do google reimbursements ✅ 2026-02-12
+- [x] Ask ISEO for part time status ✅ 2026-02-12
 - [ ] CSE 160 Midterm Tuesday Feb 10 📅 2026-02-10
 - [x] SIO 45 Midterm Fri Feb 6 📅 2026-02-06 ✅ 2026-02-07
 - [ ] SIO 45 Quiz and Discussion 🔁 every week 📅 2026-01-25
