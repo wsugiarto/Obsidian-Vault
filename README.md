@@ -1,8 +1,8 @@
-|   |   |
-|---|---|
-|First Pass|Second Pass|
-|Start date/time: Monday, 02/16/2026 11:20 a.m. PT|Start date/time: Tuesday, 02/24/2026 11:20 a.m. PT|
-|End date/time: Wednesday, 02/18/2026 11:59 p.m. PT|End date/time: Saturday, 04/11/2026 11:59 p.m. PT|
+|                                                    |                                                    |
+| -------------------------------------------------- | -------------------------------------------------- |
+| First Pass                                         | Second Pass                                        |
+| Start date/time: Monday, 02/16/2026 11:20 a.m. PT  | Start date/time: Tuesday, 02/24/2026 11:20 a.m. PT |
+| End date/time: Wednesday, 02/18/2026 11:59 p.m. PT | End date/time: Saturday, 04/11/2026 11:59 p.m. PT  |
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
 - I am allowed to finish degree this quarter (winter)
