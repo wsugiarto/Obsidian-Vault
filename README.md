@@ -9,9 +9,7 @@ Updates on what do next Spring:
 - I just need to send EASy requests when schedule of classes release
 I-20 Update how?
 
-CSE 160 points:
-Correct : 10 * 4
-Wrong: 5 * 0 
+Your diploma will be sent to the permanent mailing address listed in TritonLink. If you want your diploma mailed to a U.S. address instead, please [send an email to AcademicRecords@ucsd.edu](mailto:AcademicRecords@ucsd.edu?subject=Diplomas,%20ATTN:%20Diploma%20Division).The subject line should read “Diplomas, ATTN: Diploma Division” and the message should include the following information: your family name, given name, PID, identify yourself as an International student and be sure to provide the address to which you want your diploma sent.
 
 # **Today**
 ```tasks
