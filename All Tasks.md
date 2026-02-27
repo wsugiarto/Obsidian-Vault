@@ -1,4 +1,4 @@
-- [ ] fill out google form for cse 291A
+- [x] fill out google form for cse 291A ✅ 2026-02-26
 - [x] Do google reimbursements ✅ 2026-02-12
 - [x] Ask ISEO for part time status ✅ 2026-02-12
 - [ ] CSE 160 Midterm Tuesday Feb 10 📅 2026-02-10
