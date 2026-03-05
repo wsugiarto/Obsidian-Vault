@@ -1,9 +1,12 @@
+- [ ] SIO 45 Final Fri 8am 3/20
+- [ ] CSE 135 Final Thu 7pm 3/19
+- [ ] CSE 160 Final Thu 3/19 11:30
 - [x] fill out google form for cse 291A ✅ 2026-02-26
 - [x] Do google reimbursements ✅ 2026-02-12
 - [x] Ask ISEO for part time status ✅ 2026-02-12
-- [ ] CSE 160 Midterm Tuesday Feb 10 📅 2026-02-10
+- [x] CSE 160 Midterm Tuesday Feb 10 📅 2026-02-10 ✅ 2026-03-05
 - [x] SIO 45 Midterm Fri Feb 6 📅 2026-02-06 ✅ 2026-02-07
-- [ ] SIO 45 Quiz and Discussion 🔁 every week 📅 2026-01-25
+- [x] SIO 45 Quiz and Discussion 📅 2026-01-25 ✅ 2026-03-05
 - [x] SIO 45 Quiz and Discussion 🔁 every week 📅 2026-01-18 ✅ 2026-01-17
 - [x] SIO 45 Quiz and Discussion 🔁 every week 📅 2026-01-11 ✅ 2026-01-13
 - [x] review how to write python classes ✅ 2026-01-07
