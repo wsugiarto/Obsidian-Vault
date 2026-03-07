@@ -15,7 +15,7 @@ GitHub
 1. Personalis	Software Engineer 1	Fremont, CA
 2. StubHub	Software Engineer I - New Grad - Consumer Experience	Los Angeles, California, United States
 3. Hewlett Packard Enterprise	Software Test Engineer I	Chippewa Falls, Wisconsin, United States of America
-4. 
+4. Sonos	Software Development Engineer I - Embedded Quality	Boston, MA
 5. Affirm	Software Engineer - Early Career
 6. Jobgether	Software Engineer I & II	USA
 7. Jobgether	Software Engineer in Test I - Remote	USA
