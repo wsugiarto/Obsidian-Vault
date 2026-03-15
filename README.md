@@ -1,3 +1,11 @@
+Calculating Memory Bandwidth FLOPs
+Cost of one FLOP
+- 2 memory accesses (8 bytes) per floating point multiply add (2 FLOPs)
+- is 8/2 = 4 bytes/FLOP
+Per second we can only have 150GB from memory
+- So each second we can only have 150/4=37.5 GFLOPs
+
+
 
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
