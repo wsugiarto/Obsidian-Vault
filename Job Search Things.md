@@ -1,6 +1,6 @@
 FAANG++
 1. Twitch	Software Engineer I - Commerce Engineering	Seattle, WA
-2. 
+2. Twitch	Software Engineer I - Streamer Monetization Experience	Seattle, WA
 3. NVIDIA	Deep Learning Software Engineer - Inference - New College Grad 2026	Santa Clara, CA
 4. Google	Software Engineer - Early Career - Campus - 2026	Mountain View, CA, USA
 5. Twitch Software Engineer I Irvine, CA
