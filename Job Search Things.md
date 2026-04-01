@@ -60,9 +60,10 @@ GitHub
 
 LinkedIn
 1. Honeywell Software Engineer & Computer Science - Recent Grad/Full Time 
-2. XILO JSWE
-3. INTUIT SWE 1
-4. LPL Financial
-5. General Motors Software Engineer - Early Career 
-6. Meshy SWE
-7. Zoom SWE
+2. L3Harris Technologies Associate, Software Engineering (Carlsbad, CA)
+3. XILO JSWE
+4. INTUIT SWE 1
+5. LPL Financial
+6. General Motors Software Engineer - Early Career 
+7. Meshy SWE
+8. Zoom SWE
