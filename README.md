@@ -1,9 +1,6 @@
-Calculating Memory Bandwidth FLOPs
-Cost of one FLOP
-- 2 memory accesses (8 bytes) per floating point multiply add (2 FLOPs)
-- is 8/2 = 4 bytes/FLOP
-Per second we can only have 150GB from memory
-- So each second we can only have 150/4=37.5 GFLOPs
+- Can you check whether 291A is part of the electives i can take for BSMS
+- for BSMS from my understanding I have to take 3 classes per quarter 
+- 
 
 
 
