@@ -2,7 +2,7 @@
 - for BSMS from my understanding I have to take 3 classes per quarter 
 	- take 3 classes in each breadth category
 	- take 3 classes from only one depth category
-	- 
+	- 4 electives basically anything
 - 
 
 
