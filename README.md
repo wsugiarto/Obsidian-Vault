@@ -6,7 +6,7 @@
 - Do you have recommendations/can help me make a plan for which classes to take so i dont get overwhelmed
 	- Is there a SETs to help me figure out if a certain class will be too busy
 - 
-
+cse-gradinfo-bsms@ucsd.edu
 
 
 Updates on what do next Spring:
