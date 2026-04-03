@@ -7,6 +7,7 @@
 	- Is there a SETs to help me figure out if a certain class will be too busy
 - 
 cse-gradinfo-bsms@ucsd.edu
+cse-ms-advisors@ucsd.edu
 
 
 Updates on what do next Spring:
