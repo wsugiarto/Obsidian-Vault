@@ -1,5 +1,8 @@
 - Can you check whether 291A is part of the electives i can take for BSMS
 - for BSMS from my understanding I have to take 3 classes per quarter 
+	- take 3 classes in each breadth category
+	- take 3 classes from only one depth category
+	- 
 - 
 
 
