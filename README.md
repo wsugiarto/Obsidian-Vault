@@ -8,6 +8,7 @@
 - 
 cse-gradinfo-bsms@ucsd.edu
 cse-ms-advisors@ucsd.edu
+[https://docs.google.com/document/d/1sKNzC4AKNnYg7rvy8JfnAjq_EMDRmwiN9jbhnA3VYsc/edit?tab=t.0](https://docs.google.com/document/d/1sKNzC4AKNnYg7rvy8JfnAjq_EMDRmwiN9jbhnA3VYsc/edit?tab=t.0)
 
 
 Updates on what do next Spring:
