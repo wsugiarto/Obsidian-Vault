@@ -1,0 +1,55 @@
+Recap on TMs
+- K tape TM
+	- input tape - read only
+	- output tape - read and write
+	- (k-2) work tapes - read and write
+		- basically the memory
+	- $\gamma$ tapes alphabet (ex. ascii)
+		- special symbol b is blank in this class
+	- Q - set of states
+	- delta $\delta$ transition function
+		- delta takes Q and $\gamma$ as the inputs
+		- output is Q x $\gamma$ x {L,S,R}
+	- Two special states
+		- q_start and q_stop
+- Content of a tape is its non blank prefix
+	- configuration of TM is a snapshot
+		- Its state, tapes content, head locations
+- TMs compute partial functions
+	- partial function
+		- def: $f:\{0,1\}^* \to \{0,1\}^* \cup \{\bot\}$
+	- How does a TM compute
+		- input is "X" tape is so set the input tape to X b b ...
+		- initialize all the other tapes to all blank
+		- initial state set to qstart
+		- Run the TM which follows the transition function
+		- stop when we reach qend, then set the f(x) to be the output tape
+		- if we never stop then $\bot$ is returned
+- TM is decidable if it stops for all inputs
+	- a decidable TM computes a total function
+	- total function $f:\{0,1\}^* \to \{0,1\}^*$
+		- not undefined output
+- Not all TMs are decidable
+- Time Complexity
+	- let T: N->N a function
+	- $f:\{0,1\}^* \to \{0,1\}^*$ is computable in time T if there is a decidable TM M computing f and for all inputs x  in {0,1}*, and M(x) ahlts in <= T(|x|) steps
+- Alphabet doesn't matter
+	- Lemma let $f:\{0,1\}^* \to \{0,1\}^*$
+		- assume f is computable by TM M using alphabet $\gamma$ then f is also computable by TM M' using alphabet {0,1,b} if M runs in time T, M' runs in time T(log{$\gamma$})
+- number of work tapes doesn't matter
+	- u can combine tapes by concatening for example
+		- to deal with tape heads you can append gamma to $\gamma \times \{0,1\}$ ,
+			- 0 means head is not there, 1 means head is there
+- Question: If the original TM runs in time T, what is the time to run a new TM?
+	- new TM runs in time <= $T^2$
+	- input x length (|x| = n), then new TM runs time time <= $T(n)^2$
+	- There are better simulations like from T to TlogT
+		- we don't know if we can oly lose constant factors
+- RAM TMs
+	- basically you have an address tape that stores data from the work tapes, so that you have a special way of gettitng data without having to go through an entire work tape.
+- Universal TMs
+	- its a compiler (takes code of other programs and runs it)
+	- TM U takes 2 inputs
+		1. Encoding of an arbitrary Tm
+		2. Input x element of {0,1}*
+		3. 
