@@ -1,3 +1,6 @@
+- [ ] CSE 200 HW1 Due Monday 📅 2026-04-13
+- [ ] Friday Meet ISEO Advisor 2pm Zoom 📅 2026-04-10
+- [ ] Monday Meet BSMS Advisor at 1 Zoom 📅 2026-04-06
 - [x] SIO 45 Final Fri 8am 3/20 ✅ 2026-04-03
 - [x] CSE 135 Final Thu 7pm 3/19 ✅ 2026-03-19
 - [x] CSE 160 Final Thu 3/19 11:30 ✅ 2026-03-19
