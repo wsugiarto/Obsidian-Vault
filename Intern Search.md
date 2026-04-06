@@ -4,3 +4,4 @@
 4. Premier	Software Engineer Intern	Charlotte, NC
 5. Cloudflare	Software Engineer Intern - Summer 2026	Remote
 6. KLA	Software Engineering Intern	Milpitas, CA
+7. Leidos	Software Engineer Intern	Morgantown, WV
