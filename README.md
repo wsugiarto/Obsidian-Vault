@@ -13,7 +13,11 @@ I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1
 
 I would like to renew the visa and would like information on what I need to do this. Do I have to renew the visa in Indonesia? Since I'm currently doing BS, do I need to wait for my MS I20 to come out to apply for renewal? I would also like to know generally if the rules of OPT after completing my Masters is the same as undergrad or differences between the 2. 
 
-- Do i need a new F1 for the new I20 I receive as 
+- Am i receiving a new I20 when i reach the MS part of the BSMS?
+- Do i need to get a new F1 if i get a new I20?
+- I get 3 years of OPT from undergrad, do I get another 3 years as MS
+	- If i apply for OPT right now as an undergrad incase i get a job, then cancel before school starts in September, I still have the 3 years of new OPT i get as a masters student right?
+	- 
 
 Updates on what do next Spring:
 - I am allowed to take fuck all classes (literally 1 film class if i want) during Spring
