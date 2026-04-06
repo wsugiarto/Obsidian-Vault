@@ -1,3 +1,11 @@
+CSE 
+202, 203b, 207a, 203a
+Systems - 220, 221, 222A, 223A, 234, 240A
+Applications All of them 
+
+250A and 251A, 254
+
+
 **BSMS Questions**
 - Is there any current way where I can take these 2 classes without them affecting my GPA?
 	- Did all my requirements last quarter but thought I had to do at least one in my undergrad to do the BSMS in one year
