@@ -5,17 +5,13 @@ Applications All of them
 
 250A and 251A, 254
 
+Ask BSMS enrollment:
+Good Afternoon,
+I am a 4th year undergrad in BSMS wondering if dropping a graduate class in week 4 is the same as in week 2 for me? I'm not a graduate student yet, so I am assuming I dont have to make an EASy request to drop one grad class right? Can you also confirm whether end of week 4 refers to Friday or Sunday? Thank you.
 
-**BSMS Questions**
-- Is there any current way where I can take these 2 classes without them affecting my GPA?
-	- Did all my requirements last quarter but thought I had to do at least one in my undergrad to do the BSMS in one year
-	- Can i potentially just be an MS student now? However Im ony taking 2 classes since im doing RCL but im also international student so i cant just part time whenever I want
-- Recommendation for classes. 
-	- I'm honestly a little scared towards MS classes since im unfamiliar and it may be more difficult
-	- The consensus for other people is that its honestly easier and more relaxing, but im not sure
-	- Is there a way for me to find out more about how classes are in terms of workload and difficulties so i can better plan next quarters
-	- Can you help me pick out classes so i can finish my degree on time without straining too much workload on a certain quarter since i don't know much about classes
-	- Is there some kind of SETs for grad CSE classes to find out more about them. 
+Ask Hao Zhang
+Good Afternoon Professor,
+I am a 4th year undergrad BSMS student taking our CSE 291A class. 
 **ISEO Questions**
 I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1 visa expiring end of the year (after summer break). 
 
