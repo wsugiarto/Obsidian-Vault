@@ -11,7 +11,10 @@ I am a 4th year undergrad in BSMS wondering if dropping a graduate class in week
 
 Ask Hao Zhang
 Good Afternoon Professor,
-I am a 4th year undergrad BSMS student taking our CSE 291A class. 
+I am a 4th year undergrad BSMS student taking your CSE 291A class. I wanted to ask for some advice regarding whether I should continue or drop this class. I felt in Tuesday's lecture I was quite overwhelmed especially in the backwards propagation example. In my undergrad I took CSE 151B, 153 and 158 which are machine learning and deep learning classes, and I also took the operating systems class CSE 120. I enjoyed taking those machine learning classes especially, so I wanted to do more machine learning in the graduate program too, which was why I took this class. 
+
+
+
 **ISEO Questions**
 I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1 visa expiring end of the year (after summer break). 
 
