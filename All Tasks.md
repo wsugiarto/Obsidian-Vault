@@ -1,3 +1,4 @@
+- [ ] accept UCSD offer
 - [ ] study partial derivatives
 - [ ] 291A summary start
 - [ ] 291A scribe notes
