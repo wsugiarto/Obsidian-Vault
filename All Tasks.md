@@ -1,7 +1,7 @@
 - [ ] accept UCSD offer
 - [ ] study partial derivatives
 - [ ] 291A summary start
-- [ ] 291A scribe notes
+- [x] 291A scribe notes ✅ 2026-04-08
 - [ ] CSE 200 HW1 Due Monday 📅 2026-04-13
 - [ ] Friday Meet ISEO Advisor 2pm Zoom 📅 2026-04-10
 - [ ] Monday Meet BSMS Advisor at 1 Zoom 📅 2026-04-06
