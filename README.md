@@ -17,10 +17,10 @@ I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1
 - My current visa expires June 8 2027, which is probably before finals end in Spring next year
 	- Is this going to affect my stay?
 	- I also plan to do OPT after graduating, will this affect my stay or is it fine? 
-		- OPT does
 - I would also like to know generally if the rules of OPT after completing my Masters is the same as undergrad or differences between the 2. 
 	- I get 3 years of OPT from undergrad, do I get another 3 years as MS
 	- If i apply for OPT right now as an undergrad incase i get a job, then cancel before school starts in September, I still have the 3 years of new OPT i get as a masters student right?
+	- While under OPT if I have a renewed visa, can I leave and reenter the US if I already have a job?
 
 
 
