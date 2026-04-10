@@ -8,12 +8,22 @@ Applications All of them
 **ISEO Questions**
 I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1 visa expiring end of the year (after summer break). 
 
-I would like to renew the visa and would like information on what I need to do this. Do I have to renew the visa in Indonesia? Since I'm currently doing BS, do I need to wait for my MS I20 to come out to apply for renewal? I would also like to know generally if the rules of OPT after completing my Masters is the same as undergrad or differences between the 2. 
-
-- Am i receiving a new I20 when i reach the MS part of the BSMS? When does this happen end of this quarter or start of next? 
-- Do i need to get a new F1 if i get a new I20?
-- I get 3 years of OPT from undergrad, do I get another 3 years as MS
+- I would like to renew the visa and would like information on what I need to do this. 
+- Do I have to renew the visa in Indonesia? 
+- Since I'm currently doing BS, do I need to wait for my MS I20 to come out to apply for renewal?
+- Will I receive the new I20 at the end of this quarter or start of Fall next academic year? 
+- Since I am getting a new I20, will my current F1 visa still valid?
+	- I plan to leave the US over summer, so is reentry still ok with the current visa
+- My current visa expires June 8 2027, which is probably before finals end in Spring next year
+	- Is this going to affect my stay?
+	- I also plan to do OPT after graduating, will this affect my stay or is it fine? 
+		- OPT does
+- I would also like to know generally if the rules of OPT after completing my Masters is the same as undergrad or differences between the 2. 
+	- I get 3 years of OPT from undergrad, do I get another 3 years as MS
 	- If i apply for OPT right now as an undergrad incase i get a job, then cancel before school starts in September, I still have the 3 years of new OPT i get as a masters student right?
+
+
+
 	- 
 
 
