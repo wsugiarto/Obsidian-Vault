@@ -10,6 +10,7 @@ I am a 4th year undergrad doing the BSMS. I am an Indonesian citizen, with an f1
 
 - I would like to renew the visa and would like information on what I need to do this. 
 - Do I have to renew the visa in Indonesia? 
+- Am i even allowed to renew my F1 before it expires?
 - Since I'm currently doing BS, do I need to wait for my MS I20 to come out to apply for renewal?
 - Will I receive the new I20 at the end of this quarter or start of Fall next academic year? 
 - Since I am getting a new I20, will my current F1 visa still valid?
