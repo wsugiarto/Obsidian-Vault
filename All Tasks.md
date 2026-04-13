@@ -1,10 +1,13 @@
-- [ ] accept UCSD offer
+- [ ] Talk to Dan on Friday
+- [ ] Do part 2 of HW 291A
+- [ ] Fill out change of level form I20
+- [x] accept UCSD offer ✅ 2026-04-13
 - [x] study partial derivatives ✅ 2026-04-08
 - [x] 291A summary start ✅ 2026-04-08
 - [x] 291A scribe notes ✅ 2026-04-08
-- [ ] CSE 200 HW1 Due Monday 📅 2026-04-13
-- [ ] Friday Meet ISEO Advisor 2pm Zoom 📅 2026-04-10
-- [ ] Monday Meet BSMS Advisor at 1 Zoom 📅 2026-04-06
+- [x] CSE 200 HW1 Due Monday 📅 2026-04-13 ✅ 2026-04-13
+- [x] Friday Meet ISEO Advisor 2pm Zoom 📅 2026-04-10 ✅ 2026-04-13
+- [x] Monday Meet BSMS Advisor at 1 Zoom 📅 2026-04-06 ✅ 2026-04-13
 - [x] SIO 45 Final Fri 8am 3/20 ✅ 2026-04-03
 - [x] CSE 135 Final Thu 7pm 3/19 ✅ 2026-03-19
 - [x] CSE 160 Final Thu 3/19 11:30 ✅ 2026-03-19
