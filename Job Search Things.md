@@ -1,17 +1,18 @@
 FAANG++
-1. Twitch	Software Engineer I - Commerce Engineering	Seattle, WA
-2. Twitch	Software Engineer I - Streamer Monetization Experience	Seattle, WA
-3. NVIDIA	Deep Learning Software Engineer - Inference - New College Grad 2026	Santa Clara, CA
-4. Google	Software Engineer - Early Career - Campus - 2026	Mountain View, CA, USA
-5. Twitch Software Engineer I Irvine, CA
-6. Twitch	Software Engineer I	San Francisco, CA
-7. Figma	Early Career - Software Engineer - 2026	San Francisco, CA New York, NY
-8. Pinterest	Software Engineer University Grad	San Francisco, CA, US Palo Alto, CA, US Seattle, WA, US
-9. OpenAI	Software Engineer - Applied Emerging Talent - 2026	San Francisco
-10. Twitch	Frontend Engineer I	San Francisco, CA
-11. Stripe	Software Engineer - New Grad	San Francisco, Seattle
-12. Adobe	2026 University Graduate - Software Engineer	San Jose
-13. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
+1. Pinterest	Software Engineer I - Backend	Seattle, WA, US Bay Area, CA
+2. Twitch	Software Engineer I - Commerce Engineering	Seattle, WA
+3. Twitch	Software Engineer I - Streamer Monetization Experience	Seattle, WA
+4. NVIDIA	Deep Learning Software Engineer - Inference - New College Grad 2026	Santa Clara, CA
+5. Google	Software Engineer - Early Career - Campus - 2026	Mountain View, CA, USA
+6. Twitch Software Engineer I Irvine, CA
+7. Twitch	Software Engineer I	San Francisco, CA
+8. Figma	Early Career - Software Engineer - 2026	San Francisco, CA New York, NY
+9. Pinterest	Software Engineer University Grad	San Francisco, CA, US Palo Alto, CA, US Seattle, WA, US
+10. OpenAI	Software Engineer - Applied Emerging Talent - 2026	San Francisco
+11. Twitch	Frontend Engineer I	San Francisco, CA
+12. Stripe	Software Engineer - New Grad	San Francisco, Seattle
+13. Adobe	2026 University Graduate - Software Engineer	San Jose
+14. Databricks	Software Engineer - New Grad - 2026 Start	Bellevue, Washington Mountain View, California San Francisco, California
 
 GitHub
 1. SentiLink	Software Engineer - Full Stack/Backend - New Grad	Austin, TX
