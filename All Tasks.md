@@ -1,6 +1,6 @@
-- [ ] ask mom for more money for i20 changes
-- [ ] Talk to Dan on Friday
-- [ ] Do part 2 of HW 291A
+- [x] ask mom for more money for i20 changes ✅ 2026-04-18
+- [x] Talk to Dan on Friday ✅ 2026-04-18
+- [x] Do part 2 of HW 291A ✅ 2026-04-18
 - [x] Fill out change of level form I20 as much as i can ✅ 2026-04-13
 - [x] accept UCSD offer ✅ 2026-04-13
 - [x] study partial derivatives ✅ 2026-04-08
