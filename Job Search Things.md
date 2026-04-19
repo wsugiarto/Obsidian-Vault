@@ -19,7 +19,7 @@ GitHub
 2. Zenput	Software Engineer I	Atlanta, Boston, Louisville
 3. QuinStreet	Entry-level Software Engineer	Foster City, California
 4. Wyetech	Software Engineer 1 or 2	Annapolis Junction, Maryland
-5. 
+5. Kognitos	Software Engineer Intern - AI-Native — Summer 2026	San Jose HQ
 6. SentiLink	Software Engineer - Full Stack/Backend - New Grad	Austin, TX
 7. Torc Robotics	Software Engineer - I - Metrics for Release Platform	Remote
 8. True Anomaly	Software Engineer I - Full Stack	Denver, CO or Long Beach, CA
