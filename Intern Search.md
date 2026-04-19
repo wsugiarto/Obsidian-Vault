@@ -1,7 +1,7 @@
 1. Kognitos	Software Engineer Intern - AI-Native — Summer 2026	San Jose HQ
 2. Ripple	Software Engineer Intern - GTreasury - Summer 2026	Chicago, Illinois, United States
 3. Zoox	Software Engineer Intern - Perception Data	Foster City, CA
-4. 
+4. ChargePoint	Software QA Engineering - Intern	Campbell, CA
 5. Motorola Solutions	Software Engineering Intern - Summer 2026	Allen, TX TX
 6. GPC	Software Developer Intern	Birmingham, AL, USA
 7. GoLinks	Fullstack Engineering Intern - Hybrid - Summer 2026	San Jose, CA HQ
