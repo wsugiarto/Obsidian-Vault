@@ -1,4 +1,8 @@
 # **Today**
+
+{"BLOCK_M": 256, "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4}, Speedup vs ref: 1.2726x
+
+
 ```tasks
 not done
 (due today) OR (no due date) OR (due yesterday)
