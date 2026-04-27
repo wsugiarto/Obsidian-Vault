@@ -2,6 +2,8 @@
 
 {"BLOCK_M": 256, "BLOCK_N": 128, "BLOCK_K": 32, "num_warps": 8, "num_stages": 4}, Speedup vs ref: 1.2726x
 
+Selected config: BLOCK_M=128, BLOCK_N=256, BLOCK_K=32, num_warps=8, num_stages=3 Speedup vs ref: 1.2995x
+
 
 ```tasks
 not done
