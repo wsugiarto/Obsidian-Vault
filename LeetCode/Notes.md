@@ -864,6 +864,47 @@ class Solution:
 		    rightHeight = getHeight(node.right)
 		    return 1 + max(leftHeight,rightHeight)
 	```
+	- [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+		- When you make a data structure to store and find words tries are the best
+		- Make a TrieNode store the children and isWord value
+			- Add is just make new node if child is not there
+			- Search is use dfs/recursion if the current letter is "." (any word), else just do normal check if that letter exists as a child
+		```python
+		class TrieNode:
+		    def __init__(self):
+		        self.children = {}
+		        self.isWord = False
+		class WordDictionary:
+		
+		    def __init__(self):
+		        self.root = TrieNode()
+		        
+		
+		    def addWord(self, word: str) -> None:
+		        curr = self.root
+		        for c in word:
+		            if c not in curr.children:
+		                curr.children[c] = TrieNode()
+		            curr = curr.children[c]
+		        curr.isWord = True
+		
+		    def search(self, word: str) -> bool:
+		        def dfs(j, root):
+		            curr = root
+		            for i in range(j, len(word)):
+		                c = word[i]
+		                if c == ".":
+		                    for child in curr.children.values():
+		                        if dfs(i+1, child):
+		                            return True
+		                    return False
+		                else:
+		                    if c not in curr.children:
+		                        return False
+		                    curr = curr.children[c]
+		            return curr.isWord
+		        return dfs(0, self.root)
+		```
 
 # 12. BFS
 - Use a deque and sometimes a visited set
