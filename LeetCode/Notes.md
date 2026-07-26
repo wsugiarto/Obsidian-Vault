@@ -864,47 +864,91 @@ class Solution:
 		    rightHeight = getHeight(node.right)
 		    return 1 + max(leftHeight,rightHeight)
 	```
-	- [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
-		- When you make a data structure to store and find words tries are the best
-		- Make a TrieNode store the children and isWord value
-			- Add is just make new node if child is not there
-			- Search is use dfs/recursion if the current letter is "." (any word), else just do normal check if that letter exists as a child
-		```python
-		class TrieNode:
-		    def __init__(self):
-		        self.children = {}
-		        self.isWord = False
-		class WordDictionary:
-		
-		    def __init__(self):
-		        self.root = TrieNode()
-		        
-		
-		    def addWord(self, word: str) -> None:
-		        curr = self.root
-		        for c in word:
-		            if c not in curr.children:
-		                curr.children[c] = TrieNode()
-		            curr = curr.children[c]
-		        curr.isWord = True
-		
-		    def search(self, word: str) -> bool:
-		        def dfs(j, root):
-		            curr = root
-		            for i in range(j, len(word)):
-		                c = word[i]
-		                if c == ".":
-		                    for child in curr.children.values():
-		                        if dfs(i+1, child):
-		                            return True
-		                    return False
-		                else:
-		                    if c not in curr.children:
-		                        return False
-		                    curr = curr.children[c]
-		            return curr.isWord
-		        return dfs(0, self.root)
-		```
+	- ## Using Tries
+		- [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+			- When you make a data structure to store and find words tries are the best
+			- Make a TrieNode store the children and isWord value
+				- Add is just make new node if child is not there
+				- Search is use dfs/recursion if the current letter is "." (any word), else just do normal check if that letter exists as a child
+			```python
+			class TrieNode:
+			    def __init__(self):
+			        self.children = {}
+			        self.isWord = False
+			class WordDictionary:
+			
+			    def __init__(self):
+			        self.root = TrieNode()
+			        
+			
+			    def addWord(self, word: str) -> None:
+			        curr = self.root
+			        for c in word:
+			            if c not in curr.children:
+			                curr.children[c] = TrieNode()
+			            curr = curr.children[c]
+			        curr.isWord = True
+			
+			    def search(self, word: str) -> bool:
+			        def dfs(j, root):
+			            curr = root
+			            for i in range(j, len(word)):
+			                c = word[i]
+			                if c == ".":
+			                    for child in curr.children.values():
+			                        if dfs(i+1, child):
+			                            return True
+			                    return False
+			                else:
+			                    if c not in curr.children:
+			                        return False
+			                    curr = curr.children[c]
+			            return curr.isWord
+			        return dfs(0, self.root)
+			```
+		- [Word Search II](https://leetcode.com/problems/word-search-ii/)
+			- When keeping track of words, its very useful and efficient to use tries
+			- Make a trie of the words you want to find and then dfs + backtracking to iterate over each starting position (r,c)
+			- Remember backtracking you just need to go all directions, then remove the position from the visited list or whatever you used to keep track of progress
+			```python
+			class TrieNode:
+			    def __init__(self): 
+			        self.children = {}
+			        self.isWord = False
+			    def addWord(self, word):
+			        curr = self
+			        for c in word:
+			            if c not in curr.children:
+			                curr.children[c] = TrieNode()
+			            curr = curr.children[c]
+			        curr.isWord = True
+			
+			class Solution:
+			    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+			        Trie = TrieNode()
+			        for word in words:
+			            Trie.addWord(word)
+			        ROWS, COLS = len(board), len(board[0])
+			        res = set()
+			        visited = set()
+			        def dfs(r,c, node, word):
+			            if r < 0 or c < 0 or r >= ROWS or c >= COLS or board[r][c] not in node.children or (r,c) in visited:
+			                return
+			            visited.add((r,c))
+			            node = node.children[board[r][c]]
+			            word += board[r][c]
+			            if node.isWord:
+			                res.add(word)
+			            dfs(r+1 , c , node, word)
+			            dfs(r-1 , c , node, word)
+			            dfs(r , c+1 , node, word)
+			            dfs(r , c-1 , node, word)
+			            visited.remove((r,c))
+			        for r in range(ROWS):
+			            for c in range(COLS):
+			                dfs(r,c,Trie, "")
+			        return list(res)
+			```
 
 # 12. BFS
 - Use a deque and sometimes a visited set
