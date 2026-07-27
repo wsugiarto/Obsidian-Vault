@@ -1741,6 +1741,7 @@ def dalg(graph, start):
 # Disjoin Set Union (Union Find)
 - This algorithm is for questions, where you have a bunch of items/nodes that belong to the same group as another item, given some piece of information/connecting factor
 	- When asked if some pair belongs together, use DSU
+	- Used to find redundant edges (loops) too
 - Ex. accounts sharing an email (there is a root email connecting all of them)
 - Implementation of DSU:
 	```python 
@@ -1796,6 +1797,35 @@ def dalg(graph, start):
 		            result.append([name]+ sorted(email))
 		        return result
 
+		```
+	- [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+		- This is a way of doing DSU without having to fully implement the class. Its slightly modified to fit the question better but its essentially the same (only the return of union was changed)
+		```python
+		class Solution:
+		    def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+		        par = [i for i in range(len(edges)+1)]
+		        rank = [1 for i in range(len(edges)+1)]
+		        def find(node):
+		            if par[node] != node:
+		                par[node] = find(par[node])
+		            return par[node]
+		
+		        def union(n1, n2):
+		            p1 = find(n1)
+		            p2 = find(n2)
+		
+		            if p1 == p2:
+		                return False
+		            if rank[p1] > rank[p2]:
+		                par[p2] = p1
+		                rank[p1] += rank[p2]
+		            else:
+		                par[p1] = p2
+		                rank[p2] += rank[p1]
+		            return True
+		        for n1,n2 in edges:
+		            if not union(n1,n2):
+		                return [n1,n2]
 		```
 # String Processing
 - Generally just questions where you process strings
