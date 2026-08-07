@@ -607,6 +607,28 @@ slow = nums[0]
                 end = inv[1]
         return removed
 	```
+	- [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)
+		- Sorting is always good for intervals
+		- use minheap to find the smallest size, but make sure to store each intervals' ending time to know when to pop / if something isn't usable anymore
+		```python
+		class Solution:
+		    def minInterval(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
+		        intervals.sort()
+		        res = {}
+		        minheap = []
+		        i = 0
+		        for q in sorted(queries):
+		            while i < len(intervals) and intervals[i][0] <= q:
+		                l = intervals[i][0]
+		                r = intervals[i][1]
+		                heapq.heappush(minheap, (r-l+1, r))
+		                i += 1
+		            while minheap and minheap[0][1] < q:
+		                heapq.heappop(minheap)
+		            res[q] = minheap[0][0] if minheap else -1
+		        final = [res[q] for q in queries]
+		        return final
+		```
 # 9. Modified Binary Search
 
 Problems
