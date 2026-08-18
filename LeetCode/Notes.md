@@ -1882,3 +1882,22 @@ def dalg(graph, start):
 		
 		        return res +sign * num   
 		```
+# Bit Manipulation
+- XOR property
+	- Its commutative and associative 
+		- commutative: `a+b=b+a, a x b = b x a`
+		- associative: `(a + b) + c = a + (b + c), (a x b) x c = a x (b x c)`
+- Problems:
+	- [136. Single Number](https://leetcode.com/problems/single-number/)
+		- Array has numbers, each are a pair of the same number except one, get the one
+		- XOR starting with 0 (so first number stays as is)
+		- works because of commutation and association
+			```python
+			class Solution:
+			    def singleNumber(self, nums: List[int]) -> int:
+			        final = 0
+			        for num in nums:
+			            final = final ^ num
+			        return final
+			```
+	- 
