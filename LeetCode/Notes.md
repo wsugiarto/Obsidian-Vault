@@ -1883,6 +1883,7 @@ def dalg(graph, start):
 		        return res +sign * num   
 		```
 # Bit Manipulation
+- Questions involving bits, don't really have to think about converting ints to bits, just use bitwise operations
 - XOR property
 	- Its commutative and associative 
 		- commutative: `a+b=b+a, a x b = b x a`
@@ -1900,4 +1901,24 @@ def dalg(graph, start):
 			            final = final ^ num
 			        return final
 			```
-	- 
+	- [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+		- The simple way is to just take n%2 for each bit until n = 0
+			- increment n by n >> 1
+		- The optimal way is to do n & (n-1)
+			- This n-1 gets the right most 1 bit and every bit to the right of it will also flip, so when you & it, it will make all bits from that 1 to the end 0s
+			- Every time you do n & (n-1), add 1 to the counter
+			```python
+			class Solution:
+			    def hammingWeight(self, n: int) -> int:
+			        # res = 0
+			        # while n:
+			        #     res += n % 2
+			        #     n = n >> 1
+			        # return res
+			        res = 0
+			        while n:
+			            n = n & (n-1)
+			            res += 1
+			        return res
+			```
+		
