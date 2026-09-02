@@ -1935,5 +1935,26 @@ def dalg(graph, start):
 			            ans[i] = ans[i-offset] +1
 			        return ans
 			```
-	- 
-		
+	- [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+		- ints and bit form are interchangable, any int if u do bit ops will be in bit form.
+		  ```python
+			class Solution:
+			    def reverseBits(self, n: int) -> int:
+			        # res=  0
+			        # i=0
+			        # while n != 0:
+			        #     bit = n % 2
+			        #     res = res | (bit << (31-i))
+			        #     i += 1 
+			        #     n = n >> 1
+			        # return res
+			
+			        res=  0
+			        i=0
+			        while n != 0:
+			            bit = n % 2
+			            res += bit * 2**(31-i)
+			            i += 1 
+			            n = n >> 1
+			        return res
+			```
