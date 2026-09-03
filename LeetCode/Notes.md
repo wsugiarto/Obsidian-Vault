@@ -1959,4 +1959,16 @@ def dalg(graph, start):
 					return res
 			```
 	- [Missing Number](https://leetcode.com/problems/missing-number/)
-		- Use XOR, XOR a number with itself = 0, so 
+		- Use XOR, XOR a number with itself = 0, so anything thats not XORed with itself is missing and the final result is that missing number. 
+			```python
+			class Solution:
+			    def missingNumber(self, nums: List[int]) -> int:
+			        res = nums[0]
+			        for i in range(len(nums)):
+			            res = i ^ res
+			            if i > 0 :
+			                res = res ^ nums[i]
+			        res = res ^ len(nums)
+			        return res 
+			```
+			
