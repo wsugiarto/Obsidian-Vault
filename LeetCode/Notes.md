@@ -1957,5 +1957,4 @@ def dalg(graph, start):
 					i += 1 
 					n = n >> 1
 				return res
-		 ```
-sdasdadadsadasd
+				```
