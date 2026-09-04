@@ -1971,4 +1971,23 @@ def dalg(graph, start):
 			        res = res ^ len(nums)
 			        return res 
 			```
+	- [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
+		- This one just use a XOR b, then a AND b for the carry. XOR the result and the carry until the carry is 0
+		- Need to account for 32 bit size limit so always mask  using (0xFFFFFFFF) and check for negatives 
+			- negative flip all bits except sign bit, then not everything
+		```python
+		class Solution:
+		    def getSum(self, a: int, b: int) -> int:
+		        mask = 0xFFFFFFFF
+		        max_int = 0x7FFFFFFF
+		        carry = (a & b) << 1
+		        res= (a ^ b) & mask
+		        
+		        while carry:
+		            temp = (res & carry) << 1
+		            res = (res ^ carry) & mask 
+		            carry = temp & mask
+		        return res if res <= max_int else ~(res^mask)
+		            
+		```
 			
