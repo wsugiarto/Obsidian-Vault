@@ -1,4 +1,7 @@
 
+# Python Math
+- Remember to use fmod instead of % and int(x/10) instead of //
+	- This is for negative numbers, % will take the divisors sign so it'll act badly, // rounds to -infinity, which is also bad for negatives
 # Python making Lists tips:
 - When you want to make a list like `list[x][y]` , the way you form it is like this
 	- `list = [[startVal]* y for _ in range(x)]`
@@ -1888,6 +1891,12 @@ def dalg(graph, start):
 	- Its commutative and associative 
 		- commutative: `a+b=b+a, a x b = b x a`
 		- associative: `(a + b) + c = a + (b + c), (a x b) x c = a x (b x c)`
+	- Use it for addition and use AND for the carry
+	- Use it to find differences or to find missing/duplicate numbers
+		- a XOR a = 0, so if theres 2 in a list it will be 0
+		- a XOR 0 = a
+- AND
+	- Use it to keep the bits u want the same and 0 the rest
 - Problems:
 	- [136. Single Number](https://leetcode.com/problems/single-number/)
 		- Array has numbers, each are a pair of the same number except one, get the one
@@ -1989,5 +1998,26 @@ def dalg(graph, start):
 		            carry = temp & mask
 		        return res if res <= max_int else ~(res^mask)
 		            
+		```
+	- [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+		- Extracting digits using mod is the key
+		- Remember to use fmod instead of % and int(x/10) instead of //
+			- This is for negative numbers, % will take the divisors sign so it'll act badly, // rounds to -infinity, which is also bad for negatives
+		```python
+		class Solution:
+			def reverse(self, x: int) -> int:
+				res =0 
+				MAX = 2**31 -1
+				MIN = 2**31 * -1
+				res = 0
+				while x:
+					add = int(math.fmod(x,10))
+					x = int(x/10)
+					if res > MAX // 10 or res == MAX//10 and add >= MAX % 10:
+						return 0
+					if res < MIN // 10 or res == MIN // 10 and add <= MIN % 10:
+						return 0
+					res = res * 10 + add
+				return res
 		```
 			
