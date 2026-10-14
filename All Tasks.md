@@ -1,4 +1,4 @@
-- [ ] Do the HR courses
+- [x] Do the HR courses ✅ 2026-10-14
 - [x] ask mom for more money for i20 changes ✅ 2026-04-18
 - [x] Talk to Dan on Friday ✅ 2026-04-18
 - [x] Do part 2 of HW 291A ✅ 2026-04-18
