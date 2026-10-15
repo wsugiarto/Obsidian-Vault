@@ -1,3 +1,6 @@
+- [ ] Do the 251U HW
+- [ ] CSE 240a HW1 📅 2026-10-29
+- [ ] CSE 260 HW1 Sunday Night 📅 2026-10-25
 - [x] Do the HR courses ✅ 2026-10-14
 - [x] ask mom for more money for i20 changes ✅ 2026-04-18
 - [x] Talk to Dan on Friday ✅ 2026-04-18
