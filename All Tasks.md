@@ -1,6 +1,10 @@
-- [ ] Do the 251U HW
-- [ ] CSE 240a HW1 📅 2026-10-29
-- [ ] CSE 260 HW1 Sunday Night 📅 2026-10-25
+- [ ] Plan classes next Friday 📅 2026-11-05
+- [ ] work on cse 260 hw 📅 2026-11-01
+- [ ] finish 251U hw 📅 2026-10-31
+- [ ] Try to finish all 3 slides left of CSE 260 📅 2026-10-31
+- [x] Do the 251U HW ✅ 2026-10-31
+- [x] CSE 240a HW1 📅 2026-10-29 ✅ 2026-10-31
+- [x] CSE 260 HW1 Sunday Night 📅 2026-10-25 ✅ 2026-10-31
 - [x] Do the HR courses ✅ 2026-10-14
 - [x] ask mom for more money for i20 changes ✅ 2026-04-18
 - [x] Talk to Dan on Friday ✅ 2026-04-18
