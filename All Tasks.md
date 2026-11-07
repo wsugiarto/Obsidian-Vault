@@ -1,4 +1,4 @@
-- [ ] Plan classes next Friday 📅 2026-11-05
+- [ ] Plan classes next Friday 📅 2026-11-08
 - [x] work on cse 260 hw 📅 2026-11-01 ✅ 2026-11-02
 - [x] finish 251U hw 📅 2026-10-31 ✅ 2026-11-02
 - [x] Try to finish all 3 slides left of CSE 260 📅 2026-10-31 ✅ 2026-11-02
