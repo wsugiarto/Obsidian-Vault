@@ -1,3 +1,4 @@
+- [ ] do last check on 251U hw
 - [x] Plan classes next Friday 📅 2026-11-08 ✅ 2026-11-08
 - [x] work on cse 260 hw 📅 2026-11-01 ✅ 2026-11-02
 - [x] finish 251U hw 📅 2026-10-31 ✅ 2026-11-02
