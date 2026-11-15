@@ -1,5 +1,5 @@
 - [ ] maybe start on 251u hw if have time
-- [ ] do the reading for 240a
+- [x] do the reading for 240a ✅ 2026-11-15
 - [x] finish up 260 pper ✅ 2026-11-15
 - [x] do last check on 251U hw ✅ 2026-11-15
 - [x] Plan classes next Friday 📅 2026-11-08 ✅ 2026-11-08
