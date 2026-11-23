@@ -1701,6 +1701,31 @@ def dalg(graph, start):
 			                    dp[l][r] = max(dp[l+1][r], dp[l][r-1])
 			        return dp[0][len(s)-1]
 			```
+# 2D DP 
+- [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+	- Remember that the DP "array" can be a dictionary too / have indexes with more than one value
+	- Using recursion (DFS) is helpful in decision problems. 
+		```python
+		class Solution(object):
+		    def maxProfit(self, prices):
+		        dp = {}
+		        def dfs(i, buying):
+		            if i >= len(prices):
+		                return 0
+		            if (i, buying ) in dp:
+		                return dp[(i, buying)]
+		            if buying:
+		                buy = dfs(i+1, 0) - prices[i]
+		                cooldown = dfs(i+1, buying)
+		                dp[(i, buying)] = max(buy,cooldown)
+		            else:
+		                sell = dfs(i+2, 1) +prices[i]
+		                cooldown = dfs(i+1, buying)
+		                dp[(i, buying)] = max(sell,cooldown)
+		            return dp[(i, buying)]
+		        return dfs(0, 1)
+		```
+	
 # Sorting Problems
 - Some problems require unique sorting that will run in O(n) time instead of the nlogn time for quick, heap or merge sorts
 - Bucket Sort
