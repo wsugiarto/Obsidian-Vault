@@ -1,4 +1,4 @@
-- [ ] maybe start on 251u hw if have time
+- [x] maybe start on 251u hw if have time ✅ 2026-11-16
 - [x] do the reading for 240a ✅ 2026-11-15
 - [x] finish up 260 pper ✅ 2026-11-15
 - [x] do last check on 251U hw ✅ 2026-11-15
